@@ -1,0 +1,84 @@
+/* 
+Claudio Perez
+03/2020
+ */
+
+
+.bg-primary{
+  background-color:rgb(0,50,98) !important; /* navbar background color */
+  border-color: rgb(196,130,14);            /* navbar border color */
+}
+
+
+/* text color for navbar menu items */
+.navbar-dark .navbar-nav .show>.nav-link, .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active {
+  color: rgb(196,130,14); 
+}
+
+/* text color for menu items when hovering */
+ul.nav a:hover { color: rgb(196,130,14) !important; }
+
+a {
+  color: rgb(196,130,14);
+  text-decoration: none;
+  text-decoration-line: none;
+  text-decoration-style: initial;
+  text-decoration-color: initial;
+  background-color: transparent;
+}
+
+.navbar-brand {
+  /* https://www.dafontfree.net/freefonts-californian-fb-f64598.htm */
+  font-family: "Californian FB" !important;
+  font-size: 1.49375rem
+  /* font-family: "freight-text-pro" !important; */
+  /* font-weight: 200; */
+  /* font-style: normal; */
+}
+
+/* Added for collapsible table */
+tr.hide-table-padding td {
+  padding: 0;
+}
+
+.expand-button {
+	position: relative;
+}
+
+.accordion-toggle .expand-button:after
+{
+  position: absolute;
+  left:.75rem;
+  top: 50%;
+  transform: translate(0, -50%);
+  content: '-';
+}
+.accordion-toggle.collapsed .expand-button:after
+{
+  content: '+';
+}
+
+/* Inline code */
+
+code {
+  padding: 1px 3px;
+  background: #f5f5f5;
+  border: solid 1px #ccc;
+  /* color: #333; */
+}
+
+pre code {
+  background: transparent;
+  border: none;
+}
+
+a > code {
+  color: rgb(0,50,98);
+}
+code {
+  color: rgb(0,50,98);
+}
+
+a > code:hover, a > code:focus {
+  color: rgb(0,50,98);
+}

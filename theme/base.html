@@ -169,7 +169,12 @@
                     {% else %}
                         <div class="col-md-3">{% include "toc.html" %}</div>
                     {% endif %}
-                    <div class="col-md-9" role="main">{% include "content.html" %}</div>
+
+                    {% if page and page.meta.full_width %}
+                        {% include "content.html" %}
+                    {% else %}
+                        <div class="col-md-9" role="main">{% include "content.html" %}</div>
+                    {% endif %}
                 {%- endblock %}
             </div>
         </div>

@@ -173,7 +173,7 @@
                     {% if page and page.meta.full_width %}
                         {% include "content.html" %}
                     {% else %}
-                        <div class="col-md-9" role="main">{% include "content.html" %}</div>
+                        <div class="col-md-8" role="main">{% include "content.html" %}</div>
                     {% endif %}
                 {%- endblock %}
             </div>
@@ -185,7 +185,7 @@
             {%- if config.copyright %}
                 <p>{{ config.copyright }}</p>
             {%- endif %}
-            <p> <a href="http://filippou.ce.berkeley.edu/">© 2020 Filip C. Filippou </a> </p>
+            <p> © 2020 UC Regents, <a href="http://filippou.ce.berkeley.edu/">Filip C. Filippou</a> </p>
           {%- endblock %}
         </footer>
 

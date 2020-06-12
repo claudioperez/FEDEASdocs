@@ -69,6 +69,14 @@
 <li>
     <a href="../../../elemlib/" class="dropdown-item">Elements</a>
 </li>
+            
+<li>
+    <a href="../../Section_Library/FEDEASLab.md" class="dropdown-item">Section Library</a>
+</li>
+            
+<li>
+    <a href="../../Solution_Library/FEDEASLab/" class="dropdown-item">Solution Library</a>
+</li>
     </ul>
   </li>
                                     
@@ -86,14 +94,6 @@
                                     
 <li>
     <a href="../../General/FEDEASLab/" class="dropdown-item">Core</a>
-</li>
-                                    
-<li>
-    <a href="../../Section_Library/FEDEASLab.md" class="dropdown-item">Section Library</a>
-</li>
-                                    
-<li>
-    <a href="../../Solution_Library/FEDEASLab/" class="dropdown-item">Solution Library</a>
 </li>
                                     
 <li>
@@ -157,7 +157,7 @@
 <li>AUB = AUB_MATRIX (MODEL,ELEMDATA)</li>
 <li>AUB = AUB_MATRIX (MODEL,ELEMDATA,ALPH)</li>
 </ul>
-<p>the function sets up the block diagonal matrix of element limit-surface equations, $A_{in}$, for the structural model specified in data structure MODEL with element property information in cell array ELEMDATA. Options for parameter ALPH are specified below.</p>
+<p>the function sets up the block diagonal matrix of element limit-surface equations, <script type="math/tex">A_{in}</script>, for the structural model specified in data structure MODEL with element property information in cell array ELEMDATA. Options for parameter ALPH are specified below.</p>
 <h3 id="parameters">Parameters</h3>
 <hr />
 <ul>
@@ -174,10 +174,10 @@
 </li>
 </ul>
 <p><strong>Array.</strong>
-   If an $n \times 2$ array is passed, $n$ piecewise linear axial-moment interaction equations of the following form will be generated for each element:
+   If an <script type="math/tex">n \times 2</script> array is passed, <script type="math/tex">n</script> piecewise linear axial-moment interaction equations of the following form will be generated for each element:
    <script type="math/tex; mode=display">a_n \frac{|N|}{N_{pl}} + b_n\left( \frac{|M_z|}{M_{p,z}} + \frac{|M_y|}{M_{p,y}}\right)  \leq 1.0</script>
 </p>
-<p>If an $n \times 3$ array is passed, $n$ piecewise linear axial-moment-shear interaction equations of the following form will be applied:
+<p>If an <script type="math/tex">n \times 3</script> array is passed, <script type="math/tex">n</script> piecewise linear axial-moment-shear interaction equations of the following form will be applied:
    <script type="math/tex; mode=display">a_n \frac{|N|}{N_{p}} + b_n \frac{|M|}{M_{p}} + c_n \frac{|V|}{V_{p}} \leq 1.0</script>
 <strong>String.</strong>
    Alternatively, a <code>char array</code> may be passed indicating one of the following options:</p>
@@ -188,7 +188,7 @@
 <p><strong>Empty.</strong>
    If no parameter is passed in the third position, the function will go to the <code>NMOpt</code> field of the cell <code>ElemData</code> for each element, which may also contain a string or an array. Elements with no such field will default to the <code>AISC-H2</code> option.</p>
 <h2 id="formulation">Formulation</h2>
-<p>The matrix $A_{in}$ forms the upper bound plastic conditions in the form
+<p>The matrix <script type="math/tex">A_{in}</script> forms the upper bound plastic conditions in the form
    <script type="math/tex; mode=display">\mathbf{A}_{in} \mathbf{Q} \leq \mathbf{1}</script>
 for the lower bound linear programming problem expressed as follows:
 <script type="math/tex; mode=display">\begin{aligned}
@@ -202,11 +202,12 @@ for the lower bound linear programming problem expressed as follows:
 </p>
 <h3 id="2d-shear-moment-axial-interaction">2D Shear-moment-axial interaction</h3>
 <hr />
-<p>Interaction between shear, moment, and axial forces is implemented with $n$ piecewise linear equations of the following form:</p>
+<p>Interaction between shear, moment, and axial forces is implemented with <script type="math/tex">n</script> piecewise linear equations of the following form:</p>
 <p>
 <script type="math/tex; mode=display">a_n\dfrac{|N|}{N_p} + b_n\dfrac{|M|}{M_p} + c_n\dfrac{|V|}{V_p} \leq1.0</script>
 </p>
-<p>$N$, $M$, and $V$ are substituted by $Q_1$, $Q_2$, and $(Q_2 +Q_3)/L$ respectively, and the equations are rearranged and implemented follows:</p>
+<p>
+<script type="math/tex">N</script>, <script type="math/tex">M</script>, and <script type="math/tex">V</script> are substituted by <script type="math/tex">Q_1</script>, <script type="math/tex">Q_2</script>, and <script type="math/tex">(Q_2 +Q_3)/L</script> respectively, and the equations are rearranged and implemented follows:</p>
 <p>
 <script type="math/tex; mode=display">\dfrac{a}{N_p}Q_1 + \dfrac{b}{M_p}Q_2 + \dfrac{ c}{LV_p}(Q_2+Q_3) \leq1.0</script>
 </p>
@@ -219,7 +220,7 @@ for the lower bound linear programming problem expressed as follows:
 
         <footer class="col-md-12">
             <hr>
-            <p> © 2020 UC Regents, <a href="http://filippou.ce.berkeley.edu/">Filip C. Filippou</a> </p>
+            <p> © 1998-2020 UC Regents, <a href="http://filippou.ce.berkeley.edu/">Filip C. Filippou</a> </p>
         </footer>
         <script>
             var base_url = "../../..",
@@ -243,7 +244,7 @@ for the lower bound linear programming problem expressed as follows:
                 </p>
                 <form>
                     <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
                 </form>
                 <div id="mkdocs-search-results"></div>

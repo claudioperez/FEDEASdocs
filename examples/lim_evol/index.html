@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>othertitle - FedeasLab</title>
+        <title>Yield Surface Evolution - FedeasLab</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -69,6 +69,14 @@
 <li>
     <a href="../../elemlib/" class="dropdown-item">Elements</a>
 </li>
+            
+<li>
+    <a href="../../FEDEASLab/Section_Library/FEDEASLab.md" class="dropdown-item">Section Library</a>
+</li>
+            
+<li>
+    <a href="../../FEDEASLab/Solution_Library/FEDEASLab/" class="dropdown-item">Solution Library</a>
+</li>
     </ul>
   </li>
                                     
@@ -89,20 +97,12 @@
 </li>
                                     
 <li>
-    <a href="../../FEDEASLab/Section_Library/FEDEASLab.md" class="dropdown-item">Section Library</a>
-</li>
-                                    
-<li>
-    <a href="../../FEDEASLab/Solution_Library/FEDEASLab/" class="dropdown-item">Solution Library</a>
-</li>
-                                    
-<li>
     <a href="../../FEDEASLab/Utilities/FEDEASLab/" class="dropdown-item">Utilities</a>
 </li>
                                 </ul>
                             </li>
                             <li class="navitem">
-                                <a href="../../examples/" class="nav-link">Examples</a>
+                                <a href="../" class="nav-link">Examples</a>
                             </li>
                         </ul>
 
@@ -131,13 +131,17 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#nonlinear-element-modeling" class="nav-link">Nonlinear Element Modeling</a>
+            <li class="nav-item" data-level="1"><a href="#yield-surface-evolution" class="nav-link">Yield Surface Evolution</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#element-data-structures" class="nav-link">Element Data Structures</a>
+            <li class="nav-item" data-level="2"><a href="#formulation" class="nav-link">Formulation</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#element-library" class="nav-link">Element Library</a>
+            <li class="nav-item" data-level="2"><a href="#implementation" class="nav-link">Implementation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#examples" class="nav-link">Examples</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -151,89 +155,65 @@
                     
                         <div class="col-md-8" role="main">
 
-<h1 id="nonlinear-element-modeling">Nonlinear Element Modeling</h1>
-<h2 id="element-data-structures">Element Data Structures</h2>
-<p>When the character variable ACTION has one of the following values,
-the function performs the listed operations and returns the results in ELEMRESP:</p>
-<ul>
-<li><code>'size'</code>: report size of element arrays</li>
-<li><code>'chec'</code>: check element property data for omissions and assign default values</li>
-<li><code>'init'</code>: initialize element history variables</li>
-<li><code>'forc'</code>: report element resisting forces</li>
-<li><code>'stif'</code>: report element stiffness matrix and resisting forces</li>
-<li><code>'mass'</code>: report lumped mass vector and consistent mass matrix</li>
-<li><code>'post'</code>: report post-processing information</li>
-<li><code>'defo'</code>: report function handle for deformed shape</li>
-</ul>
-<p>This is a test equation:
-<script type="math/tex; mode=display">V = A_f U_f</script>
+<h1 id="yield-surface-evolution">Yield Surface Evolution</h1>
+<p>This note explores how the yield surface of certain cross sections evolve as they undergo combined flexural and axial loading into the inelastic range. The scope of the discussion is limited by the following assumptions:</p>
+<ol>
+<li>Shear interaction is negligible.</li>
+<li>Planar sections remain plane under deformation.</li>
+<li>For doubly symmetric sections, flexure occurs about a principle axis.</li>
+<li>For singly symmetric sections, flexure occurs about the asymmetric principle axis.</li>
+</ol>
+<p>An implementation is developed and examples are presented for a perfectly plastic rectangular homogeneous section, but the generalization of this case is relatively straight forward.</p>
+<h2 id="formulation">Formulation</h2>
+<p>We seek to define a surface, <script type="math/tex">F_\tau</script>, at instant <script type="math/tex">\tau</script> by the following set of moment-axial force ordered pairs:</p>
+<p>
+<script type="math/tex; mode=display">
+\{ \left( M, P \right) \in \mathbb{R} \times \mathbb{R} \mid \Phi(M,P) \}
+</script>
 </p>
-<p>The data structure ELEMRESP stands for the following data object(s) for each ACTION:</p>
-<ul>
-<li>ELEMRESP = ARSZ        for <code>action = 'size'</code></li>
-<li>ELEMRESP = ELEMDATA    for <code>action = 'chec'</code></li>
-<li>ELEMRESP = ELEMSTATE   for <code>action = 'init'</code></li>
-<li>ELEMRESP = ELEMSTATE   for <code>action = 'stif'</code></li>
-<li>ELEMRESP = ELEMSTATE   for <code>action = 'forc'</code></li>
-<li>ELEMRESP = ELEMMASS    for <code>action = 'mass'</code></li>
-<li>ELEMRESP = ELEMPOST    for <code>action = 'post'</code></li>
-<li>ELEMRESP = FunHandle   for <code>action = 'defo'</code></li>
-<li>ELEMRESP is empty      for unsupported keywords</li>
-</ul>
-<p>ELEMDATA is a data structure with element property information in fields</p>
-<p>ELEMSTATE is a data structure with the current element state; it has the fields
-- u     = vector of total element displacements in global reference
-- Du    = vector of element displacement increments from last convergence
-- DDu   = vector of element displacement increments from last iteration
-- ke    = element stiffness matrix in global reference; updated under - ACTION = <code>stif</code>
-- p     = element resisting force vector in global reference; updated - under ACTION = <code>stif</code> or <code>forc</code>
-- Past  = element history variables at last converged state
-- Pres  = current element history variables
-- lamda = row vector of current load factor(s)</p>
-<p>ELEMMASS is a data structure with element mass information in fields
-        ml    = lumped mass vector
-        mc    = consistent mass matrix</p>
-<p>ARSZ   is an Boolean array of size NDF x NEN,
-         where NDF = number of DOFs/node, NEN = number of nodes,
-         with unit values corresponding to the active element DOFs</p>
-<p>ELEMDATA is a data structure with element property information in fields</p>
-<p>ELEMSTATE is a data structure with the current element state; it has the fields</p>
-<p>ELEMMASS is a data structure with element mass information in fields</p>
-<p>ELEMPOST is a data structure with element response information for post-processing in fields</p>
-<h2 id="element-library">Element Library</h2>
-<p>{% raw %}
-{% for elem in meta.elems %}</p>
-<h3 id="elem-elem">{{elem}} {$ elem $}</h3>
-<p><details>
-  <summary> {{ elem }} {$ elem $}</summary>
-  other text
-  </details></p>
-<p>{% endfor %}
-{% endraw %}</p>
-<p>{% for elem in meta.elems %}</p>
-<h3 id="elem-elem_1">{{elem}} {$ elem $}</h3>
-<p><details>
-  <summary> {{ elem }} {% title %} {% elem %}</summary>
-  other text
-  </details></p>
-<p>{% endfor %}</p>
-<h3 id="le2dfrm">LE2dFrm</h3>
-<details>
-  <summary>Click here {{page.elems[0]}}</summary>
+<p>where <script type="math/tex">\Phi</script> is satisfied when <script type="math/tex">M</script> and <script type="math/tex">P</script> are resultants of a stress distribution, <script type="math/tex">\sigma</script>, meeting the condition <script type="math/tex">(\exists \mathbf{x} \in \Omega ) [\sigma ( \mathbf{x} ) = \sigma_{y, \tau }(\mathbf{x})]</script> for material behavior with only one component. In this condition, <script type="math/tex">\mathbf{x} \in \Omega</script> denotes a point in the cross section, and <script type="math/tex">\sigma_{y,\tau}</script> is the limit stress at time <script type="math/tex">\tau</script>.</p>
+<p>For the case of perfect plasticity without hardening, the dependence of <script type="math/tex">\sigma_y</script> on <script type="math/tex">\mathbf{x}</script> and <script type="math/tex">\tau</script> is dropped. Additionally, for a singly symmetric homogenous section obeying the assumptions stated above, the stress and strain fields are constant along the flexural axis. After discretizing such a cross section into <script type="math/tex">n_{IP}</script> integration points, the aforementioned condition is restated approximately as follows:</p>
+<p>
+<script type="math/tex; mode=display">
+\Phi(M,P) \implies \exists i \in N \mid \sigma(x_i) = \sigma_y 
+</script>
+</p>
+<p>where N is the set of integration point indices <script type="math/tex">\{i \in\mathbb{Z}^+ \mid i \le n_{IP} \}</script> and <script type="math/tex">x_i</script> is a scalar distance orthogonal to the flexural axis.</p>
+<p>The discrete problem may then be stated as follows:</p>
+<blockquote>
+<p>Given a vector, <script type="math/tex">\hat{\mathbf{x}}</script>, of <script type="math/tex">n_{IP}</script> integration point locations, and a vector of corresponding stresses, <script type="math/tex">\mathbf{y}_\tau</script> at instant <script type="math/tex">\tau</script>, find the following set, <script type="math/tex">Y</script>, of admissible stress vectors, <script type="math/tex">\mathbf{y}</script>:
+<script type="math/tex; mode=display">Y_\tau = \{
+ \mathbf{y} \in \mathbb{R}^{n_{IP}} \mid
+     (\exists a \in \mathbb{R})(\exists m \in \mathbb{R})[\mathbf{y} - \mathbf{y}_\tau = a + m\hat{\mathbf{x}}] \text{ and }
+      (\exists i \in N)[ y_i = \sigma_y ]
+\} </script>
+which is the set of all discrete stress vectors, <script type="math/tex">\mathbf{y}</script>, such that there exists an admissible strain increment <script type="math/tex">\Delta \varepsilon = \Delta\varepsilon_a + \Delta\kappa \mathbf{x}</script> which will produce the elastic stress increment <script type="math/tex">\mathbf{y} - \mathbf{y}_\tau = E \Delta\varepsilon</script>, and there exists an element, <script type="math/tex">y_i</script>, in <script type="math/tex">\mathbf{y}</script> that is equal to the limit stress.</p>
+</blockquote>
+<p>Unlike similar discrete approximations of the <strong>plastic</strong> limit surface, the accuracy of this approximation for the <strong>elastic</strong> limit surface is dependent on the loading history. Furthermore, this dependence is very difficult to predict. As it is related to the distance between integration points and extrema in the residual stress field. </p>
+<h2 id="implementation">Implementation</h2>
+<p>The implementation of this problem is divided into two functions, <code>plot_evol</code> and <code>lim_clip</code>. The former is a wrapper to the latter. <code>plot_evol</code> extracts the section state and other parameters from the standard <code>FEDEASLab</code> data structures and normalizes the residual stress oridinates before calling <code>lim_clip</code>.</p>
+<p>The function <code>lim_clip</code> is formulated in terms of an arbitrary set of abscisssas and ordinates, which are supplied to the argument <code>XY</code> as an array of size <script type="math/tex">(n_{IP},2)</script>. Each ordinate, <code>XY(i,2)</code>, corresponds to the stress <script type="math/tex">y_i \in \mathbf{y}_\tau</script> at integration point, <code>i</code>. The values supplied in <code>XY</code> should be normalized such that the codomain, <code>XY(:,2)</code>,  is the interval <script type="math/tex">[+1, -1]</script>. The function iterates over every integration point in the set <script type="math/tex">N</script>, carrying out 4 separate nested iterations over the remaining integration points indices, <script type="math/tex">\{ j \in\mathbb{Z}^+ \mid j \le n_{IP}, j \ne i\}</script>.  This is a very computationally expensive procedure that grows quickly with <script type="math/tex">n_{IP}</script>. The return variable, <code>Y_lim</code>, is a subset of the piecewise continuous set <script type="math/tex">Y_\tau</script> with column vectors <code>Y_lim(:,k)</code> defining points of discontinuity.</p>
+<h2 id="examples">Examples</h2>
+<p>The function <code>plot_evol</code> is used in these examples to produce a figure with two plots. The plot on the left shows the normalized stress vectors <script type="math/tex">y_k</script> (also <code>Y_lim(:,k)</code>) that correspond to points in the normalized resultant plot on the right. It should be noted, however, that the stress distribution corresponding to the <em>current</em> stress distribution is not shown.</p>
+<p>Examples are executed through the following script:</p>
+<script src="https://gist.github.com/claudioperez/c6e9c9f108fe3706ef18aecd6984444a.js?file=surf_ex_2.m"></script>
 
-  #### Heading
-  1. A numbered
-  2. list
-     * With some
-     * Sub bullets
-</details></div>
+<p><code>{include=surf_ex_2.m .matlab}</code></p>
+<h3 id="example-1-path-o-a-b-o-loadopt3">Example 1 - Path O-A-B-O' (<code>LoadOpt=3</code>)</h3>
+<p><img alt="Point A, 30 integration points." src="../oabo-a-30.png" /></p>
+<p><img alt="Point B, 30 integration points." src="../oabo-b-30.png" /></p>
+<p><img alt="Point O', 30 integration points." src="../oabo-o-30.png" /></p>
+<h3 id="example-2-path-o-a-b-c-o-loadopt4">Example 2 - Path O-A-B-C-O' (<code>LoadOpt=4</code>)</h3>
+<p>This example is identical to the previous up to point B, after which unloading occurs under a constant moment up to point C.</p>
+<p><img alt="Point C, 30 integration points." src="../oabco-c-30.png" /></p>
+<p><img alt="Point O', 30 integration points." src="../oabco-o-30.png" /></p></div>
                     
             </div>
         </div>
 
         <footer class="col-md-12">
             <hr>
-            <p> © 2020 UC Regents, <a href="http://filippou.ce.berkeley.edu/">Filip C. Filippou</a> </p>
+            <p> © 1998-2020 UC Regents, <a href="http://filippou.ce.berkeley.edu/">Filip C. Filippou</a> </p>
         </footer>
         <script>
             var base_url = "../..",
@@ -257,7 +237,7 @@ the function performs the listed operations and returns the results in ELEMRESP:
                 </p>
                 <form>
                     <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
                 </form>
                 <div id="mkdocs-search-results"></div>

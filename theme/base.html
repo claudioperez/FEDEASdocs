@@ -131,10 +131,10 @@
                                 <a href="{{ page.edit_url }}" class="nav-link">
                                     {%- if config.repo_name == 'GitHub' -%}
                                         <i class="fa fa-github"></i> Edit on {{ config.repo_name }}
-                                    {%- elif config.repo_name == 'Bitbucket' -%}
+                                    <!-- {%- elif config.repo_name == 'Bitbucket' -%}
                                         <i class="fa fa-bitbucket"></i> Edit on {{ config.repo_name }}
                                     {%- elif config.repo_name == 'GitLab' -%}
-                                        <i class="fa fa-gitlab"></i> Edit on {{ config.repo_name }}
+                                        <i class="fa fa-gitlab"></i> Edit on {{ config.repo_name }} -->
                                     {%- else -%}
                                     Edit on {{ config.repo_name }}
                                     {%- endif -%}
@@ -145,10 +145,10 @@
                                 <a href="{{ config.repo_url }}" class="nav-link">
                                     {%- if config.repo_name == 'GitHub' -%}
                                         <i class="fa fa-github"></i> {{ config.repo_name }}
-                                    {%- elif config.repo_name == 'Bitbucket' -%}
+                                    <!-- {%- elif config.repo_name == 'Bitbucket' -%}
                                         <i class="fa fa-bitbucket"></i> {{ config.repo_name }}
                                     {%- elif config.repo_name == 'GitLab' -%}
-                                        <i class="fa fa-gitlab"></i> {{ config.repo_name }}
+                                        <i class="fa fa-gitlab"></i> {{ config.repo_name }} -->
                                     {%- else -%}
                                     {{ config.repo_name }}
                                     {%- endif -%}
@@ -185,7 +185,7 @@
             {%- if config.copyright %}
                 <p>{{ config.copyright }}</p>
             {%- endif %}
-            <p> © 2020 UC Regents, <a href="http://filippou.ce.berkeley.edu/">Filip C. Filippou</a> </p>
+            <p> © 1998-2020 UC Regents, <a href="http://filippou.ce.berkeley.edu/">Filip C. Filippou</a> </p>
           {%- endblock %}
         </footer>
 

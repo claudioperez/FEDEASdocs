@@ -69,6 +69,14 @@
 <li>
     <a href="../../../elemlib/" class="dropdown-item">Elements</a>
 </li>
+            
+<li>
+    <a href="../../Section_Library/FEDEASLab.md" class="dropdown-item">Section Library</a>
+</li>
+            
+<li>
+    <a href="../../Solution_Library/FEDEASLab/" class="dropdown-item">Solution Library</a>
+</li>
     </ul>
   </li>
                                     
@@ -86,14 +94,6 @@
                                     
 <li>
     <a href="../../General/FEDEASLab/" class="dropdown-item">Core</a>
-</li>
-                                    
-<li>
-    <a href="../../Section_Library/FEDEASLab.md" class="dropdown-item">Section Library</a>
-</li>
-                                    
-<li>
-    <a href="../../Solution_Library/FEDEASLab/" class="dropdown-item">Solution Library</a>
 </li>
                                     
 <li>
@@ -208,22 +208,23 @@
 <ul>
 <li><code>lim_coef</code>: float array.</li>
 </ul>
-<p>If an $n \times 1$ array is passed, $n$ piecewise linear equations of the following form will be generated for each element:
+<p>If an <script type="math/tex">n \times 1</script> array is passed, <script type="math/tex">n</script> piecewise linear equations of the following form will be generated for each element:
    <script type="math/tex; mode=display">a_n \frac{|Q_i|}{Q_{i,pl}}    \leq 1.0</script>
 </p>
-<p>If an $n \times 2$ array is passed, $n$ piecewise linear axial-moment interaction equations of the following form will be generated for each element:
+<p>If an <script type="math/tex">n \times 2</script> array is passed, <script type="math/tex">n</script> piecewise linear axial-moment interaction equations of the following form will be generated for each element:
    <script type="math/tex; mode=display">a_n \frac{|N|}{N_{pl}} + b_n\frac{|M_z|}{M_{p,z}}   \leq 1.0</script>
 </p>
-<p>If an $n \times 3$ array is passed, $n$ piecewise linear axial-moment-shear interaction equations of the following form will be applied:
+<p>If an <script type="math/tex">n \times 3</script> array is passed, <script type="math/tex">n</script> piecewise linear axial-moment-shear interaction equations of the following form will be applied:
    <script type="math/tex; mode=display">a_n \frac{|N|}{N_{p}} + b_n \frac{|M|}{M_{p}} + c_n \frac{|V|}{V_{p}} \leq 1.0</script>
 </p>
 <h3 id="case-iii-nvm-interaction">Case III: NVM interaction</h3>
 <hr />
-<p>Interaction between shear, moment, and axial forces is implemented with $n$ piecewise linear equations of the following form:</p>
+<p>Interaction between shear, moment, and axial forces is implemented with <script type="math/tex">n</script> piecewise linear equations of the following form:</p>
 <p>
 <script type="math/tex; mode=display">a_n\dfrac{|N|}{N_p} + b_n\dfrac{|M|}{M_p} + c_n\dfrac{|V|}{V_p} \leq1.0</script>
 </p>
-<p>$N$, $M$, and $V$ are substituted by $Q_1$, $Q_2$, and $(Q_2 +Q_3)/L$ respectively, and the equations are rearranged and implemented follows:</p>
+<p>
+<script type="math/tex">N</script>, <script type="math/tex">M</script>, and <script type="math/tex">V</script> are substituted by <script type="math/tex">Q_1</script>, <script type="math/tex">Q_2</script>, and <script type="math/tex">(Q_2 +Q_3)/L</script> respectively, and the equations are rearranged and implemented follows:</p>
 <p>
 <script type="math/tex; mode=display">\dfrac{a}{N_p}Q_1 + \dfrac{b}{M_p}Q_2 + \dfrac{ c}{LV_p}(Q_2+Q_3) \leq1.0</script>
 </p>
@@ -236,7 +237,7 @@
 
         <footer class="col-md-12">
             <hr>
-            <p> © 2020 UC Regents, <a href="http://filippou.ce.berkeley.edu/">Filip C. Filippou</a> </p>
+            <p> © 1998-2020 UC Regents, <a href="http://filippou.ce.berkeley.edu/">Filip C. Filippou</a> </p>
         </footer>
         <script>
             var base_url = "../../..",
@@ -260,7 +261,7 @@
                 </p>
                 <form>
                     <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
                 </form>
                 <div id="mkdocs-search-results"></div>

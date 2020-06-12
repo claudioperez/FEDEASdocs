@@ -69,6 +69,14 @@
 <li>
     <a href="../../../elemlib/" class="dropdown-item">Elements</a>
 </li>
+            
+<li>
+    <a href="../../../FEDEASLab/Section_Library/FEDEASLab.md" class="dropdown-item">Section Library</a>
+</li>
+            
+<li>
+    <a href="../../../FEDEASLab/Solution_Library/FEDEASLab/" class="dropdown-item">Solution Library</a>
+</li>
     </ul>
   </li>
                                     
@@ -86,14 +94,6 @@
                                     
 <li>
     <a href="../../../FEDEASLab/General/FEDEASLab/" class="dropdown-item">Core</a>
-</li>
-                                    
-<li>
-    <a href="../../../FEDEASLab/Section_Library/FEDEASLab.md" class="dropdown-item">Section Library</a>
-</li>
-                                    
-<li>
-    <a href="../../../FEDEASLab/Solution_Library/FEDEASLab/" class="dropdown-item">Solution Library</a>
 </li>
                                     
 <li>
@@ -157,9 +157,9 @@
 
 <h1 id="hw-3-problem-3">HW-3 Problem 3</h1>
 <p><img src="doc\img\fig1.png" width="80%"></p>
-<p>The purpose of the structural model in Fig. $3(a)$ is the study of the risk of a mid-rise building forming a soft first-story collapse mechanism under the combined action of a total gravity load $P_{v}$ and a lateral load. The latter is assumed to be linearly distributed over the height of the building with a resultant $P_{h}$ located at a distance $H$ above the first floor. The building has a single bay of length $L$ and the height of the first story is 12 feet. The ratio of $(H-h)/ L$ is $4 .$ The first story columns consist of $\mathrm{W} 14 \mathrm{x} 426$ steel sections with Grade 50 Steel and are pinned at the foundation. The first story columns can be assumed restrained against rotation at the top, since they frame into a girder that can be assumed to be infinitely rigid in flexure. The girder and columns can be assumed to be inextensible.</p>
+<p>The purpose of the structural model in Fig. <script type="math/tex">3(a)</script> is the study of the risk of a mid-rise building forming a soft first-story collapse mechanism under the combined action of a total gravity load <script type="math/tex">P_{v}</script> and a lateral load. The latter is assumed to be linearly distributed over the height of the building with a resultant <script type="math/tex">P_{h}</script> located at a distance <script type="math/tex">H</script> above the first floor. The building has a single bay of length <script type="math/tex">L</script> and the height of the first story is 12 feet. The ratio of <script type="math/tex">(H-h)/ L</script> is <script type="math/tex">4 .</script> The first story columns consist of <script type="math/tex">\mathrm{W} 14 \mathrm{x} 426</script> steel sections with Grade 50 Steel and are pinned at the foundation. The first story columns can be assumed restrained against rotation at the top, since they frame into a girder that can be assumed to be infinitely rigid in flexure. The girder and columns can be assumed to be inextensible.</p>
 <h2 id="31-aisc-h2">3.1 - AISC H2</h2>
-<p>Verify the maximum lateral force $P_{h}$ that the first story can resist for an ultimate load factor $\lambda=2.0$ under the assumption that the gravity load $P_{v}$ is negligible relative to the lateral load $P_{h}$ using the diamond shaped plastic limit surface in Fig. 4.6 of the course reader (AISC Equation H2-1).</p>
+<p>Verify the maximum lateral force <script type="math/tex">P_{h}</script> that the first story can resist for an ultimate load factor <script type="math/tex">\lambda=2.0</script> under the assumption that the gravity load <script type="math/tex">P_{v}</script> is negligible relative to the lateral load <script type="math/tex">P_{h}</script> using the diamond shaped plastic limit surface in Fig. 4.6 of the course reader (AISC Equation H2-1).</p>
 <pre><code class="matlab">CleanStart
 LimEqn = 'AISC-H2';
 beta  = 0;
@@ -177,7 +177,7 @@ lamc =
 </code></pre>
 <p><img alt="png" src="../output_2_1.png" /></p>
 <h2 id="32-aisc-h1">3.2 - AISC H1</h2>
-<p>How much can the maximum lateral force $P_{h}$ be increased by using the $N$ -M plastic limit surface of the AISC specification in equation 4.7 of the course reader?</p>
+<p>How much can the maximum lateral force <script type="math/tex">P_{h}</script> be increased by using the <script type="math/tex">N</script> -M plastic limit surface of the AISC specification in equation 4.7 of the course reader?</p>
 <pre><code class="matlab">CleanStart
 LimEqn = 'AISC-H1';
 beta  = 0;
@@ -194,7 +194,7 @@ lamc =
     2.0000
 </code></pre>
 <h2 id="33-vertical-load">3.3 - Vertical Load</h2>
-<p>Repeat the preceding questions for the case that the gravity load $P_{v}$ is equal to $50 \%$ of the lateral load $P_{h}$ under the assumption that it remains constant during the application of the lateral load and is, therefore, assigned an ultimate load factor of 1.2.</p>
+<p>Repeat the preceding questions for the case that the gravity load <script type="math/tex">P_{v}</script> is equal to <script type="math/tex">50 \%</script> of the lateral load <script type="math/tex">P_{h}</script> under the assumption that it remains constant during the application of the lateral load and is, therefore, assigned an ultimate load factor of 1.2.</p>
 <h3 id="331">3.3.1</h3>
 <pre><code class="matlab">CleanStart
 LimEqn = 'AISC-H2';
@@ -217,7 +217,7 @@ lamc =
 
         <footer class="col-md-12">
             <hr>
-            <p> © 2020 UC Regents, <a href="http://filippou.ce.berkeley.edu/">Filip C. Filippou</a> </p>
+            <p> © 1998-2020 UC Regents, <a href="http://filippou.ce.berkeley.edu/">Filip C. Filippou</a> </p>
         </footer>
         <script>
             var base_url = "../../..",
@@ -241,7 +241,7 @@ lamc =
                 </p>
                 <form>
                     <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
                 </form>
                 <div id="mkdocs-search-results"></div>

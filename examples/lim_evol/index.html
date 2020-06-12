@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Yield Surface Evolution - FedeasLab</title>
+        <title>Yield surface evolution - FedeasLab</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -197,15 +197,37 @@
 <p>Examples are executed using the following Matlab script:</p>
 <script src="https://gist.github.com/claudioperez/c6e9c9f108fe3706ef18aecd6984444a.js?file=surf_ex_2.m"></script>
 
-<p><code>{include=surf_ex_2.m .matlab}</code></p>
-<h3 id="example-1-path-o-a-b-o-loadopt3">Example 1 - Path O-A-B-O' (<code>LoadOpt=3</code>)</h3>
-<p><img alt="Point A, 30 integration points." src="../oabo-a-30.png" /></p>
-<p><img alt="Point B, 30 integration points." src="../oabo-b-30.png" /></p>
-<p><img alt="Point O', 30 integration points." src="../oabo-o-30.png" /></p>
-<h3 id="example-2-path-o-a-b-c-o-loadopt4">Example 2 - Path O-A-B-C-O' (<code>LoadOpt=4</code>)</h3>
-<p>This example is identical to the previous up to point B, after which unloading occurs under a constant moment up to point C.</p>
-<p><img alt="Point C, 30 integration points." src="../oabco-c-30.png" /></p>
-<p><img alt="Point O', 30 integration points." src="../oabco-o-30.png" /></p></div>
+<p>```{include=surf_ex_2.m .matlab}</p>
+<pre><code>
+### Example 1 - Path O-A-B-O' (`LoadOpt=3`)
+
+![Point A, 30 integration points.](./oabo-a-30.png)
+
+![Point B, 30 integration points.](./oabo-b-30.png)
+
+![Point O', 30 integration points.](./oabo-o-30.png)
+
+### Example 2 - Path O-A-B-C-O' (`LoadOpt=4`)
+
+This example is identical to the previous up to point B, after which unloading occurs under a constant moment up to point C.
+
+![Point C, 30 integration points.](./oabco-c-30.png)
+
+![Point O', 30 integration points.](./oabco-o-30.png)
+
+## Source Code
+
+### `lim_clip`
+
+&lt;script src=&quot;https://gist.github.com/claudioperez/c6e9c9f108fe3706ef18aecd6984444a.js?file=lim_clip.m&quot;&gt;&lt;/script&gt;
+
+```{include=lim_clip.m .matlab}
+</code></pre>
+
+<h3 id="plot_evol"><code>plot_evol</code></h3>
+<script src="https://gist.github.com/claudioperez/c6e9c9f108fe3706ef18aecd6984444a.js?file=plot_evol.m"></script>
+
+<p><code>{include=plot_evol.m .matlab}</code></p></div>
                     
             </div>
         </div>

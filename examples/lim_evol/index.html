@@ -184,9 +184,7 @@
 <p>Given a vector, <script type="math/tex">\hat{\mathbf{x}}</script>, of <script type="math/tex">n_{IP}</script> integration point locations, and a vector of corresponding stresses, <script type="math/tex">\mathbf{y}_\tau</script> at instant <script type="math/tex">\tau</script>, find the following set, <script type="math/tex">Y</script>, of admissible stress vectors, <script type="math/tex">\mathbf{y}</script>:
 <script type="math/tex; mode=display">Y_\tau = \{
  \mathbf{y} \in \mathbb{R}^{n_{IP}} \mid
-     (\exists a \in \mathbb{R})(\exists m \in \mathbb{R})[\mathbf{y} - \mathbf{y}_\tau = a + m\hat{\mathbf{x}}] \text{ and }
-      (\exists i \in N)[ y_i = \sigma_y ]
-\} </script>
+     (\exists a \in \mathbb{R})(\exists m \in \mathbb{R})[\mathbf{y} - \mathbf{y}_\tau = a + m\hat{\mathbf{x}}] \text{ and } (\exists i \in N)[ y_i = \sigma_y ]\} </script>
 which is the set of all discrete stress vectors, <script type="math/tex">\mathbf{y}</script>, such that there exists an admissible strain increment <script type="math/tex">\Delta \varepsilon = \Delta\varepsilon_a + \Delta\kappa \mathbf{x}</script> which will produce the elastic stress increment <script type="math/tex">\mathbf{y} - \mathbf{y}_\tau = E \Delta\varepsilon</script>, and there exists an element, <script type="math/tex">y_i</script>, in <script type="math/tex">\mathbf{y}</script> that is equal to the limit stress.</p>
 </blockquote>
 <p>Unlike similar discrete approximations of the <strong>plastic</strong> limit surface, the accuracy of this approximation for the <strong>elastic</strong> limit surface is dependent on the loading history. Furthermore, this dependence is very difficult to predict. As it is related to the distance between integration points and extrema in the residual stress field. </p>
@@ -195,7 +193,7 @@ which is the set of all discrete stress vectors, <script type="math/tex">\mathbf
 <p>The function <code>lim_clip</code> is formulated in terms of an arbitrary set of abscisssas and ordinates, which are supplied to the argument <code>XY</code> as an array of size <script type="math/tex">(n_{IP},2)</script>. Each ordinate, <code>XY(i,2)</code>, corresponds to the stress <script type="math/tex">y_i \in \mathbf{y}_\tau</script> at integration point, <code>i</code>. The values supplied in <code>XY</code> should be normalized such that the codomain, <code>XY(:,2)</code>,  is the interval <script type="math/tex">[+1, -1]</script>. The function iterates over every integration point in the set <script type="math/tex">N</script>, carrying out 4 separate nested iterations over the remaining integration points indices, <script type="math/tex">\{ j \in\mathbb{Z}^+ \mid j \le n_{IP}, j \ne i\}</script>.  This is a very computationally expensive procedure that grows quickly with <script type="math/tex">n_{IP}</script>. The return variable, <code>Y_lim</code>, is a subset of the piecewise continuous set <script type="math/tex">Y_\tau</script> with column vectors <code>Y_lim(:,k)</code> defining points of discontinuity.</p>
 <h2 id="examples">Examples</h2>
 <p>The function <code>plot_evol</code> is used in these examples to produce a figure with two plots. The plot on the left shows the normalized stress vectors <script type="math/tex">y_k</script> (also <code>Y_lim(:,k)</code>) that correspond to points in the normalized resultant plot on the right. It should be noted, however, that the stress distribution corresponding to the <em>current</em> stress distribution is not shown.</p>
-<p>Examples are executed through the following script:</p>
+<p>Examples are executed using the following Matlab script:</p>
 <script src="https://gist.github.com/claudioperez/c6e9c9f108fe3706ef18aecd6984444a.js?file=surf_ex_2.m"></script>
 
 <p><code>{include=surf_ex_2.m .matlab}</code></p>

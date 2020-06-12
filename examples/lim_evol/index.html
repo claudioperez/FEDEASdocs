@@ -160,8 +160,8 @@
 <ol>
 <li>Shear interaction is negligible.</li>
 <li>Planar sections remain plane under deformation.</li>
-<li>For doubly symmetric sections, flexure occurs about a principle axis.</li>
-<li>For singly symmetric sections, flexure occurs about the asymmetric principle axis.</li>
+<li>For doubly symmetric sections, flexure occurs about a principal axis.</li>
+<li>For singly symmetric sections, flexure occurs about the asymmetric principal axis.</li>
 </ol>
 <p>An implementation is developed and examples are presented for a perfectly plastic rectangular homogeneous section, but the generalization of this case is relatively straight forward.</p>
 <h2 id="formulation">Formulation</h2>
@@ -181,9 +181,12 @@
 <p>where N is the set of integration point indices <script type="math/tex">\{i \in\mathbb{Z}^+ \mid i \le n_{IP} \}</script> and <script type="math/tex">x_i</script> is a scalar distance orthogonal to the flexural axis.</p>
 <p>The discrete problem may then be stated as follows:</p>
 <blockquote>
-<p>Given a vector, <script type="math/tex">\hat{\mathbf{x}}</script>, of <script type="math/tex">n_{IP}</script> integration point locations, and a vector of corresponding stresses, <script type="math/tex">\mathbf{y}_\tau</script> at instant <script type="math/tex">\tau</script>, find the following set, <script type="math/tex">Y</script>, of admissible stress vectors, <script type="math/tex">\mathbf{y}</script>:
-<script type="math/tex; mode=display">Y_\tau = \{ \mathbf{y} \in \mathbb{R}^{n_{IP}} \mid (\exists a \in \mathbb{R})(\exists m \in \mathbb{R})[\mathbf{y} - \mathbf{y}_\tau = a + m\hat{\mathbf{x}}] \text{ and } (\exists i \in N)[ y_i = \sigma_y ]\} </script>
-which is the set of all discrete stress vectors, <script type="math/tex">\mathbf{y}</script>, such that there exists an admissible strain increment <script type="math/tex">\Delta \varepsilon = \Delta\varepsilon_a + \Delta\kappa \mathbf{x}</script> which will produce the elastic stress increment <script type="math/tex">\mathbf{y} - \mathbf{y}_\tau = E \Delta\varepsilon</script>, and there exists an element, <script type="math/tex">y_i</script>, in <script type="math/tex">\mathbf{y}</script> that is equal to the limit stress.</p>
+<p>Given a vector, <script type="math/tex">\hat{\mathbf{x}}</script>, of <script type="math/tex">n_{IP}</script> integration point locations, and a vector of corresponding stresses, <script type="math/tex">\mathbf{y}_\tau</script> at instant <script type="math/tex">\tau</script>, find the following set, <script type="math/tex">Y</script>, of admissible stress vectors, <script type="math/tex">\mathbf{y}</script>:</p>
+<p>
+<script type="math/tex; mode=display">Y_\tau = \{ \mathbf{y} \in \mathbb{R}^{n_{IP}} \mid (\exists a \in \mathbb{R})(\exists m \in \mathbb{R})[\mathbf{y} - \mathbf{y}_\tau = a + m\hat{\mathbf{x}}] \text{ and } (\exists i \in N)[ y_i = \sigma_y ]\}</script>
+</p>
+<p>which is the set of all discrete stress vectors, <script type="math/tex">\mathbf{y}</script>, such that there exists an admissible strain increment <script type="math/tex">\Delta \varepsilon = \Delta\varepsilon_a + \Delta\kappa \mathbf{x}</script> which will produce the elastic stress increment <script type="math/tex">\mathbf{y} - \mathbf{y}_\tau = E \Delta\varepsilon</script>, and there exists an element, <script type="math/tex">y_i</script>, in <script type="math/tex">\mathbf{y}</script> that is equal to the limit stress.
+</p>
 </blockquote>
 <p>Unlike similar discrete approximations of the <strong>plastic</strong> limit surface, the accuracy of this approximation for the <strong>elastic</strong> limit surface is dependent on the loading history. Furthermore, this dependence is very difficult to predict as it is related to the distance between integration points and extrema in the residual stress field.</p>
 <h2 id="implementation">Implementation</h2>

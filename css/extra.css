@@ -3,6 +3,12 @@ Claudio Perez
 03/2020
  */
 
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+
 
 .bg-primary{
   background-color:rgb(0,50,98) !important; /* navbar background color */

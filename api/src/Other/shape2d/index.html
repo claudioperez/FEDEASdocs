@@ -143,6 +143,29 @@
     
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
+        
+            
+            <li class="nav-item" data-level="1"><a href="#shape2d" class="nav-link">shape2d</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#purpose" class="nav-link">Purpose</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#synopsis" class="nav-link">Synopsis</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#description" class="nav-link">Description</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#cross-reference-information" class="nav-link">Cross-Reference Information</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        
         </ul>
     </div>
 </div></div>
@@ -157,20 +180,20 @@
 <!--<table width="100%"><tr><td align="left"><a href="../../index.md"><img alt="<" border="0" src="../../left.png">&nbsp;Master index</a></td>
 <td align="right"><a href="index.md">Index for src\Other&nbsp;<img alt=">" border="0" src="../../right.png"></a></td></tr></table>-->
 
-<h1>shape2d
-</h1>
+<h1 id="shape2d">shape2d</h1>
+<!-- <h1>shape2d
+</h1> -->
 
-<h2 id="purpose"><a name="_name"></a>Purpose <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<h2 id="purpose"><a name="_name"></a>Purpose</h2>
+<!-- <h2 id="purpose"><a name="_name"></a>Purpose</h2> -->
 
-<div class="box"><strong>SHAPE2D shape functions for 4-9 node quadrilateral element</strong></div>
+<p>SHAPE2D shape functions for 4-9 node quadrilateral element</p>
+<!-- <div class="box"><strong>SHAPE2D shape functions for 4-9 node quadrilateral element</strong></div> -->
 
-<h2><a name="_synopsis"></a>Synopsis <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
-
-<div class="box"><strong>function [N,dNdx,J] = shape2d (nat,xyz,nodix) </strong></div>
-
-<h2><a name="_description"></a>Description <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
-
-<div class="fragment"><pre class="comment">SHAPE2D shape functions for 4-9 node quadrilateral element
+<h2 id="synopsis"><a name="_synopsis"></a>Synopsis</h2>
+<p><code>function [N,dNdx,J] = shape2d (nat,xyz,nodix)</code> </p>
+<h2 id="description"><a name="_description"></a>Description</h2>
+<pre class="comment">SHAPE2D shape functions for 4-9 node quadrilateral element
  [N, dNdx, J] = SHAPE2D (NAT,XYZ,NODIX) shape functions for 4-9 node quadrilateral element
 %
  Input Parameters
@@ -185,12 +208,28 @@
  dNdx  = dNdx(i,j) = derivative of shape function j with respect to geometric coordinate x_i
  J     = Jacobian of transformation from geometric to natural coordinates
 
-  Reference: T.J.R. Hughes, The Finite Element Method, pp. 135</pre></div>
+  Reference: T.J.R. Hughes, The Finite Element Method, pp. 135</pre>
+
+<!-- <div class="fragment"><pre class="comment">SHAPE2D shape functions for 4-9 node quadrilateral element
+ [N, dNdx, J] = SHAPE2D (NAT,XYZ,NODIX) shape functions for 4-9 node quadrilateral element
+%
+ Input Parameters
+ ----------------
+ nat   = [ xi eta ] natural coordinates of point of interest
+ xyz   = nodal coordinates for element (row i for node i)
+ nodix = node index, e.g. [1:4 7 8] if nodes 1 through 4 (always), if 7 and 8 are present 
+ ----------------
+ Return Variables
+ ----------------
+ N     = shape function values for point of interest
+ dNdx  = dNdx(i,j) = derivative of shape function j with respect to geometric coordinate x_i
+ J     = Jacobian of transformation from geometric to natural coordinates
+
+  Reference: T.J.R. Hughes, The Finite Element Method, pp. 135</pre></div> -->
 
 <!-- crossreference -->
 
-<h2><a name="_cross"></a>Cross-Reference Information <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
-
+<h2 id="cross-reference-information"><a name="_cross"></a>Cross-Reference Information</h2>
 <p>This function calls:
 <ul style="list-style-image:url(../../matlabicon.gif)">
 </ul>
@@ -198,7 +237,7 @@ This function is called by:
 <ul style="list-style-image:url(../../matlabicon.gif)">
 <li><a href="InelPanelZone.md" class="code" title="function ElemResp = InelPanelZone (action,el_no,xyz,ElemData,ElemState)">InelPanelZone</a>   INELPANELZONE 4-node panel zone element with inelastic material</li></ul>
 <!-- crossreference --></p>
-<!-- <hr><address>Generated on Wed 08-Jul-2020 12:45:12 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" title="Matlab Documentation in HTML">m2html</a></strong> &copy; 2005</address> --></div>
+<!-- <hr><address>Generated on Wed 08-Jul-2020 14:50:56 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" title="Matlab Documentation in HTML">m2html</a></strong> &copy; 2005</address> --></div>
                     
             </div>
         </div>

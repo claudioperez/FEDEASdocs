@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Function index - FedeasLab</title>
+        <title>About - FedeasLab</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -43,8 +43,8 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href=".." class="nav-link">Home</a>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">About</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
@@ -125,6 +125,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <!-- <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../DataStructs/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li> -->
                     </ul>
                 </div>
             </div>
@@ -145,21 +155,9 @@
         <ul class="nav flex-column">
         
             
-            <li class="nav-item" data-level="1"><a href="#function-index" class="nav-link">Function index</a>
+            <li class="nav-item" data-level="1"><a href="#about-fedeaslab" class="nav-link">About FEDEASLab</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#basics" class="nav-link">Basics</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#simplecnn-wrapper" class="nav-link">SimpleCNN wrapper</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#dagnn-wrapper" class="nav-link">DagNN wrapper</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#other-functions" class="nav-link">Other functions</a>
+            <li class="nav-item" data-level="2"><a href="#license" class="nav-link">License</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -174,76 +172,12 @@
                     
                         <div class="col-md-8" role="main">
 
-<h1 id="function-index">Function index</h1>
-<p>FEDEASLab includes several MATLAB functions organized as follows:</p>
-<ul>
-<li><a href="#Basics">Basics</a>. These functions implement the CNN
-  computational blocks that can be combined either manually or using
-  one of the provided wrappers to construct CNNs.</li>
-<li><a href="#elemlib">Element Library</a>. SimpleNN is a lightweight wrapper
-  implementing CNNs that are linear chains of computational blocks.</li>
-<li><a href="#matlib">Material Library</a>. DagNN is an object-oriented wrapper
-  supporting more complex network topologies.</li>
-<li><a href="#utility">Other functions</a>. These helper functions are used to
-  initialize and compile MatConvNet.</li>
-</ul>
-<p>There is no general training function as training depends on the
-dataset and problem. Look at the <code>examples</code> subdirectory for code
-showing how to train CNNs.</p>
-<p><a name="core"></a></p>
-<h2 id="basics">Basics</h2>
-<ul>
-<li><a href="mfiles/vl_nnbnorm.md"><code>vl_nnbnorm</code></a> Batch normalization.</li>
-<li><a href="mfiles/vl_nnbilinearsampler.md"><code>vl_nnbilinearsampler</code></a> Bilinear Sampler.</li>
-<li><a href="mfiles/vl_nnconv.md"><code>vl_nnconv</code></a> Linear convolution by a filter.</li>
-<li><a href="mfiles/vl_nnconcat.md"><code>vl_nnconcat</code></a> Concatenation.</li>
-<li><a href="mfiles/vl_nnconvt.md"><code>vl_nnconvt</code></a> Convolution transpose.</li>
-<li><a href="mfiles/vl_nncrop.md"><code>vl_nncrop</code></a> Cropping.</li>
-<li><a href="mfiles/vl_nndropout.md"><code>vl_nndropout</code></a> Dropout.</li>
-<li><a href="mfiles/vl_nnloss.md"><code>vl_nnloss</code></a> Classification log-loss.</li>
-<li><a href="mfiles/vl_nnnoffset.md"><code>vl_nnnoffset</code></a> Norm-dependent offset.</li>
-<li><a href="mfiles/vl_nnnormalize.md"><code>vl_nnnormalize</code></a> Local Response Normalization (LRN).</li>
-<li><a href="mfiles/vl_nnpdist.md"><code>vl_nnpdist</code></a> Pairwise distances.</li>
-<li><a href="mfiles/vl_nnpool.md"><code>vl_nnpool</code></a> Max and sum pooling.</li>
-<li><a href="mfiles/vl_nnrelu.md"><code>vl_nnrelu</code></a> Rectified Linear Unit.</li>
-<li><a href="mfiles/vl_nnroipool.md"><code>vl_nnroipool</code></a> Region of interest pooling.</li>
-<li><a href="mfiles/vl_nnsigmoid.md"><code>vl_nnsigmoid</code></a> Sigmoid.</li>
-<li><a href="mfiles/vl_nnsoftmax.md"><code>vl_nnsoftmax</code></a> Channel soft-max.</li>
-<li><a href="mfiles/vl_nnsoftmaxloss.md"><code>vl_nnsoftmaxloss</code></a> <em>Deprecated</em></li>
-<li><a href="mfiles/vl_nnspnorm.md"><code>vl_nnspnorm</code></a> Spatial normalization.</li>
-</ul>
-<p><a name="simplenn"></a></p>
-<h2 id="simplecnn-wrapper">SimpleCNN wrapper</h2>
-<ul>
-<li><a href="mfiles/simplenn/vl_simplenn.md"><code>vl_simplenn</code></a> A lightweight wrapper for
-  CNNs with a linear topology.</li>
-<li><a href="mfiles/simplenn/vl_simplenn_tidy.md"><code>vl_simplenn_tidy</code></a> Upgrade or
-  otherwise fix a CNN.</li>
-<li><a href="mfiles/simplenn/vl_simplenn_display.md"><code>vi_simplenn_display</code></a> Print
-  information about the CNN architecture.</li>
-<li><a href="mfiles/simplenn/vl_simplenn_move.md"><code>vl_simplenn_move</code></a> Move the CNN
-  between CPU and GPU.</li>
-</ul>
-<p><a name="dagnn"></a></p>
-<h2 id="dagnn-wrapper">DagNN wrapper</h2>
-<ul>
-<li><a href="mfiles/+dagnn/@DagNN/DagNN.md"><code>DagNN</code></a> An object-oriented wrapper
-  for CNN with complex topologies</li>
-</ul>
-<p><a name="utility"></a></p>
-<h2 id="other-functions">Other functions</h2>
-<ul>
-<li><a href="mfiles/vl_argparse.md"><code>vl_argparse</code></a> A helper function to parse
-  optional arguments.</li>
-<li><a href="mfiles/vl_compilenn.md"><code>vl_compilenn</code></a> Compile the MEX fields in the toolbox.</li>
-<li><a href="mfiles/vl_contrib.md"><code>vl_contrib</code></a> Download, compile, and setup third-party modules.</li>
-<li><a href="mfiles/vl_rootnn.md"><code>vl_rootnn</code></a> Return the path to the MatConvNet toolbox installation.</li>
-<li><a href="mfiles/vl_setupnn.md"><code>vl_setpunn</code></a> Setup MatConvNet for use in MATLAB.</li>
-<li><a href="mfiles/vl_imreadjpeg.md"><code>vl_imreadjpeg</code></a> Quickly load a batch of JPEG images.</li>
-<li><a href="mfiles/vl_taccum.md"><code>vl_taccum</code></a> Accumulate tensors operating in-place when possible.</li>
-<li><a href="mfiles/vl_tmove.md"><code>vl_tmove</code></a> Exchange tensors between MATLAB processes and GPUs.</li>
-<li><a href="mfiles/vl_tshow.md"><code>vl_tshow</code></a> Show a tensor on screen.</li>
-</ul></div>
+<h1 id="about-fedeaslab">About FEDEASLab</h1>
+<p>FEDEASLab is a modular Matlab© toolbox for the simulation of the nonlinear structural response under static and dynamic loads. The names stands for Finite Elements for Design, Evaluation and Analysis of Structures and pays homage to Φϵιδιας, the creator of the magnificent sculptures for the Parthenon during the golden age of Athens under Pericles.</p>
+<p>and has been used successfully for the development of new elements and material models, as well as for the simulation of the response of small and large structural models in research and instruction.</p>
+<p>The toolbox consists of several functions grouped in categories. These functions operate on five basic data structures which represent the model, the loading, the element properties, the state of the structural response, and the parameters of the solution strategy. A sixth data structure is optional and carries post-processing information that can be used for response interpretation and visualization.</p>
+<p>The process of performing the nonlinear response analysis of a structure under static or transient conditions is broken down into logical steps. Each step is represented by a separate function. With this approach the definition of the model, the element properties and the loading as well as the analysis of the model under the given loading is accomplished with scripts that invoke the individual functions. Alternative solution strategies can be readily explored. Moreover, the user can easily exchange a function to provide additional capabilities. It is equally easy to access the data objects and enhance the information stored in them. A common task is the addition of element and material models. This task is simplified by the consistent function interface used throughout the toolbox.</p>
+<h2 id="license">License</h2></div>
                     
             </div>
         </div>

@@ -4555,10 +4555,10 @@
    display: block;
    padding: 0.9rem 1rem;
    font-weight: 400;
-   font-size: 0.9rem;
+   font-size: 1.0rem;
  }
  .navbar .nav-link {
-  color: #8099B1;
+  /* color: #8099B1; */
   color: #fff;
  }
 
@@ -4702,7 +4702,8 @@ ul.nav a:hover { color: rgb(196,130,14) !important; }
    padding-top: 0.74765625rem;
    padding-bottom: 0.74765625rem;
    margin-right: 1rem;
-   font-size: 1.015625rem;
+   /* font-size: 1.015625rem; */
+   font-size: 1.3rem;
    line-height: inherit;
    white-space: nowrap;
    

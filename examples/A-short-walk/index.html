@@ -8,18 +8,23 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Index - FedeasLab</title>
+        <title>Index - FEDEASLab</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/color-brewer.min.css">
-        <link href="../../css/extra.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
 
 
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
         <script src="../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
+        <!-- <script>
+            $(".nav .nav-link").on("click", function(){
+            $(".nav").find(".active").removeClass("active");
+            $(this).addClass("active");
+         });
+         </script> -->
 
 
 
@@ -37,7 +42,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="../..">FedeasLab</a>
+                <a class="navbar-brand" href="../..">FEDEASLab</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -46,28 +51,25 @@
                 <!-- Expanded navigation -->
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
+                        <ul class="nav navbar-nav ml-auto"></ul>
+                        <!-- <ul class="nav navbar-nav"> -->
                             <li class="navitem">
                                 <a href="../../about/" class="nav-link">About</a>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Guides <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../quick.md" class="dropdown-item">Quick Start</a>
+    <a href="../../get-started" class="dropdown-item">Getting Started</a>
 </li>
                                     
 <li>
-    <a href="../../DataStructs/" class="dropdown-item">Data Structures</a>
+    <a href="../../api" class="dropdown-item">Data Structures</a>
 </li>
                                     
 <li>
-    <a href="../../dat/" class="dropdown-item">Schemas</a>
-</li>
-                                    
-<li>
-    <a href="../../sch/index" class="dropdown-item">Schemas-2</a>
+    <a href="../../developers" class="dropdown-item">Developers</a>
 </li>
                                 </ul>
                             </li>
@@ -76,7 +78,7 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../api/" class="dropdown-item">Index</a>
+    <a href="../../FEDEASLab/" class="dropdown-item">Index</a>
 </li>
                                     
   <li class="dropdown-submenu">
@@ -96,11 +98,11 @@
 </li>
             
 <li>
-    <a href="../../FEDEASLab/Section_Library/FEDEASLab.md" class="dropdown-item">Section Library</a>
+    <a href="../../FEDEASLab/src/Section_Library/" class="dropdown-item">Section Library</a>
 </li>
             
 <li>
-    <a href="../../FEDEASLab/Solution_Library/FEDEASLab/" class="dropdown-item">Solution Library</a>
+    <a href="../../FEDEASLab/src/Solution_Library/" class="dropdown-item">Solution Library</a>
 </li>
     </ul>
   </li>
@@ -110,26 +112,26 @@
 </li>
                                     
 <li>
-    <a href="../../FEDEASLab/Dynamics/FEDEASLab/" class="dropdown-item">Transient analysis</a>
+    <a href="../../FEDEASLab/Dynamics/" class="dropdown-item">Transient analysis</a>
 </li>
                                     
 <li>
-    <a href="../../FEDEASLab/Plastic_Analysis/LimEqns_2dFrm/" class="dropdown-item">Plastic Analysis</a>
+    <a href="../../FEDEASLab/Plastic_Analysis/LimEqns_2dFrm.md" class="dropdown-item">Plastic Analysis</a>
 </li>
                                     
 <li>
-    <a href="../../FEDEASLab/General/FEDEASLab/" class="dropdown-item">Core</a>
+    <a href="../../FEDEASLab/General/FEDEASLab.md" class="dropdown-item">Core</a>
 </li>
                                 </ul>
                             </li>
                             <li class="navitem">
                                 <a href="../" class="nav-link">Examples</a>
                             </li>
-                        </ul>
+                        <!-- </ul> -->
 
-                    <ul class="nav navbar-nav ml-auto">
+                    <!-- <ul class="nav navbar-nav ml-auto"> -->
                         <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#elstir_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
@@ -137,8 +139,16 @@
                 </div>
             </div>
         </div>
-        
         <div class="container">
+            
+            <!-- <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+            </nav> -->
+            
             <div class="row">
                     
                         <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
@@ -223,7 +233,7 @@
                     
 
                     
-                        <div class="col-md-8" role="main">
+                        <article class="col-md-8">
 
 <h1 id="inelasticity-in-frame-sections">Inelasticity in Frame Sections</h1>
 <p>In this section, the response of a nonlinear cross section is analyzed,
@@ -337,7 +347,8 @@ length of time required by the analysis to conclude.</p>
 <p><img alt="Axial force-moment history at base columns - Third Analysis.\label{fig:c1-3}{=tex}" src="docs/img/p4/c1-3.png" /></p>
 <h2 id="4_1">4</h2>
 <h2 id="other">Other</h2>
-<p><img alt="Ground motion with superposed husid plot" src="docs/img/p4/ground-motion.png" /></p></div>
+<p><img alt="Ground motion with superposed husid plot" src="docs/img/p4/ground-motion.png" /></p></article>
+                        <!-- <div class="col-md-8" role="main"></div> -->
                     
             </div>
         </div>
@@ -354,7 +365,7 @@ length of time required by the analysis to conclude.</p>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
         <script src="../../search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal" id="elstir_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -368,16 +379,16 @@ length of time required by the analysis to conclude.</p>
                 </p>
                 <form>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                        <input type="search" class="form-control" placeholder="Search..." id="elstir-search-query" title="Type search term here">
                     </div>
                 </form>
-                <div id="mkdocs-search-results"></div>
+                <div id="elstir-search-results"></div>
             </div>
             <div class="modal-footer">
             </div>
         </div>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+</div><div class="modal" id="elstir_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

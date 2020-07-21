@@ -8,18 +8,23 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Index - FedeasLab</title>
+        <title>Index - FEDEASLab</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/color-brewer.min.css">
-        <link href="../css/extra.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
 
 
         <script src="../js/jquery-1.10.2.min.js" defer></script>
         <script src="../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
+        <!-- <script>
+            $(".nav .nav-link").on("click", function(){
+            $(".nav").find(".active").removeClass("active");
+            $(this).addClass("active");
+         });
+         </script> -->
 
 
 
@@ -37,7 +42,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="..">FedeasLab</a>
+                <a class="navbar-brand" href="..">FEDEASLab</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -46,37 +51,34 @@
                 <!-- Expanded navigation -->
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
+                        <ul class="nav navbar-nav ml-auto"></ul>
+                        <!-- <ul class="nav navbar-nav"> -->
                             <li class="navitem">
                                 <a href="../about/" class="nav-link">About</a>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Guides <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../quick.md" class="dropdown-item">Quick Start</a>
+    <a href="../get-started" class="dropdown-item">Getting Started</a>
 </li>
                                     
 <li>
-    <a href="../DataStructs/" class="dropdown-item">Data Structures</a>
+    <a href="." class="dropdown-item">Data Structures</a>
 </li>
                                     
 <li>
-    <a href="../dat/" class="dropdown-item">Schemas</a>
-</li>
-                                    
-<li>
-    <a href="../sch/index" class="dropdown-item">Schemas-2</a>
+    <a href="../developers" class="dropdown-item">Developers</a>
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Functions <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="./" class="dropdown-item active">Index</a>
+    <a href="../FEDEASLab/" class="dropdown-item">Index</a>
 </li>
                                     
   <li class="dropdown-submenu">
@@ -96,11 +98,11 @@
 </li>
             
 <li>
-    <a href="../FEDEASLab/Section_Library/FEDEASLab.md" class="dropdown-item">Section Library</a>
+    <a href="../FEDEASLab/src/Section_Library/" class="dropdown-item">Section Library</a>
 </li>
             
 <li>
-    <a href="../FEDEASLab/Solution_Library/FEDEASLab/" class="dropdown-item">Solution Library</a>
+    <a href="../FEDEASLab/src/Solution_Library/" class="dropdown-item">Solution Library</a>
 </li>
     </ul>
   </li>
@@ -110,45 +112,43 @@
 </li>
                                     
 <li>
-    <a href="../FEDEASLab/Dynamics/FEDEASLab/" class="dropdown-item">Transient analysis</a>
+    <a href="../FEDEASLab/Dynamics/" class="dropdown-item">Transient analysis</a>
 </li>
                                     
 <li>
-    <a href="../FEDEASLab/Plastic_Analysis/LimEqns_2dFrm/" class="dropdown-item">Plastic Analysis</a>
+    <a href="../FEDEASLab/Plastic_Analysis/LimEqns_2dFrm.md" class="dropdown-item">Plastic Analysis</a>
 </li>
                                     
 <li>
-    <a href="../FEDEASLab/General/FEDEASLab/" class="dropdown-item">Core</a>
+    <a href="../FEDEASLab/General/FEDEASLab.md" class="dropdown-item">Core</a>
 </li>
                                 </ul>
                             </li>
                             <li class="navitem">
                                 <a href="../examples/" class="nav-link">Examples</a>
                             </li>
-                        </ul>
+                        <!-- </ul> -->
 
-                    <ul class="nav navbar-nav ml-auto">
+                    <!-- <ul class="nav navbar-nav ml-auto"> -->
                         <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#elstir_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <!-- <li class="nav-item">
-                                <a rel="prev" href="../dat/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../matlib/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li> -->
                     </ul>
                 </div>
             </div>
         </div>
-        
         <div class="container">
+            
+            <!-- <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+            </nav> -->
+            
             <div class="row">
                     
                         <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
@@ -165,31 +165,31 @@
             
             <li class="nav-item" data-level="1"><a href="None" class="nav-link">Directories</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="src/Element_Library" class="nav-link">\Element Library</a>
+            <li class="nav-item" data-level="2"><a href="../../FEDEASLab/src/Element_Library" class="nav-link">..\..\FEDEASLab\src\Element Library</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="src/Material_Library" class="nav-link">\Material Library</a>
+            <li class="nav-item" data-level="2"><a href="../../FEDEASLab/src/Material_Library" class="nav-link">..\..\FEDEASLab\src\Material Library</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="src/Other" class="nav-link">\Other</a>
+            <li class="nav-item" data-level="2"><a href="../../FEDEASLab/src/Other" class="nav-link">..\..\FEDEASLab\src\Other</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="src/Solution_Scripts" class="nav-link">\Solution Scripts</a>
+            <li class="nav-item" data-level="2"><a href="../../FEDEASLab/src/Solution_Scripts" class="nav-link">..\..\FEDEASLab\src\Solution Scripts</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="src/Utilities" class="nav-link">\Utilities</a>
+            <li class="nav-item" data-level="2"><a href="../../FEDEASLab/src/Utilities" class="nav-link">..\..\FEDEASLab\src\Utilities</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="src/Utilities/PreProcessing" class="nav-link">\Utilities\PreProcessing</a>
+            <li class="nav-item" data-level="2"><a href="../../FEDEASLab/src/Utilities/PreProcessing" class="nav-link">..\..\FEDEASLab\src\Utilities\PreProcessing</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="src/Utilities/Quadrature" class="nav-link">\Utilities\Quadrature</a>
+            <li class="nav-item" data-level="2"><a href="../../FEDEASLab/src/Utilities/Quadrature" class="nav-link">..\..\FEDEASLab\src\Utilities\Quadrature</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -202,7 +202,7 @@
                     
 
                     
-                        <div class="col-md-8" role="main">
+                        <article class="col-md-8">
 
 <!-- <!DOCTYPE html> -->
 
@@ -214,19 +214,20 @@
 <h1>Index</h1></p>
 <table width="100%">
         <tr>
-                <td><a href="src/Utilities/CleanStart" title="src\Utilities">CleanStart</a></td>        <td><a href="src/Material_Library/InelLPwLH1dMat" title="src\Material_Library">InelLPwLH1dMat</a></td>      <td><a href="src/Solution_Scripts/S_InitialStep" title="src\Solution_Scripts">S_InitialStep</a></td>        <td><a href="src/Other/Simple_PanelZone_Test" title="src\Other">Simple_PanelZone_Test</a></td>  </tr>   <tr>
-                <td><a href="src/Utilities/PreProcessing/Create_MRFrame" title="src\Utilities\PreProcessing">Create_MRFrame</a></td>        <td><a href="src/Other/InelPanelZone" title="src\Other">InelPanelZone</a></td>      <td><a href="src/Solution_Scripts/S_MultiStep" title="src\Solution_Scripts">S_MultiStep</a></td>        <td><a href="src/Utilities/Units" title="src\Utilities">Units</a></td>  </tr>   <tr>
-                <td><a href="src/Other/Create_PanelZone" title="src\Other">Create_PanelZone</a></td>        <td><a href="src/Element_Library/InelTruss" title="src\Element_Library">InelTruss</a></td>      <td><a href="src/Solution_Scripts/S_MultiStep_wLoadHist" title="src\Solution_Scripts">S_MultiStep_wLoadHist</a></td>        <td><a href="src/Other/shape2d" title="src\Other">shape2d</a></td>  </tr>   <tr>
-                <td><a href="src/Material_Library/GMP1dMat" title="src\Material_Library">GMP1dMat</a></td>      <td><a href="src/Element_Library/LE2dFrm" title="src\Element_Library">LE2dFrm</a></td>      <td><a href="src/Solution_Scripts/S_MultiStep_wLoadHistwSD" title="src\Solution_Scripts">S_MultiStep_wLoadHistwSD</a></td>      <td><a href="" title=""></a></td>   </tr>   <tr>
-                <td><a href="src/Utilities/Quadrature/Gauss2d" title="src\Utilities\Quadrature">Gauss2d</a></td>        <td><a href="src/Material_Library/LEIso2dMat" title="src\Material_Library">LEIso2dMat</a></td>      <td><a href="src/Solution_Scripts/S_Transient_MultiStep" title="src\Solution_Scripts">S_Transient_MultiStep</a></td>        <td><a href="" title=""></a></td>   </tr>   <tr>
-                <td><a href="src/Utilities/Quadrature/Gaussq" title="src\Utilities\Quadrature">Gaussq</a></td>      <td><a href="src/Other/Plot_SingularModes" title="src\Other">Plot_SingularModes</a></td>        <td><a href="src/Solution_Scripts/S_Transient_MultiStepwSD" title="src\Solution_Scripts">S_Transient_MultiStepwSD</a></td>      <td><a href="" title=""></a></td>   </tr>   <tr>
-                <td><a href="src/Material_Library/InelJ2PwLH3dMat" title="src\Material_Library">InelJ2PwLH3dMat</a></td>        <td><a href="src/Utilities/SIUnits" title="src\Utilities">SIUnits</a></td>      <td><a href="src/Other/Set_PlastCond" title="src\Other">Set_PlastCond</a></td>      <td><a href="" title=""></a></td>   </tr></table>
+                <td><a href="../../FEDEASLab/src/Utilities/CleanStart" title="..\..\FEDEASLab\src\Utilities">CleanStart</a></td>        <td><a href="../../FEDEASLab/src/Material_Library/InelLPwLH1dMat" title="..\..\FEDEASLab\src\Material_Library">InelLPwLH1dMat</a></td>      <td><a href="../../FEDEASLab/src/Solution_Scripts/S_InitialStep" title="..\..\FEDEASLab\src\Solution_Scripts">S_InitialStep</a></td>        <td><a href="../../FEDEASLab/src/Other/Simple_PanelZone_Test" title="..\..\FEDEASLab\src\Other">Simple_PanelZone_Test</a></td>  </tr>   <tr>
+                <td><a href="../../FEDEASLab/src/Utilities/PreProcessing/Create_MRFrame" title="..\..\FEDEASLab\src\Utilities\PreProcessing">Create_MRFrame</a></td>        <td><a href="../../FEDEASLab/src/Other/InelPanelZone" title="..\..\FEDEASLab\src\Other">InelPanelZone</a></td>      <td><a href="../../FEDEASLab/src/Solution_Scripts/S_MultiStep" title="..\..\FEDEASLab\src\Solution_Scripts">S_MultiStep</a></td>        <td><a href="../../FEDEASLab/src/Utilities/Units" title="..\..\FEDEASLab\src\Utilities">Units</a></td>  </tr>   <tr>
+                <td><a href="../../FEDEASLab/src/Other/Create_PanelZone" title="..\..\FEDEASLab\src\Other">Create_PanelZone</a></td>        <td><a href="../../FEDEASLab/src/Element_Library/InelTruss" title="..\..\FEDEASLab\src\Element_Library">InelTruss</a></td>      <td><a href="../../FEDEASLab/src/Solution_Scripts/S_MultiStep_wLoadHist" title="..\..\FEDEASLab\src\Solution_Scripts">S_MultiStep_wLoadHist</a></td>        <td><a href="../../FEDEASLab/src/Other/shape2d" title="..\..\FEDEASLab\src\Other">shape2d</a></td>  </tr>   <tr>
+                <td><a href="../../FEDEASLab/src/Material_Library/GMP1dMat" title="..\..\FEDEASLab\src\Material_Library">GMP1dMat</a></td>      <td><a href="../../FEDEASLab/src/Element_Library/LE2dFrm" title="..\..\FEDEASLab\src\Element_Library">LE2dFrm</a></td>      <td><a href="../../FEDEASLab/src/Solution_Scripts/S_MultiStep_wLoadHistwSD" title="..\..\FEDEASLab\src\Solution_Scripts">S_MultiStep_wLoadHistwSD</a></td>      <td><a href="" title=""></a></td>   </tr>   <tr>
+                <td><a href="../../FEDEASLab/src/Utilities/Quadrature/Gauss2d" title="..\..\FEDEASLab\src\Utilities\Quadrature">Gauss2d</a></td>        <td><a href="../../FEDEASLab/src/Material_Library/LEIso2dMat" title="..\..\FEDEASLab\src\Material_Library">LEIso2dMat</a></td>      <td><a href="../../FEDEASLab/src/Solution_Scripts/S_Transient_MultiStep" title="..\..\FEDEASLab\src\Solution_Scripts">S_Transient_MultiStep</a></td>        <td><a href="" title=""></a></td>   </tr>   <tr>
+                <td><a href="../../FEDEASLab/src/Utilities/Quadrature/Gaussq" title="..\..\FEDEASLab\src\Utilities\Quadrature">Gaussq</a></td>      <td><a href="../../FEDEASLab/src/Other/Plot_SingularModes" title="..\..\FEDEASLab\src\Other">Plot_SingularModes</a></td>        <td><a href="../../FEDEASLab/src/Solution_Scripts/S_Transient_MultiStepwSD" title="..\..\FEDEASLab\src\Solution_Scripts">S_Transient_MultiStepwSD</a></td>      <td><a href="" title=""></a></td>   </tr>   <tr>
+                <td><a href="../../FEDEASLab/src/Material_Library/InelJ2PwLH3dMat" title="..\..\FEDEASLab\src\Material_Library">InelJ2PwLH3dMat</a></td>        <td><a href="../../FEDEASLab/src/Utilities/SIUnits" title="..\..\FEDEASLab\src\Utilities">SIUnits</a></td>      <td><a href="../../FEDEASLab/src/Other/Set_PlastCond" title="..\..\FEDEASLab\src\Other">Set_PlastCond</a></td>      <td><a href="" title=""></a></td>   </tr></table>
 
-<!-- <hr><address>Generated on Wed 08-Jul-2020 17:32:03 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" title="Matlab Documentation in HTML">m2html</a></strong> &copy; 2005</address> -->
+<!-- <hr><address>Generated on Wed 15-Jul-2020 00:16:13 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" title="Matlab Documentation in HTML">m2html</a></strong> &copy; 2005</address> -->
 
 <!-- </body> -->
 
-<!-- </html> --></div>
+<!-- </html> --></article>
+                        <!-- <div class="col-md-8" role="main"></div> -->
                     
             </div>
         </div>
@@ -243,7 +244,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
         <script src="../search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal" id="elstir_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -257,16 +258,16 @@
                 </p>
                 <form>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                        <input type="search" class="form-control" placeholder="Search..." id="elstir-search-query" title="Type search term here">
                     </div>
                 </form>
-                <div id="mkdocs-search-results"></div>
+                <div id="elstir-search-results"></div>
             </div>
             <div class="modal-footer">
             </div>
         </div>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+</div><div class="modal" id="elstir_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

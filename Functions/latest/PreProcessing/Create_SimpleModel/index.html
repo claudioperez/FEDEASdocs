@@ -13,6 +13,7 @@
         <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../../_static/css/extra.css" rel="stylesheet">
 
 
         <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
@@ -51,8 +52,8 @@
                 <!-- Expanded navigation -->
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
-                        <ul class="nav navbar-nav ml-auto"></ul>
-                        <!-- <ul class="nav navbar-nav"> -->
+                        <ul class="nav navbar-nav ml-auto">
+                        <!--<ul class="nav navbar-nav">-->
                             <li class="navitem">
                                 <a href="../../../../About/" class="nav-link">About</a>
                             </li>
@@ -67,16 +68,6 @@
 <li>
     <a href="../../../../Guides/DataStructures" class="dropdown-item">Data Structures</a>
 </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Creating Elements</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../../../index" class="dropdown-item">indexx</a>
-</li>
-    </ul>
-  </li>
                                     
 <li>
     <a href="../../../../Developers/" class="dropdown-item">Developing</a>
@@ -99,35 +90,17 @@
     <a href="#" class="dropdown-item">Modeling Libraries</a>
     <ul class="dropdown-menu">
             
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Material Models</a>
-    <ul class="dropdown-menu">
+<li>
+    <a href="../../Modeling_Library/Material_Library/" class="dropdown-item">Material Models</a>
+</li>
             
 <li>
-    <a href="../../Modeling_Library/Material_Library/" class="dropdown-item">None</a>
+    <a href="../../Modeling_Library/Frame_Elements/" class="dropdown-item">Frame Elements</a>
 </li>
-    </ul>
-  </li>
-            
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Frame Elements</a>
-    <ul class="dropdown-menu">
             
 <li>
-    <a href="../../Modeling_Library/Frame_Elements/" class="dropdown-item">None</a>
+    <a href="../../Modeling_Library/Section_Library/" class="dropdown-item">Section Library</a>
 </li>
-    </ul>
-  </li>
-            
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Section Library</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../Modeling_Library/Section_Library/" class="dropdown-item">None</a>
-</li>
-    </ul>
-  </li>
     </ul>
   </li>
                                     
@@ -143,12 +116,13 @@
                             <li class="navitem">
                                 <a href="../../../../Examples/" class="nav-link">Examples</a>
                             </li>
-                        <!-- </ul> -->
+                        <!--</ul>-->
+                        <!--</div>-->
 
                     <!-- <ul class="nav navbar-nav ml-auto"> -->
                         <li class="nav-item">
                             <a href="#" class="nav-link" data-toggle="modal" data-target="#elstir_search_modal">
-                                <i class="fa fa-search"></i> Search
+                               <img src="img/search.png" class="icon"> <!--<i class="fa fa-search"></i>--> Search
                             </a>
                         </li>
                     </ul>
@@ -175,56 +149,9 @@
     </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+    <div id="toc-collapse" class="navbar-collapse collapse card ">
         <ul class="nav flex-column">
         
-        
-            
-            <li class="nav-item " data-level="1"><a href="None" class="nav-link ">Pre-Processing</a>
-              <ul class="nav flex-column">
-              <div class="dropdown-divider"></div>
-            <li class="nav-item " data-level="2"><a href="None" class="nav-link ">Create Damping</a>
-              <ul class="nav flex-column">
-              
-              </ul>
-            </li>
-            <li class="nav-item " data-level="2"><a href="None" class="nav-link ">Create Loading</a>
-              <ul class="nav flex-column">
-              
-              </ul>
-            </li>
-            <li class="nav-item " data-level="2"><a href="None" class="nav-link ">Create Model</a>
-              <ul class="nav flex-column">
-              
-              </ul>
-            </li>
-            <li class="nav-item " data-level="2"><a href="None" class="nav-link ">Create MRFrame</a>
-              <ul class="nav flex-column">
-              
-              </ul>
-            </li>
-            <li class="nav-item " data-level="2"><a href="None" class="nav-link ">Create NodalForces</a>
-              <ul class="nav flex-column">
-              
-              </ul>
-            </li>
-            <li class="nav-item " data-level="2"><a href="None" class="nav-link ">Create NodalMass</a>
-              <ul class="nav flex-column">
-              
-              </ul>
-            </li>
-            <li class="nav-item " data-level="2"><a href="None" class="nav-link active">Create SimpleModel</a>
-              <ul class="nav flex-column">
-              
-              </ul>
-            </li>
-            <li class="nav-item " data-level="2"><a href="None" class="nav-link ">Pre-Processing</a>
-              <ul class="nav flex-column">
-              
-              </ul>
-            </li>
-              </ul>
-            </li>
         
         </ul>
     </div>
@@ -307,7 +234,7 @@ connectivity and boundary conditions**
 
         <footer class="col-md-12">
             <hr>
-            <p> © 1998-2020 UC Regents, <a href="http://filippou.ce.berkeley.edu/">Filip C. Filippou</a> </p>
+                <p>&copy 1998-2020 UC Regents, <a href="http://filippou.ce.berkeley.edu/">Filip C. Filippou</a></p>
         </footer>
         <script>
             var base_url = "../../../..",

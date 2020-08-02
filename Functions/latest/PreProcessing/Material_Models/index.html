@@ -7,16 +7,17 @@
         
         
         
-        <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>HW-3 Problem 3 - FEDEASLab</title>
-        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Material Models - FEDEASLab</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../../_static/css/extra.css" rel="stylesheet">
 
 
-        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
         <!-- <script>
@@ -42,7 +43,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="../../..">FEDEASLab</a>
+                <a class="navbar-brand" href="../../../..">FEDEASLab</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -51,35 +52,25 @@
                 <!-- Expanded navigation -->
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
-                        <ul class="nav navbar-nav ml-auto"></ul>
-                        <!-- <ul class="nav navbar-nav"> -->
+                        <ul class="nav navbar-nav ml-auto">
+                        <!--<ul class="nav navbar-nav">-->
                             <li class="navitem">
-                                <a href="../../../About/" class="nav-link">About</a>
+                                <a href="../../../../About/" class="nav-link">About</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Guides <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../../Guides/get-started" class="dropdown-item">Getting Started</a>
+    <a href="../../../../Guides/get-started" class="dropdown-item">Getting Started</a>
 </li>
                                     
 <li>
-    <a href="../../../Guides/DataStructures" class="dropdown-item">Data Structures</a>
+    <a href="../../../../Guides/DataStructures" class="dropdown-item">Data Structures</a>
 </li>
                                     
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Creating Elements</a>
-    <ul class="dropdown-menu">
-            
 <li>
-    <a href="../../../index" class="dropdown-item">indexx</a>
-</li>
-    </ul>
-  </li>
-                                    
-<li>
-    <a href="../../../Developers/" class="dropdown-item">Developing</a>
+    <a href="../../../../Developers/" class="dropdown-item">Developing</a>
 </li>
                                 </ul>
                             </li>
@@ -88,67 +79,50 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../../Functions/latest" class="dropdown-item">Index</a>
+    <a href="../.." class="dropdown-item">Index</a>
 </li>
                                     
 <li>
-    <a href="../../../Functions/latest/PreProcessing/" class="dropdown-item">Pre-processing</a>
+    <a href="../" class="dropdown-item">Pre-processing</a>
 </li>
                                     
   <li class="dropdown-submenu">
     <a href="#" class="dropdown-item">Modeling Libraries</a>
     <ul class="dropdown-menu">
             
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Material Models</a>
-    <ul class="dropdown-menu">
+<li>
+    <a href="../../Modeling_Library/Material_Library/" class="dropdown-item">Material Models</a>
+</li>
             
 <li>
-    <a href="../../../Functions/latest/Modeling_Library/Material_Library/" class="dropdown-item">None</a>
+    <a href="../../Modeling_Library/Frame_Elements/" class="dropdown-item">Frame Elements</a>
 </li>
-    </ul>
-  </li>
-            
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Frame Elements</a>
-    <ul class="dropdown-menu">
             
 <li>
-    <a href="../../../Functions/latest/Modeling_Library/Frame_Elements/" class="dropdown-item">None</a>
+    <a href="../../Modeling_Library/Section_Library/" class="dropdown-item">Section Library</a>
 </li>
-    </ul>
-  </li>
-            
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Section Library</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../../Functions/latest/Modeling_Library/Section_Library/" class="dropdown-item">None</a>
-</li>
-    </ul>
-  </li>
     </ul>
   </li>
                                     
 <li>
-    <a href="../../../Functions/latest/Solution_Scripts/" class="dropdown-item">Solution Library</a>
+    <a href="../../Solution_Scripts/" class="dropdown-item">Solution Library</a>
 </li>
                                     
 <li>
-    <a href="../../../Functions/latest/Utilities/" class="dropdown-item">Utilities</a>
+    <a href="../../Utilities/" class="dropdown-item">Utilities</a>
 </li>
                                 </ul>
                             </li>
                             <li class="navitem">
-                                <a href="../../" class="nav-link">Examples</a>
+                                <a href="../../../../Examples/" class="nav-link">Examples</a>
                             </li>
-                        <!-- </ul> -->
+                        <!--</ul>-->
+                        <!--</div>-->
 
                     <!-- <ul class="nav navbar-nav ml-auto"> -->
                         <li class="nav-item">
                             <a href="#" class="nav-link" data-toggle="modal" data-target="#elstir_search_modal">
-                                <i class="fa fa-search"></i> Search
+                               <img src="img/search.png" class="icon"> <!--<i class="fa fa-search"></i>--> Search
                             </a>
                         </li>
                     </ul>
@@ -175,8 +149,9 @@
     </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+    <div id="toc-collapse" class="navbar-collapse collapse card ">
         <ul class="nav flex-column">
+        
         
         </ul>
     </div>
@@ -186,62 +161,7 @@
                     
                         <article class="col-md-8">
 
-<h1 id="hw-3-problem-3">HW-3 Problem 3</h1>
-<p><img src="doc\img\fig1.png" width="80%"></p>
-<p>The purpose of the structural model in Fig. <script type="math/tex">3(a)</script> is the study of the risk of a mid-rise building forming a soft first-story collapse mechanism under the combined action of a total gravity load <script type="math/tex">P_{v}</script> and a lateral load. The latter is assumed to be linearly distributed over the height of the building with a resultant <script type="math/tex">P_{h}</script> located at a distance <script type="math/tex">H</script> above the first floor. The building has a single bay of length <script type="math/tex">L</script> and the height of the first story is 12 feet. The ratio of <script type="math/tex">(H-h)/ L</script> is <script type="math/tex">4 .</script> The first story columns consist of <script type="math/tex">\mathrm{W} 14 \mathrm{x} 426</script> steel sections with Grade 50 Steel and are pinned at the foundation. The first story columns can be assumed restrained against rotation at the top, since they frame into a girder that can be assumed to be infinitely rigid in flexure. The girder and columns can be assumed to be inextensible.</p>
-<h2 id="31-aisc-h2">3.1 - AISC H2</h2>
-<p>Verify the maximum lateral force <script type="math/tex">P_{h}</script> that the first story can resist for an ultimate load factor <script type="math/tex">\lambda=2.0</script> under the assumption that the gravity load <script type="math/tex">P_{v}</script> is negligible relative to the lateral load <script type="math/tex">P_{h}</script> using the diamond shaped plastic limit surface in Fig. 4.6 of the course reader (AISC Equation H2-1).</p>
-<pre><code class="matlab">CleanStart
-LimEqn = 'AISC-H2';
-beta  = 0;
-Ph = 217.67;
-[lamc,Qc] = hw3p3(beta,LimEqn,Ph,true);
-lamc
-</code></pre>
-
-<pre><code>Optimal solution found.
-
-
-lamc =
-
-    2.0000
-</code></pre>
-<p><img alt="png" src="../output_2_1.png" /></p>
-<h2 id="32-aisc-h1">3.2 - AISC H1</h2>
-<p>How much can the maximum lateral force <script type="math/tex">P_{h}</script> be increased by using the <script type="math/tex">N</script> -M plastic limit surface of the AISC specification in equation 4.7 of the course reader?</p>
-<pre><code class="matlab">CleanStart
-LimEqn = 'AISC-H1';
-beta  = 0;
-Ph = 236.64;
-[lamc,Qc] = hw3p3(beta,LimEqn,Ph);
-lamc
-</code></pre>
-
-<pre><code>Optimal solution found.
-
-
-lamc =
-
-    2.0000
-</code></pre>
-<h2 id="33-vertical-load">3.3 - Vertical Load</h2>
-<p>Repeat the preceding questions for the case that the gravity load <script type="math/tex">P_{v}</script> is equal to <script type="math/tex">50 \%</script> of the lateral load <script type="math/tex">P_{h}</script> under the assumption that it remains constant during the application of the lateral load and is, therefore, assigned an ultimate load factor of 1.2.</p>
-<h3 id="331">3.3.1</h3>
-<pre><code class="matlab">CleanStart
-LimEqn = 'AISC-H2';
-beta  = 1/2;
-Ph = 217.67;
-[lamc,Qc] = hw3p3(beta,LimEqn,Ph);
-lamc
-</code></pre>
-
-<pre><code>Optimal solution found.
-
-
-lamc =
-
-    2.0000
-</code></pre></article>
+</article>
                         <!-- <div class="col-md-8" role="main"></div> -->
                     
             </div>
@@ -249,15 +169,15 @@ lamc =
 
         <footer class="col-md-12">
             <hr>
-            <p> © 1998-2020 UC Regents, <a href="http://filippou.ce.berkeley.edu/">Filip C. Filippou</a> </p>
+                <p>&copy 1998-2020 UC Regents, <a href="http://filippou.ce.berkeley.edu/">Filip C. Filippou</a></p>
         </footer>
         <script>
-            var base_url = "../../..",
+            var base_url = "../../../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../../../js/base.js" defer></script>
+        <script src="../../../../js/base.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
-        <script src="../../../search/main.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
 
         <div class="modal" id="elstir_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">

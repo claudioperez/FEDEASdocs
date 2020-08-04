@@ -1,5 +1,5 @@
 body::before {
-    background: url(/img/grid.png) repeat-x;
+    background: url(img/grid.png) repeat-x;
 }
 
 .navbar-brand {

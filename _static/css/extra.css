@@ -7,7 +7,7 @@ body::before {
     padding-top: 0.74765625rem;
     padding-bottom: 0.74765625rem;
     margin-right: 1rem;
-    font-size: 1.015625rem;
+    /* font-size: 1.015625rem; */
     font-size: 1.3rem;
     line-height: inherit;
     white-space: nowrap;

@@ -1,6 +1,6 @@
-body::before {
+/* body::before {
     background: url(/img/grid.png) repeat-x;
-}
+} */
 
 .navbar-brand {
     display: inline-block;

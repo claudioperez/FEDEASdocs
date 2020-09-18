@@ -6,18 +6,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://claudioperez.github.io/FEDEASdocs/Functions/latest/PreProcessing/Structure/Create_Damping/">
-        <link rel="shortcut icon" href="../../../../../img/favicon.ico">
-        <title>Create Damping - FEDEASLab</title>
-        <link href="../../../../../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../../../../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../../../../../css/base.css" rel="stylesheet">
+        <link rel="canonical" href="https://claudioperez.github.io/FEDEASdocs/Guides/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Getting Started - FEDEASLab</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-        <link href="../../../../../_static/css/extra.css" rel="stylesheet">
+        <link href="../_static/css/extra.css" rel="stylesheet">
 
 
-        <script src="../../../../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../../../../js/bootstrap.min.js" defer></script>
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/matlab.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
@@ -44,7 +44,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="../../../../..">FEDEASLab</a>
+                <a class="navbar-brand" href="..">FEDEASLab</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -56,21 +56,21 @@
                         <ul class="nav navbar-nav ml-auto">
                         <!--<ul class="nav navbar-nav">-->
                             <li class="navitem">
-                                <a href="../../../../../About/" class="nav-link">About</a>
+                                <a href="../About/" class="nav-link">About</a>
                             </li>
                             <li class="navitem">
-                                <a href="../../../../../Guides/" class="nav-link">Guides</a>
+                                <a href="./" class="nav-link">Guides</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Functions <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../.." class="dropdown-item">Index</a>
+    <a href="../Functions/latest" class="dropdown-item">Index</a>
 </li>
                                     
 <li>
-    <a href="../../" class="dropdown-item">Pre-processing</a>
+    <a href="../Functions/latest/PreProcessing/" class="dropdown-item">Pre-processing</a>
 </li>
                                     
   <li class="dropdown-submenu">
@@ -78,30 +78,30 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="../../../Modeling_Library/Element_Library/" class="dropdown-item">Element</a>
+    <a href="../Functions/latest/Modeling_Library/Element_Library/" class="dropdown-item">Element</a>
 </li>
             
 <li>
-    <a href="../../../Modeling_Library/Material_Library/" class="dropdown-item">Material</a>
+    <a href="../Functions/latest/Modeling_Library/Material_Library/" class="dropdown-item">Material</a>
 </li>
             
 <li>
-    <a href="../../../Modeling_Library/Section_Library/" class="dropdown-item">Section</a>
+    <a href="../Functions/latest/Modeling_Library/Section_Library/" class="dropdown-item">Section</a>
 </li>
     </ul>
   </li>
                                     
 <li>
-    <a href="../../../Solution_Library/" class="dropdown-item">Solution Library</a>
+    <a href="../Functions/latest/Solution_Library/" class="dropdown-item">Solution Library</a>
 </li>
                                     
 <li>
-    <a href="../../../Utilities/" class="dropdown-item">Utilities</a>
+    <a href="../Functions/latest/Utilities/" class="dropdown-item">Utilities</a>
 </li>
                                 </ul>
                             </li>
                             <li class="navitem">
-                                <a href="../../../../../Examples/" class="nav-link">Examples</a>
+                                <a href="../Examples/" class="nav-link">Examples</a>
                             </li>
                         <!--</ul>-->
                         <!--</div>-->
@@ -128,83 +128,47 @@
             
             <div class="row">
                     
-                        <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
-
-    
-    <div id="toc-collapse" class="navbar-collapse collapse card ">
-        <ul class="nav flex-column">
-        
-        
-        </ul>
-    </div>
-</div></div>
+                        <div>  </div>
                     
 
                     
-                        <article class="col-md-9 p-3">
+                        <article class="col-md-12 p-3">
                         <!-- <article class="col-md-9"> -->
                         
 
-<p>[]{#_top}</p>
-<div>
+<h1 id="getting-started">Getting Started</h1>
+<h2 id="download-install">Download &amp; Install</h2>
+<p>The <code>FEDEASLab</code> Matlab Toolbox will soon be available for download
+<!-- The <code>FEDEASLab</code> Matlab Toolbox can be downloaded -->
+as a zipped folder from <a href="">here</a>.</p>
+<div class="row content homepage-links">
 
-[Home](../FEDEASLab.html) &gt; [General](FEDEASLab.html) &gt;
-Create\_Damping.m
-
-</div>
-
-<h1 id="create_damping">Create_Damping</h1>
-<h2 id="_namepurpose">[]{#_name}PURPOSE <a href="#_top"><img alt="\^" src="../up.png" /></a></h2>
-<div class="box">
-
-**CREATE\_DAMPING setup damping matrix of structural model**
-
-</div>
-
-<h2 id="_synopsissynopsis">[]{#_synopsis}SYNOPSIS <a href="#_top"><img alt="\^" src="../up.png" /></a></h2>
-<div class="box">
-
-**function C = Create\_Damping (type,Kf,Ml,zeta,mode)**
-
-</div>
-
-<h2 id="_descriptiondescription">[]{#_description}DESCRIPTION <a href="#_top"><img alt="\^" src="../up.png" /></a></h2>
-<div class="fragment">
-
-<pre><code class="comment">CREATE_DAMPING setup damping matrix of structural model
-  C = CREATE_DAMPING (TYPE,KF,ML,ZETA,MODE)
-  function sets up damping matrix C according to character variable TYPE
-  for a structure with free dof stiffness matrix KF and free dof lumped mass vector ML;
-  the damping matrix is calibrated so that the mode numbers in row vector MODE have
-  damping ratios as specified in row vector ZETA;
-  character variable TYPE should be either 'StifProp', 'Caughey' or 'Modal'
-  Note: Caughey with one mode reduces to mass proportional damping matrix and
-        with two modes reduces to Rayleigh damping;
-        for more than 2 modes Caughey damping works only if Ml is fully populated;
-        Modal damping refers to the method of superposing modal damping matrices
-        Reference: Chopra, Dynamics of Structures, 2nd edition, pp. 455-463
-</code></pre>
-
-
-</div>
-
-<h2 id="_crosscross-reference-information">[]{#_cross}CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="\^" src="../up.png" /></a></h2>
-<p>This function calls:</p>
-<p>This function is called by:</p>
-<ul>
-<li><a class="code" href="Add_Damping2State.html" title="function State = Add_Damping2State (type,Model,State,zeta,mode)">Add_Damping2State</a>
-    ADD_DAMPING2STATE setup damping matrix of structural model as field
-    of data structure STATE</li>
+<div class="col-md-4 listing">
+<div class="article-header"><h3>Teaching</h3></div>
+<ul class="list-icons">
+<li><span class="icon-zap"></span><a href="Teaching/">Get Started</a></li>
 </ul>
-<hr />
-<p>Generated on Wed 22-Jan-2020 08:42:48 by
-<strong><a href="http://www.artefact.tk/software/matlab/m2html/" title="Matlab Documentation in HTML">m2html</a></strong>
-© 2005</p>
+</div>
+
+<div class="col-md-4 listing">
+<div class="article-header"><h3>Modeling</h3></div>
+<ul class="list-icons">
+<li><span class="icon-file-document"></span><a href="...">Coming soon</a></li>
+</ul>
+</div>
+
+<div class="col-md-4 listing">
+<div class="article-header"><h3>Developing</h3></div>
+<ul class="list-icons">
+<li><span class="icon-file-document"></span><a href="...">Coming soon</a></li>
+</ul>
+</div>
+
+</div>
+
+<!-- Adding to Matlab path -->
+
+<!-- ## Building Models -->
                         
                         </article>
                         <!-- <div class="col-md-8" role="main"></div> -->
@@ -217,12 +181,12 @@ Create\_Damping.m
                 <p>&copy 1998-2020 UC Regents, <a href="http://filippou.ce.berkeley.edu/">Filip C. Filippou</a></p>
         </footer>
         <script>
-            var base_url = "../../../../..",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../../../../../js/base.js" defer></script>
+        <script src="../js/base.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
-        <script src="../../../../../search/main.js" defer></script>
+        <script src="../search/main.js" defer></script>
 
         <div class="modal" id="elstir_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">

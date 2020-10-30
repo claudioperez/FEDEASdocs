@@ -1,0 +1,128 @@
+---
+references:
+- id: fdlb-0001
+  archive: fcf
+  collection-title: Section analysis
+  medium: CE221
+  programming-language: Matlab
+  system: CE221
+  title: Hw12P1A
+  type: book
+  URL: 'https://github.com/FEDEASLab/fdlb-0001.git'
+
+- id: fdlb-0002
+  abstract: >-
+    Analysis of 2d section under axial force and bending moment (single
+    reference load).
+  archive: fcf
+  collection-title: Section analysis
+  medium: CE221
+  programming-language: Matlab
+  system: CE221
+  title: Hw12P1B1
+  type: book
+  URL: 'https://github.com/FEDEASLab/fdlb-0002.git'
+
+- id: fdlb-0003
+  abstract: >-
+    Analysis of 2d section under axial force and bending moment with different
+    load histories.
+  archive: fcf
+  collection-title: Section analysis
+  medium: CE221
+  programming-language: Matlab
+  system: CE221
+  title: Hw12P1B2
+  type: book
+  URL: 'https://github.com/FEDEASLab/fdlb-0003.git'
+  version: 1.0.0
+
+- id: fdlb-0004
+  abstract: >-
+    Cyclic loading of an inelastic cantilever column using a one component
+    series beam model.
+  archive: fcf
+  collection-title: Inelastic frames
+  medium: CE221
+  programming-language: Matlab
+  system: CE221
+  title: Hw12P2A
+  type: book
+  URL: 'https://github.com/FEDEASLab/fdlb-0004'
+
+- id: fdlb-0005
+  abstract: Cyclic Load Analysis of Cantilever Column with Fiber Beam-Column Element.
+  archive: fcf
+  collection-title: Inelastic frames
+  medium: CE221
+  system: CE221
+  title: Hw12P2B
+  type: book
+  URL: 'https://github.com/FEDEASLab/fdlb-0005'
+
+- id: fdlb-0006
+  abstract: >-
+    Incremental PushOver Analysis with load factor control allowing for strength
+    loss under constant gravity loads and increasing lateral forces.
+  archive: fcf
+  collection-title: Pushover analysis
+  medium: CE221
+  system: CE221
+  title: Hw12P3
+  type: book
+  URL: 'https://github.com/FEDEASLab/fdlb-0006.git'
+
+- id: fdlb-0007
+  abstract: Nonlinear Time History Analysis under constant gravity loads.
+  archive: fcf
+  collection-title: Time history analysis
+  medium: CE221
+  system: CE221
+  title: Hw12P4
+  type: book
+  URL: 'https://github.com/FEDEASLab/fdlb-0007.git'
+
+- id: fdlb-0008
+  archive: fcf
+  collection-title: Reliability Analysis
+  medium: FEDEASLab Dev
+  programming-language: Matlab
+  system: FEDEASLab Dev
+  title: Built-up column
+  type: book
+  URL: 'https://github.com/FEDEASLab/fdlb-0008'
+
+- id: fdlb-0009
+  abstract: Algorithmic panel zone mesh generation.
+  archive: fcf
+  collection-title: Panel Zones
+  medium: FEDEASLab Dev
+  programming-language: Matlab
+  system: FEDEASLab Dev
+  title: Panel Zone Mesh Generation
+  type: book
+  URL: 'https://github.com/FEDEASLab/fdlb-0009.git'
+
+- id: fdlb-0010
+  collection-title: Linear analysis
+  medium: CE220
+  programming-language: Matlab
+  system: CE220
+  title: Basic Collection
+  type: book
+
+- id: fdlb-0011
+  collection-title: Section analysis
+  medium: FEDEASLab Dev
+  programming-language: Matlab
+  system: FEDEASLab Dev
+  title: Yield surface evolution
+  type: book
+
+- id: fdlb-0012
+  medium: FEDEASLab Dev
+  programming-language: Matlab
+  system: FEDEASLab Dev
+  title: Generalized piecewise limit surface
+  type: book
+...

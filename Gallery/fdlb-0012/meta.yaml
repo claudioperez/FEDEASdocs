@@ -1,0 +1,16 @@
+URL: https://github.com/FEDEASLab/fdlb-0012
+abstract: Development of a function that sets up the block diagonal matrix of element
+  limit-surface equations, $A_{in}$, for plastic analysis of a structural model using
+  FEDEASLab.
+archive: $FEDEASLAB_DEV
+archive_location: Gallery/fdlb-0012
+author:
+- family: Perez
+  given: Claudio
+collection-title: Plastic analysis
+id: fdlb-0012
+medium: FEDEASLab Dev
+programming-language: Matlab
+system: FEDEASLab Dev
+title: Generalized piecewise limit surface
+type: book

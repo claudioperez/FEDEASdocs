@@ -1,9 +1,11 @@
-URL: https://github.com/FEDEASLab/fdlb-0007.git
+URL: https://github.com/FEDEASLab/fdlb-0007
 abstract: Nonlinear Time History Analysis under constant gravity loads.
-archive: fcf
+archive: $FEDEASLAB_DEV
+archive_location: Gallery/fdlb-0007
 collection-title: Time history analysis
 id: fdlb-0007
 medium: CE221
+note: 'schema: ElstirResource'
 system: CE221
 title: Hw12P4
 type: book

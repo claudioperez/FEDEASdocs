@@ -1,9 +1,10 @@
 URL: https://github.com/FEDEASLab/fdlb-0008
-archive: fcf
+archive: $FEDEASLAB_DEV
+archive_location: Gallery/fdlb-0008
 collection-title: Reliability Analysis
 id: fdlb-0008
-medium: Dev
+medium: FEDEASLab Dev
 programming-language: Matlab
-system: Dev
+system: FEDEASLab Dev
 title: Built-up column
 type: book

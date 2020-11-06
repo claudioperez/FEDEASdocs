@@ -1,7 +1,8 @@
-URL: https://github.com/FEDEASLab/fdlb-0006.git
+URL: https://github.com/FEDEASLab/fdlb-0006
 abstract: Incremental PushOver Analysis with load factor control allowing for strength
   loss under constant gravity loads and increasing lateral forces.
-archive: fcf
+archive: $FEDEASLAB_DEV
+archive_location: Gallery/fdlb-0006
 collection-title: Pushover analysis
 id: fdlb-0006
 medium: CE221

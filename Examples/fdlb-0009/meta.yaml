@@ -1,10 +1,11 @@
-URL: https://github.com/FEDEASLab/fdlb-0009.git
+URL: https://github.com/FEDEASLab/fdlb-0009
 abstract: Algorithmic panel zone mesh generation.
-archive: fcf
+archive: $FEDEASLAB_DEV
+archive_location: Gallery/fdlb-0009
 collection-title: Panel Zones
 id: fdlb-0009
-medium: Dev
+medium: FEDEASLab Dev
 programming-language: Matlab
-system: Dev
+system: FEDEASLab Dev
 title: Panel Zone Mesh Generation
 type: book

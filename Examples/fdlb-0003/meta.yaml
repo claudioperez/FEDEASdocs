@@ -1,7 +1,8 @@
-URL: https://github.com/FEDEASLab/fdlb-0003.git
+URL: https://github.com/FEDEASLab/fdlb-0003
 abstract: Analysis of 2d section under axial force and bending moment with different
   load histories.
-archive: fcf
+archive: $FEDEASLAB_DEV
+archive_location: Gallery/fdlb-0003
 collection-title: Section analysis
 id: fdlb-0003
 medium: CE221

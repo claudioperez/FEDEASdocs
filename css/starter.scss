@@ -1,146 +1,119 @@
-// Simplex 4.5.0
-// Bootswatch
+// Override Bootstrap's Sass default variables
+//
+// Nearly all variables in Bootstrap are written with the `!default` flag.
+// This allows you to override the default values of those variables before
+// you import Bootstrap's source Sass files.
+//
+// Overriding the default variable values is the best way to customize your
+// CSS without writing _new_ styles. For example, change you can either change
+// `$body-color` or write more CSS that override's Bootstrap's CSS like so:
+// `body { color: red; }`.
 
 
-// Variables ===================================================================
+//
+// Override Bootstrap here
+//
 
-$web-font-path: "https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" !default;
-@import url($web-font-path);
+@import "bootswatch/variables.scss";
 
-@mixin btn-shadow($color){
-  @include gradient-y-three-colors(lighten($color, 3%), $color, 6%, darken($color, 3%));
-  filter: none;
-  border: 1px solid darken($color, 6.5%);
-}
+// Toggle global options
+// $enable-gradients: true;
+// $enable-shadows: true;
 
-// Navbar ======================================================================
 
-.navbar {
-  // border-width: 1px;
-  border-width: 0 0 0.0px 0;
-  border-style: solid;
-  box-shadow: 0 0 0.5rem 0 rgba(221,221,221,0.5);
+$font-size-base:              1.0rem;
+$lead-font-size:              $font-size-base * 1.2;
+$lead-font-weight:            300;
 
-  &-fixed-top {
-    border-width: 0 0 3px 0;
-    
-    /* csslint ignore:start */
-    position: -webkit-sticky;
-    position: sticky;
-    /* csslint ignore:end */
-  }
+// Headings
+$headings-font-weight:           300;
+$headings-color:              #444;
 
-  &-fixed-bottom {
-    border-top-width: 1px 0 0 0;
-    border-style: solid;
-  }
-}
 
-.bg-primary {
-  background-color: $primary !important;
-  border-color: darken($secondary, 6.5%) !important;
-}
+$component-active-color:      $secondary;
+// $component-active-bg:         $secondary;
 
-.bg-dark {
-  border-color: darken($dark, 6.5%) !important;
-}
+// $navbar-light-color
 
-.bg-gray {
-  // border-color: darken(#fff, 6.5%);
-  // border-color: $primary;
-  background-color: $gray-100;
-}
+$navbar-dark-color:         $white;
+// $navbar-dark-hover-color:   $white;
+$navbar-dark-hover-color:   $secondary;
 
-// Buttons =====================================================================
+$dropdown-link-hover-bg:            $gray-100;
+$dropdown-link-hover-color:         $secondary;
+$dropdown-link-active-bg:           transparent;
+$dropdown-link-active-color:        $secondary;
+// Customize some defaults
+// $body-color: purple;
+// $body-bg: #f5f5f5;
 
-.btn-primary,
-.btn-primary:hover {
-  @include btn-shadow($primary);
-}
 
-.btn-secondary,
-.btn-secondary:hover {
-  @include btn-shadow($secondary);
-}
+//
+// Bring in Bootstrap
+//
 
-.btn-secondary:focus,
-.btn-secondary:not([disabled]):not(.disabled):active,
-.btn-secondary:not([disabled]):not(.disabled).active {
-  box-shadow: 0 0 0 0.2rem rgba($gray-200, 0.5);
-}
+// Option 1
+//
+// Import all of Bootstrap's CSS
 
-.btn-success,
-.btn-success:hover {
-  @include btn-shadow($success);
-}
+// @import "bootstrap/scss/bootstrap";
 
-.btn-info,
-.btn-info:hover {
-  @include btn-shadow($info);
-}
+// Option 2
+//
+// Import just the styles you need. Note that some stylesheets are required no matter what.
 
-.btn-warning,
-.btn-warning:hover {
-  @include btn-shadow($warning);
-}
+@import "../../node_modules/bootstrap/scss/functions"; // Required
+@import "../../node_modules/bootstrap/scss/variables"; // Required
+@import "../../node_modules/bootstrap/scss/mixins"; // Required
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/reboot"; // Required
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/code";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/tables";
+// @import "../../node_modules/bootstrap/scss/forms";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/dropdown"; // cmp
+@import "../../node_modules/bootstrap/scss/button-group";
+// @import "../../node_modules/bootstrap/scss/input-group"; // Requires forms
+// @import "../../node_modules/bootstrap/scss/custom-forms";
+@import "../../node_modules/bootstrap/scss/nav";    // cmp
+@import "../../node_modules/bootstrap/scss/navbar"; // Requires nav
+@import "../../node_modules/bootstrap/scss/card";   // cmp
+@import "../../node_modules/bootstrap/scss/breadcrumb";
+@import "../../node_modules/bootstrap/scss/pagination";
+@import "../../node_modules/bootstrap/scss/badge";
+@import "../../node_modules/bootstrap/scss/jumbotron";
+@import "../../node_modules/bootstrap/scss/alert";
+@import "../../node_modules/bootstrap/scss/progress";
+@import "../../node_modules/bootstrap/scss/media";
+@import "../../node_modules/bootstrap/scss/list-group";
+@import "../../node_modules/bootstrap/scss/close";
+@import "../../node_modules/bootstrap/scss/toasts";
+@import "../../node_modules/bootstrap/scss/modal"; // Requires transitions
+@import "../../node_modules/bootstrap/scss/tooltip";
+@import "../../node_modules/bootstrap/scss/popover";
+@import "../../node_modules/bootstrap/scss/carousel";
+@import "../../node_modules/bootstrap/scss/spinners";
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/print";
 
-.btn-danger,
-.btn-danger:hover {
-  @include btn-shadow($danger);
-}
 
-.btn-dark,
-.btn-dark:hover {
-  @include btn-shadow($dark);
-}
 
-.btn-light,
-.btn-light:hover {
-  @include btn-shadow($light);
-}
 
-.btn-outline-secondary {
-  border-color: $gray-700;
-  color: $gray-700;
+//
+// Custom styles
+//
 
-  &:hover {
-    background-color: $gray-700;
-    color: $white;
-  }
-}
+// body {
+//   padding: 3rem;
+// }
 
-// Typography ==================================================================
 
-.text-secondary {
-  color: $gray-700 !important;
-}
 
-// Tables ======================================================================
-
-// Forms =======================================================================
-
-legend,
-label {
-  color: $headings-color;
-}
-
-// Navs =======================================================================
-
-.breadcrumb {
-  border: 1px solid darken(#fff, 6.5%);
-}
-
-.pagination {
-  .page-link:hover {
-    text-decoration: none;
-  }
-}
-
-// Indicators ==================================================================
-
-// Progress bars ===============================================================
-
-// Containers ==================================================================
+@import "bootswatch/bootswatch.scss";
 
 html {
   /* csslint ignore:start */
@@ -228,12 +201,6 @@ code {
   word-wrap: break-word;
 }
 
-pre {
-  max-width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 pre code {
   display: block;
   background: transparent;
@@ -260,8 +227,7 @@ a > code {
 }
 
 a:hover code, a:focus code {
-  // color: #0d5875;
-  color: #790909;
+  color: #7a0000;
 }
 
 footer {
@@ -503,9 +469,9 @@ h1:hover .headerlink, h2:hover .headerlink, h3:hover .headerlink, h4:hover .head
 .comment {
   color: #228B22;
 }
-// pre {
-//   padding: 0.5em;
-// }
+pre {
+  padding: 0.5em;
+}
 pre, code {
   background: #f0f0f0;
   color: #000;

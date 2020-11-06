@@ -1,7 +1,10 @@
+URL: https://github.com/FEDEASLab/fdlb-0011
+archive: $FEDEASLAB_DEV
+archive_location: Gallery/fdlb-0011
 collection-title: Section analysis
 id: fdlb-0011
-medium: Dev
+medium: FEDEASLab Dev
 programming-language: Matlab
-system: Dev
+system: FEDEASLab Dev
 title: Yield surface evolution
 type: book

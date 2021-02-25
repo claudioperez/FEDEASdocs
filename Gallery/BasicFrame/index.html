@@ -208,7 +208,7 @@
 <p>All analysis scripts start with calls of A and B for the description of the model geometry and element properties.</p>
 <ol type="1">
 <li><p>The first script then specifies the applied loading and use the function LinearStep.m to determine the linear static solution with the direct stiffness implementation of the displacement method of analysis. The post-processing of the results takes place in a separate script called <a href="%5Bsrc%5D/Post_LinearAnalysis.m"><code>Post_LinearAnalysis.m</code></a></p></li>
-<li><p>The second script specifies the lumped mass matrix of the model and uses the function <a href="/Functions/latest/Analysis_Functions/Dynamic/EigenMode/"><code>EigenMode.m</code></a> to determine the period and the shape of its eigenmodes.</p></li>
+<li><p>The second script specifies the lumped mass matrix of the model and uses the function <a href="../../Functions/latest/Analysis_Functions/Dynamic/EigenMode/"><code>EigenMode.m</code></a> to determine the period and the shape of its eigenmodes.</p></li>
 <li><p>The third script specifies the influence vector at the free DOFs under horizontal support acceleration and the ground acceleration record. It then uses the function ModalAnalysis.m to determine the transient response of each mode to the support acceleration. The post-processing of the results takes place in a separate script called <code>Post_ModalAnalysis.m</code>.</p></li>
 <li><p>The fourth script specifies the reference load distribution and then uses the function PlasticAnalysis.m to determine the collapse load factor, the basic forces at incipient collapse and the plastic collapse mechanism. The post-processing of the results takes place in a separate script called <code>Post_PlasticAnalysis.m</code>.</p></li>
 </ol>

@@ -10,7 +10,7 @@
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
       <!-- <a href='https://pngtree.com/so/fresh-lines'>fresh lines png from pngtree.com</a> -->
-        <title>Example - Analysis of 2-Story Steel Frame - FEDEASLab</title>
+        <title>Analysis of 2-Story Steel Frame - FEDEASLab</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -132,8 +132,8 @@
               <div class="dropdown-divider"></div>
                     
             <li class="nav-item active" data-level="2">
-              <a href="/FEDEASdocs/Gallery/BasicFrame/" class="active">Example - Analysis of 2-Story Steel Frame</a>
-              <!-- <a href="/FEDEASdocs/Gallery/BasicFrame/" class="nav-link active">Example - Analysis of 2-Story Steel Frame</a> -->
+              <a href="/FEDEASdocs/Gallery/BasicFrame/" class="active">Analysis of 2-Story Steel Frame</a>
+              <!-- <a href="/FEDEASdocs/Gallery/BasicFrame/" class="nav-link active">Analysis of 2-Story Steel Frame</a> -->
               
               <ul class="nav flex-column">
               
@@ -145,73 +145,6 @@
             <li class="nav-item " data-level="2">
               <a href="/FEDEASdocs/Gallery/BasicLinear/" class="">FEDEASLab Basic Examples</a>
               <!-- <a href="/FEDEASdocs/Gallery/BasicLinear/" class="nav-link ">FEDEASLab Basic Examples</a> -->
-              
-              <ul class="nav flex-column">
-              
-              </ul>
-              
-            </li>
-                    
-                    
-            <li class="nav-item " data-level="2">
-              <a href="/FEDEASdocs/Gallery/fdlb-0004/" class="">FDLB-0001</a>
-              <!-- <a href="/FEDEASdocs/Gallery/fdlb-0004/" class="nav-link ">FDLB-0001</a> -->
-              
-              <ul class="nav flex-column">
-              
-                    
-              </ul>
-              
-            </li>
-                    
-                    
-            <li class="nav-item " data-level="2">
-              <a href="/FEDEASdocs/Gallery/fdlb-0005/" class="">FDLB-0005 (`Hw12P2B`)</a>
-              <!-- <a href="/FEDEASdocs/Gallery/fdlb-0005/" class="nav-link ">FDLB-0005 (`Hw12P2B`)</a> -->
-              
-              <ul class="nav flex-column">
-              
-              </ul>
-              
-            </li>
-                    
-                    
-            <li class="nav-item " data-level="2">
-              <a href="/FEDEASdocs/Gallery/fdlb-0006/" class="">FDLB-0006 (`Hw12P3`)</a>
-              <!-- <a href="/FEDEASdocs/Gallery/fdlb-0006/" class="nav-link ">FDLB-0006 (`Hw12P3`)</a> -->
-              
-              <ul class="nav flex-column">
-              
-              </ul>
-              
-            </li>
-                    
-                    
-            <li class="nav-item " data-level="2">
-              <a href="/FEDEASdocs/Gallery/fdlb-0007/" class="">FDLB-0007</a>
-              <!-- <a href="/FEDEASdocs/Gallery/fdlb-0007/" class="nav-link ">FDLB-0007</a> -->
-              
-              <ul class="nav flex-column">
-              
-              </ul>
-              
-            </li>
-                    
-                    
-            <li class="nav-item " data-level="2">
-              <a href="/FEDEASdocs/Gallery/fdlb-0008/" class="">FDLB-0008</a>
-              <!-- <a href="/FEDEASdocs/Gallery/fdlb-0008/" class="nav-link ">FDLB-0008</a> -->
-              
-              <ul class="nav flex-column">
-              
-              </ul>
-              
-            </li>
-                    
-                    
-            <li class="nav-item " data-level="2">
-              <a href="/FEDEASdocs/Gallery/fdlb-0009/" class="">CreateMesh</a>
-              <!-- <a href="/FEDEASdocs/Gallery/fdlb-0009/" class="nav-link ">CreateMesh</a> -->
               
               <ul class="nav flex-column">
               
@@ -233,8 +166,8 @@
                     
                     
             <li class="nav-item " data-level="2">
-              <a href="/FEDEASdocs/Gallery/fdlb-0012/" class="">`AIN_MATRIX`</a>
-              <!-- <a href="/FEDEASdocs/Gallery/fdlb-0012/" class="nav-link ">`AIN_MATRIX`</a> -->
+              <a href="/FEDEASdocs/Gallery/fdlb-0012/" class="">Generalized piecewise limit surface</a>
+              <!-- <a href="/FEDEASdocs/Gallery/fdlb-0012/" class="nav-link ">Generalized piecewise limit surface</a> -->
               
               <ul class="nav flex-column">
               
@@ -256,8 +189,11 @@
                         <!-- <article class="col-md-9"> -->
                         
 
-<h1 id="example---analysis-of-2-story-steel-frame">Example - Analysis of 2-Story Steel Frame</h1>
-<p>The <a href="./src/">script files</a> contain the geometry, the element properties and the loading of a 2-story, 1-bay steel frame. The description of the model is subdivided into the following scripts:</p>
+<h1 id="analysis-of-2-story-steel-frame">Analysis of 2-Story Steel Frame</h1>
+<blockquote>
+<p><a href="./src.zip">Download <code>zip</code> package</a></p>
+</blockquote>
+<p>The script files contain the geometry, the element properties and the loading of a 2-story, 1-bay steel frame. The description of the model is subdivided into the following scripts:</p>
 <ol type="A">
 <li><p>Description of model geometry with boundary conditions in a file with prefix <code>Model</code>.</p></li>
 <li><p>Description of the element properties in a file with the suffix <code>ElemData</code>. <code>LinearElemData.m</code> specifies the properties for linear elastic frame elements, and <code>SimpleInelElemData</code> for simple inelastic elements that will be discussed in the course of this semester.</p></li>
@@ -266,13 +202,13 @@
 <ol type="1">
 <li>Linear elastic analysis under static loads (file <a href="src/S_LinearAnalysis.m"><code>S_LinearAnalysis.m</code></a>).</li>
 <li>Vibration periods and mode shapes (file <a href="src/S_PeriodNModes.m"><code>S_PeriodNModes.m</code></a>).</li>
-<li>Transient analysis under ground acceleration with mode superposition (modal analysis) (file <code>S_ModalAnalysis.m</code>).</li>
+<li>Transient analysis under ground acceleration with mode superposition (modal analysis) (file <a href="src/S_ModalAnalysis.m"><code>S_ModalAnalysis.m</code></a>).</li>
 <li>Determination of the collapse load factor, the basic forces at incipient collapse and the collapse mechanism by the lower and upper bound theorems of plastic analysis (file <a href="src/S_PlasticAnalysis.m"><code>S_PlasticAnalysis.m</code></a>).</li>
 </ol>
 <p>All analysis scripts start with calls of A and B for the description of the model geometry and element properties.</p>
 <ol type="1">
 <li><p>The first script then specifies the applied loading and use the function LinearStep.m to determine the linear static solution with the direct stiffness implementation of the displacement method of analysis. The post-processing of the results takes place in a separate script called <a href="%5Bsrc%5D/Post_LinearAnalysis.m"><code>Post_LinearAnalysis.m</code></a></p></li>
-<li><p>The second script specifies the lumped mass matrix of the model and uses the function <code>EigenMode.m</code> to determine the period and the shape of its eigenmodes.</p></li>
+<li><p>The second script specifies the lumped mass matrix of the model and uses the function <a href="/Functions/latest/Analysis_Functions/Dynamic/EigenMode/"><code>EigenMode.m</code></a> to determine the period and the shape of its eigenmodes.</p></li>
 <li><p>The third script specifies the influence vector at the free DOFs under horizontal support acceleration and the ground acceleration record. It then uses the function ModalAnalysis.m to determine the transient response of each mode to the support acceleration. The post-processing of the results takes place in a separate script called <code>Post_ModalAnalysis.m</code>.</p></li>
 <li><p>The fourth script specifies the reference load distribution and then uses the function PlasticAnalysis.m to determine the collapse load factor, the basic forces at incipient collapse and the plastic collapse mechanism. The post-processing of the results takes place in a separate script called <code>Post_PlasticAnalysis.m</code>.</p></li>
 </ol>

@@ -8,6 +8,8 @@
         
         <link rel="canonical" href="https://claudioperez.github.io/FEDEASdocs/Guides/Teaching/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
+
+      <!-- <a href='https://pngtree.com/so/fresh-lines'>fresh lines png from pngtree.com</a> -->
         <title>FEDEASLab Basic Structural Analysis Functions - FEDEASLab</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
@@ -61,25 +63,23 @@
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Functions <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li><a href="../../Functions/latest" class="dropdown-item">Index</a></li>
-                                    
-<li><a href="../../Functions/latest/PreProcessing/" class="dropdown-item">Pre-processing</a></li>
+<li><a href="../../Functions/latest" class="dropdown-item">Module Breakdown</a></li>
                                     
   <li class="dropdown-submenu">
     <a href="#" class="dropdown-item">Modeling Libraries</a>
     <ul class="dropdown-menu">
             
-<li><a href="../../Functions/latest/Modeling_Library/Element_Library/" class="dropdown-item">Element</a></li>
+<li><a href="../../Functions/latest/Element_Library/" class="dropdown-item">Elements</a></li>
             
-<li><a href="../../Functions/latest/Modeling_Library/Material_Library/" class="dropdown-item">Material</a></li>
+<li><a href="../../Functions/latest/Material_Library/" class="dropdown-item">Materials</a></li>
             
-<li><a href="../../Functions/latest/Modeling_Library/Section_Library/" class="dropdown-item">Section</a></li>
+<li><a href="../../Functions/latest/Section_Library/" class="dropdown-item">Sections</a></li>
     </ul>
   </li>
                                     
-<li><a href="../../Functions/latest/Solution_Library/" class="dropdown-item">Solution Library</a></li>
+<li><a href="../../Functions/latest/Analysis_Functions/" class="dropdown-item">Analysis Functions</a></li>
                                     
-<li><a href="../../Functions/latest/Utilities/" class="dropdown-item">Utilities</a></li>
+<li><a href="../../Functions/latest/Utility_Functions/" class="dropdown-item">Utilities</a></li>
                                 </ul>
                             </li>
                             <li class="navitem">
@@ -117,15 +117,16 @@
                         <article class="col-md-12 p-3">
                         <!-- <article class="col-md-9"> -->
                         
-<h1>FEDEASLab Basic Structural Analysis Functions</h1>
 
+<h1>FEDEASLab Basic Structural Analysis Functions</h1>
 <h2 id="abstract">Abstract</h2>
-<p><code>FEDEASLab</code> is  a  collection  of <code>Matlab</code> functions  for  instruction  and  research  in  linear  and  nonlinear finite element analysis. These functions take advantage of the widespread use of <code>Matlab</code> in engineering curricula around the world, and the extensive set of built-in and customized <code>Matlab</code> functions for many branches of science and engineering. In parallel with the introduction of basic concepts in an introductory course on structural analysis,the initial set of functions is rather small. This report is limited to this initial set. As the complexity of structural analysis concepts and procedures grows, the number of functions grows rapidly under the following criteria:</p>
-<ol>
+<p><code>FEDEASLab</code> is a collection of <code>Matlab</code> functions for instruction and research in linear and nonlinear finite element analysis. These functions take advantage of the widespread use of <code>Matlab</code> in engineering curricula around the world, and the extensive set of built-in and customized <code>Matlab</code> functions for many branches of science and engineering. In parallel with the introduction of basic concepts in an introductory course on structural analysis,the initial set of functions is rather small. This report is limited to this initial set. As the complexity of structural analysis concepts and procedures grows, the number of functions grows rapidly under the following criteria:</p>
+<ol type="1">
 <li>Maintain modularity by keeping the extent of each function focused on a specific task realizing that composite tasks can be accomplished by collecting functions into scripts or higher order functions.</li>
 <li>Maintain modularity by organizing the variables of the analysis process in a small set of data structures serving as input and output arguments of the different functions.</li>
 </ol>
 <p>The organization of structural analysis variables in data structures accommodates the subsequent growth in complexity of the structural analysis task with the addition of fields to the existing data structures. For the same reason general utility functions start out with input arguments of simple data types and subsequently expand to accommodate more complex data types while retaining the same interface</p>
+
                         
 
 <div class="container mt-3 pt-3">

@@ -1,6 +1,0 @@
-module_resources:
-  glob:
-  - src/*.zip
-  - meta.yaml
-  - README.yaml > index.md
-  - img/

@@ -26,8 +26,10 @@ html {
     height: 100%;
     top: 0;
     left: 0;
+    opacity: 0.3;
     background-color: #f8f8f8;
-    background: url(../img/grid.png) repeat-x;
+    background: url(../img/grid.png) repeat-x; 
+    /* background: url(../img/grid3.png) repeat; */
     will-change: transform;
     z-index: -1;
 }

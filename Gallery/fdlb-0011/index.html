@@ -8,6 +8,8 @@
         
         <link rel="canonical" href="https://claudioperez.github.io/FEDEASdocs/Gallery/fdlb-0011/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
+
+      <!-- <a href='https://pngtree.com/so/fresh-lines'>fresh lines png from pngtree.com</a> -->
         <title>Yield surface evolution - FEDEASLab</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
@@ -64,25 +66,23 @@
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Functions <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li><a href="../../Functions/latest" class="dropdown-item">Index</a></li>
-                                    
-<li><a href="../../Functions/latest/PreProcessing/" class="dropdown-item">Pre-processing</a></li>
+<li><a href="../../Functions/latest" class="dropdown-item">Module Breakdown</a></li>
                                     
   <li class="dropdown-submenu">
     <a href="#" class="dropdown-item">Modeling Libraries</a>
     <ul class="dropdown-menu">
             
-<li><a href="../../Functions/latest/Modeling_Library/Element_Library/" class="dropdown-item">Element</a></li>
+<li><a href="../../Functions/latest/Element_Library/" class="dropdown-item">Elements</a></li>
             
-<li><a href="../../Functions/latest/Modeling_Library/Material_Library/" class="dropdown-item">Material</a></li>
+<li><a href="../../Functions/latest/Material_Library/" class="dropdown-item">Materials</a></li>
             
-<li><a href="../../Functions/latest/Modeling_Library/Section_Library/" class="dropdown-item">Section</a></li>
+<li><a href="../../Functions/latest/Section_Library/" class="dropdown-item">Sections</a></li>
     </ul>
   </li>
                                     
-<li><a href="../../Functions/latest/Solution_Library/" class="dropdown-item">Solution Library</a></li>
+<li><a href="../../Functions/latest/Analysis_Functions/" class="dropdown-item">Analysis Functions</a></li>
                                     
-<li><a href="../../Functions/latest/Utilities/" class="dropdown-item">Utilities</a></li>
+<li><a href="../../Functions/latest/Utility_Functions/" class="dropdown-item">Utilities</a></li>
                                 </ul>
                             </li>
                             <li class="navitem">
@@ -132,8 +132,8 @@
               <div class="dropdown-divider"></div>
                     
             <li class="nav-item " data-level="2">
-              <a href="/FEDEASdocs/Gallery/fdlb-0001/" class="">FDLB-0001</a>
-              <!-- <a href="/FEDEASdocs/Gallery/fdlb-0001/" class="nav-link ">FDLB-0001</a> -->
+              <a href="/FEDEASdocs/Gallery/BasicFrame/" class="">Example - Analysis of 2-Story Steel Frame</a>
+              <!-- <a href="/FEDEASdocs/Gallery/BasicFrame/" class="nav-link ">Example - Analysis of 2-Story Steel Frame</a> -->
               
               <ul class="nav flex-column">
               
@@ -143,19 +143,8 @@
                     
                     
             <li class="nav-item " data-level="2">
-              <a href="/FEDEASdocs/Gallery/fdlb-0002/" class="">FDLB-0002</a>
-              <!-- <a href="/FEDEASdocs/Gallery/fdlb-0002/" class="nav-link ">FDLB-0002</a> -->
-              
-              <ul class="nav flex-column">
-              
-              </ul>
-              
-            </li>
-                    
-                    
-            <li class="nav-item " data-level="2">
-              <a href="/FEDEASdocs/Gallery/fdlb-0003/" class="">FDLB-0003</a>
-              <!-- <a href="/FEDEASdocs/Gallery/fdlb-0003/" class="nav-link ">FDLB-0003</a> -->
+              <a href="/FEDEASdocs/Gallery/BasicLinear/" class="">FEDEASLab Basic Examples</a>
+              <!-- <a href="/FEDEASdocs/Gallery/BasicLinear/" class="nav-link ">FEDEASLab Basic Examples</a> -->
               
               <ul class="nav flex-column">
               
@@ -231,17 +220,6 @@
             </li>
                     
                     
-            <li class="nav-item " data-level="2">
-              <a href="/FEDEASdocs/Gallery/fdlb-0010/" class="">`FEDEASLab` Basic Examples</a>
-              <!-- <a href="/FEDEASdocs/Gallery/fdlb-0010/" class="nav-link ">`FEDEASLab` Basic Examples</a> -->
-              
-              <ul class="nav flex-column">
-              
-              </ul>
-              
-            </li>
-                    
-                    
             <li class="nav-item active" data-level="2">
               <a href="/FEDEASdocs/Gallery/fdlb-0011/" class="active">Yield surface evolution</a>
               <!-- <a href="/FEDEASdocs/Gallery/fdlb-0011/" class="nav-link active">Yield surface evolution</a> -->
@@ -277,9 +255,10 @@
                         <article class="col-md-9 p-3">
                         <!-- <article class="col-md-9"> -->
                         
+
 <h1 id="yield-surface-evolution">Yield Surface Evolution</h1>
 <p>This note explores how the yield surface of certain cross sections evolve as they undergo combined flexural and axial loading into the inelastic range. The scope of the discussion is limited by the following assumptions:</p>
-<ol>
+<ol type="1">
 <li>Shear interaction is negligible.</li>
 <li>Planar sections remain plane under deformation.</li>
 <li>For doubly symmetric sections, flexure occurs about a principal axis.</li>
@@ -287,67 +266,55 @@
 </ol>
 <p>An implementation is developed and examples are presented for a perfectly plastic rectangular homogeneous section, but the generalization of this case is relatively straight forward.</p>
 <h2 id="formulation">Formulation</h2>
-<p>We seek to define a surface, <script type="math/tex">F_\tau</script>, at instant <script type="math/tex">\tau</script> by the following set of moment-axial force ordered pairs:</p>
-<p>
-<script type="math/tex; mode=display">
+<p>We seek to define a surface, <span class="math inline">\(F_\tau\)</span>, at instant <span class="math inline">\(\tau\)</span> by the following set of moment-axial force ordered pairs:</p>
+<p><span class="math display">\[
 \{ \left( M, P \right) \in \mathbb{R} \times \mathbb{R} \mid \Phi(M,P) \}
-</script>
-</p>
-<p>where <script type="math/tex">\Phi</script> is satisfied when <script type="math/tex">M</script> and <script type="math/tex">P</script> are resultants of a stress distribution, <script type="math/tex">\sigma</script>, meeting the condition <script type="math/tex">(\exists \mathbf{x} \in \Omega ) [\sigma ( \mathbf{x} ) = \sigma_{y, \tau }(\mathbf{x})]</script> for material behavior with only one component. In this condition, <script type="math/tex">\mathbf{x} \in \Omega</script> denotes a point in the cross section, and <script type="math/tex">\sigma_{y,\tau}</script> is the limit stress at time <script type="math/tex">\tau</script>.</p>
-<p>For the case of perfect plasticity without hardening, the dependence of <script type="math/tex">\sigma_y</script> on <script type="math/tex">\mathbf{x}</script> and <script type="math/tex">\tau</script> is dropped. Additionally, for a singly symmetric homogenous section obeying the assumptions stated above, the stress and strain fields are constant along the flexural axis. After discretizing such a cross section into <script type="math/tex">n_{IP}</script> integration points, the aforementioned condition is restated approximately as follows:</p>
-<p>
-<script type="math/tex; mode=display">
+\]</span></p>
+<p>where <span class="math inline">\(\Phi\)</span> is satisfied when <span class="math inline">\(M\)</span> and <span class="math inline">\(P\)</span> are resultants of a stress distribution, <span class="math inline">\(\sigma\)</span>, meeting the condition <span class="math inline">\((\exists \mathbf{x} \in \Omega ) [\sigma ( \mathbf{x} ) = \sigma_{y, \tau }(\mathbf{x})]\)</span> for material behavior with only one component. In this condition, <span class="math inline">\(\mathbf{x} \in \Omega\)</span> denotes a point in the cross section, and <span class="math inline">\(\sigma_{y,\tau}\)</span> is the limit stress at time <span class="math inline">\(\tau\)</span>.</p>
+<p>For the case of perfect plasticity without hardening, the dependence of <span class="math inline">\(\sigma_y\)</span> on <span class="math inline">\(\mathbf{x}\)</span> and <span class="math inline">\(\tau\)</span> is dropped. Additionally, for a singly symmetric homogenous section obeying the assumptions stated above, the stress and strain fields are constant along the flexural axis. After discretizing such a cross section into <span class="math inline">\(n_{IP}\)</span> integration points, the aforementioned condition is restated approximately as follows:</p>
+<p><span class="math display">\[
 \Phi(M,P) \implies \exists i \in N \mid \sigma(x_i) = \sigma_y 
-</script>
-</p>
-<p>where N is the set of integration point indices <script type="math/tex">\{i \in\mathbb{Z}^+ \mid i \le n_{IP} \}</script> and <script type="math/tex">x_i</script> is a scalar distance orthogonal to the flexural axis.</p>
+\]</span></p>
+<p>where N is the set of integration point indices <span class="math inline">\(\{i \in\mathbb{Z}^+ \mid i \le n_{IP} \}\)</span> and <span class="math inline">\(x_i\)</span> is a scalar distance orthogonal to the flexural axis.</p>
 <p>The discrete problem may then be stated as follows:</p>
 <blockquote>
-<p>Given a vector, <script type="math/tex">\hat{\mathbf{x}}</script>, of <script type="math/tex">n_{IP}</script> integration point locations, and a vector of corresponding stresses, <script type="math/tex">\mathbf{y}_\tau</script> at instant <script type="math/tex">\tau</script>, find the following set, <script type="math/tex">Y</script>, of admissible stress vectors, <script type="math/tex">\mathbf{y}</script>:</p>
-<p>
-<script type="math/tex; mode=display">Y_\tau = \{ \mathbf{y} \in \mathbb{R}^{n_{IP}} \mid (\exists a \in \mathbb{R})(\exists m \in \mathbb{R})[\mathbf{y} - \mathbf{y}_\tau = a + m\hat{\mathbf{x}}] \text{ and } (\exists i \in N)[ y_i = \sigma_y ]\}</script>
-</p>
-<p>which is the set of all discrete stress vectors, <script type="math/tex">\mathbf{y}</script>, such that there exists an admissible strain increment <script type="math/tex">\Delta \varepsilon = \Delta\varepsilon_a + \Delta\kappa \mathbf{x}</script> which will produce the elastic stress increment <script type="math/tex">\mathbf{y} - \mathbf{y}_\tau = E \Delta\varepsilon</script>, and there exists an element, <script type="math/tex">y_i</script>, in <script type="math/tex">\mathbf{y}</script> that is equal to the limit stress.
-</p>
+<p>Given a vector, <span class="math inline">\(\hat{\mathbf{x}}\)</span>, of <span class="math inline">\(n_{IP}\)</span> integration point locations, and a vector of corresponding stresses, <span class="math inline">\(\mathbf{y}_\tau\)</span> at instant <span class="math inline">\(\tau\)</span>, find the following set, <span class="math inline">\(Y\)</span>, of admissible stress vectors, <span class="math inline">\(\mathbf{y}\)</span>:</p>
+<p><span class="math display">\[Y_\tau = \{ \mathbf{y} \in \mathbb{R}^{n_{IP}} \mid (\exists a \in \mathbb{R})(\exists m \in \mathbb{R})[\mathbf{y} - \mathbf{y}_\tau = a + m\hat{\mathbf{x}}] \text{ and } (\exists i \in N)[ y_i = \sigma_y ]\}\]</span></p>
+<p>which is the set of all discrete stress vectors, <span class="math inline">\(\mathbf{y}\)</span>, such that there exists an admissible strain increment <span class="math inline">\(\Delta \varepsilon = \Delta\varepsilon_a + \Delta\kappa \mathbf{x}\)</span> which will produce the elastic stress increment <span class="math inline">\(\mathbf{y} - \mathbf{y}_\tau = E \Delta\varepsilon\)</span>, and there exists an element, <span class="math inline">\(y_i\)</span>, in <span class="math inline">\(\mathbf{y}\)</span> that is equal to the limit stress.</p>
 </blockquote>
 <p>Unlike similar discrete approximations of the <strong>plastic</strong> limit surface, the accuracy of this approximation for the <strong>elastic</strong> limit surface is dependent on the loading history. Furthermore, this dependence is very difficult to predict as it is related to the distance between integration points and extrema in the residual stress field.</p>
 <h2 id="implementation">Implementation</h2>
 <p>The implementation of this problem is divided into two functions, <code>plot_evol</code> and <code>lim_clip</code>. The former is a wrapper to the latter. <code>plot_evol</code> extracts the section state and other parameters from the standard <code>FEDEASLab</code> data structures and normalizes the residual stress oridinates before calling <code>lim_clip</code>.</p>
-<p>The function <code>lim_clip</code> is formulated in terms of an arbitrary set of abscisssas and ordinates, which are supplied to the argument <code>XY</code> as an array of size <script type="math/tex">(n_{IP},2)</script>. Each ordinate, <code>XY(i,2)</code>, corresponds to the stress <script type="math/tex">y_i \in \mathbf{y}_\tau</script> at integration point, <code>i</code>. The values supplied in <code>XY</code> should be normalized such that the codomain, <code>XY(:,2)</code>,  is the interval <script type="math/tex">[+1, -1]</script>. The function iterates over every integration point in the set <script type="math/tex">N</script>, carrying out 4 separate nested iterations over the remaining integration points indices, <script type="math/tex">\{ j \in\mathbb{Z}^+ \mid j \le n_{IP}, j \ne i\}</script>.  This is a very computationally expensive procedure that grows quickly with <script type="math/tex">n_{IP}</script>. The return variable, <code>Y_lim</code>, is a subset of the piecewise continuous set <script type="math/tex">Y_\tau</script> with column vectors <code>Y_lim(:,k)</code> defining points of discontinuity.</p>
+<p>The function <code>lim_clip</code> is formulated in terms of an arbitrary set of abscisssas and ordinates, which are supplied to the argument <code>XY</code> as an array of size <span class="math inline">\((n_{IP},2)\)</span>. Each ordinate, <code>XY(i,2)</code>, corresponds to the stress <span class="math inline">\(y_i \in \mathbf{y}_\tau\)</span> at integration point, <code>i</code>. The values supplied in <code>XY</code> should be normalized such that the codomain, <code>XY(:,2)</code>, is the interval <span class="math inline">\([+1, -1]\)</span>. The function iterates over every integration point in the set <span class="math inline">\(N\)</span>, carrying out 4 separate nested iterations over the remaining integration points indices, <span class="math inline">\(\{ j \in\mathbb{Z}^+ \mid j \le n_{IP}, j \ne i\}\)</span>. This is a very computationally expensive procedure that grows quickly with <span class="math inline">\(n_{IP}\)</span>. The return variable, <code>Y_lim</code>, is a subset of the piecewise continuous set <span class="math inline">\(Y_\tau\)</span> with column vectors <code>Y_lim(:,k)</code> defining points of discontinuity.</p>
 <h2 id="examples">Examples</h2>
-<p>The function <code>plot_evol</code> is used in these examples to produce a figure with two plots. The plot on the left shows the normalized stress vectors <script type="math/tex">y_k</script> (also <code>Y_lim(:,k)</code>) that correspond to points in the normalized resultant plot on the right. It should be noted, however, that the stress distribution corresponding to the <em>current</em> stress distribution is not shown.</p>
+<p>The function <code>plot_evol</code> is used in these examples to produce a figure with two plots. The plot on the left shows the normalized stress vectors <span class="math inline">\(y_k\)</span> (also <code>Y_lim(:,k)</code>) that correspond to points in the normalized resultant plot on the right. It should be noted, however, that the stress distribution corresponding to the <em>current</em> stress distribution is not shown.</p>
 <p>Examples are executed using the following Matlab script:</p>
 <script src="https://gist.github.com/claudioperez/c6e9c9f108fe3706ef18aecd6984444a.js?file=surf_ex_2.m"></script>
-
-<p>```{include=surf_ex_2.m .matlab}</p>
-<p>```</p>
-<h3 id="example-1-path-o-a-b-o-loadopt3">Example 1 - Path O-A-B-O' (<code>LoadOpt=3</code>)</h3>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6aVvPM5A2-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<div class="sourceCode" id="cb1" data-include="surf_ex_2.m"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+<h3 id="example-1---path-o-a-b-o-loadopt3">Example 1 - Path O-A-B-O’ (<code>LoadOpt=3</code>)</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6aVvPM5A2-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
 <!-- ![Point A, 30 integration points.](./oabo-a-30.png)
 
 ![Point B, 30 integration points.](./oabo-b-30.png)
 
 ![Point O', 30 integration points.](./oabo-o-30.png) -->
-
-<h3 id="example-2-path-o-a-b-c-o-loadopt4">Example 2 - Path O-A-B-C-O' (<code>LoadOpt=4</code>)</h3>
+<h3 id="example-2---path-o-a-b-c-o-loadopt4">Example 2 - Path O-A-B-C-O’ (<code>LoadOpt=4</code>)</h3>
 <p>This example is identical to the previous up to point B, after which unloading occurs under a constant moment up to point C.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/x0eixejN0IQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/x0eixejN0IQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
 <!-- ![Point C, 30 integration points.](./oabco-c-30.png)
 
 ![Point O', 30 integration points.](./oabco-o-30.png) -->
-
 <h2 id="source-code">Source Code</h2>
 <h3 id="lim_clip"><code>lim_clip</code></h3>
 <script src="https://gist.github.com/claudioperez/c6e9c9f108fe3706ef18aecd6984444a.js?file=lim_clip.m"></script>
-
 <!-- ``` {include=lim_clip.m .matlab}
 
 ``` -->
-
 <h3 id="plot_evol"><code>plot_evol</code></h3>
 <script src="https://gist.github.com/claudioperez/c6e9c9f108fe3706ef18aecd6984444a.js?file=plot_evol.m"></script>
+
                         
                         </article>
                         <!-- <div class="col-md-8" role="main"></div> -->

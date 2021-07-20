@@ -8,8 +8,6 @@
         
         <link rel="canonical" href="https://claudioperez.github.io/FEDEASdocs/Gallery/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-
-      <!-- <a href='https://pngtree.com/so/fresh-lines'>fresh lines png from pngtree.com</a> -->
         <title>Gallery - FEDEASLab</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
@@ -57,30 +55,10 @@
                                 <a href="../About/" class="nav-link">About</a>
                             </li>
                             <li class="navitem">
-                                <a href="../Guides/" class="nav-link">Guides</a>
+                                <a href="../Pages/" class="nav-link">Pages</a>
                             </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Functions <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li><a href="../Functions/latest" class="dropdown-item">Module Breakdown</a></li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Modeling Libraries</a>
-    <ul class="dropdown-menu">
-            
-<li><a href="../Functions/latest/Element_Library/" class="dropdown-item">Elements</a></li>
-            
-<li><a href="../Functions/latest/Material_Library/" class="dropdown-item">Materials</a></li>
-            
-<li><a href="../Functions/latest/Section_Library/" class="dropdown-item">Sections</a></li>
-    </ul>
-  </li>
-                                    
-<li><a href="../Functions/latest/Analysis_Functions/" class="dropdown-item">Analysis Functions</a></li>
-                                    
-<li><a href="../Functions/latest/Utility_Functions/" class="dropdown-item">Utilities</a></li>
-                                </ul>
+                            <li class="navitem">
+                                <a href="../Functions/Help" class="nav-link">Functions</a>
                             </li>
                             <li class="navitem">
                                 <a href="./" class="nav-link">Gallery</a>
@@ -172,12 +150,12 @@
     Linear analysis
 </option>
 
-<option class="btn" value="Section-analysis" id="Section analysis-fi" type="button" href="#Sectionanalysis" >
-    Section analysis
-</option>
-
 <option class="btn" value="Plastic-analysis" id="Plastic analysis-fi" type="button" href="#Plasticanalysis" >
     Plastic analysis
+</option>
+
+<option class="btn" value="Section-analysis" id="Section analysis-fi" type="button" href="#Sectionanalysis" >
+    Section analysis
 </option>
 
 </select>
@@ -190,7 +168,31 @@
 <div class="gallery" id="gallery">
 
 
-<div class="card shadow-sm my-3  CE221 Linear-analysis gallery-item" data-gallery_info='{"system": "CE221", "collection-title": "Linear analysis"}'>
+<div class="card shadow-sm my-3  gallery-item" >
+  <div class="row no-gutters">
+    <div class="card-header">
+        <p><code></code></p>
+      
+    </div>
+    <div class="col-md-7">
+      <div class="card-body">
+        <a href="/FEDEASdocs/Gallery/Basic2/" class="stretched-link">
+          <h5 class="card-title">Analysis of 3-Story, Multi-Bay Steel Frame</h5>
+        </a>
+        <p class="card-text">
+          </p>
+      </div>
+    </div>
+        
+  </div>
+  <!-- <div class="card-footer"> -->
+      <!-- <code></code> -->
+  <!-- </div> -->
+</div>
+
+
+
+<div class="card shadow-sm my-3  CE221 Linear-analysis gallery-item" data-gallery_info='{"distribution": "CE221", "collection-title": "Linear analysis"}'>
   <div class="row no-gutters">
     <div class="card-header">
         <p><code>fdlb-0013</code></p>
@@ -218,7 +220,7 @@
 
 
 
-<div class="card shadow-sm my-3  CE220 Linear-analysis gallery-item" data-gallery_info='{"system": "CE220", "collection-title": "Linear analysis"}'>
+<div class="card shadow-sm my-3  CE220 Plastic-analysis gallery-item" data-gallery_info='{"distribution": "CE220", "collection-title": "Plastic analysis"}'>
   <div class="row no-gutters">
     <div class="card-header">
         <p><code>fdlb-0010</code></p>
@@ -242,7 +244,7 @@
 
 
 
-<div class="card shadow-sm my-3  FEDEASLab-Dev Section-analysis gallery-item" data-gallery_info='{"system": "FEDEASLab Dev", "collection-title": "Section analysis"}'>
+<div class="card shadow-sm my-3  FEDEASLab-Dev Section-analysis gallery-item" data-gallery_info='{"distribution": "FEDEASLab Dev", "collection-title": "Section analysis"}'>
   <div class="row no-gutters">
     <div class="card-header">
         <p><code>fdlb-0011</code></p>
@@ -271,7 +273,7 @@
 
 
 
-<div class="card shadow-sm my-3  FEDEASLab-Dev Plastic-analysis gallery-item" data-gallery_info='{"system": "FEDEASLab Dev", "collection-title": "Plastic analysis"}'>
+<div class="card shadow-sm my-3  FEDEASLab-Dev Plastic-analysis gallery-item" data-gallery_info='{"distribution": "FEDEASLab Dev", "collection-title": "Plastic analysis"}'>
   <div class="row no-gutters">
     <div class="card-header">
         <p><code>fdlb-0012</code></p>
@@ -295,6 +297,30 @@
 </div>
 
 
+
+<div class="card shadow-sm my-3  gallery-item" >
+  <div class="row no-gutters">
+    <div class="card-header">
+        <p><code></code></p>
+      
+    </div>
+    <div class="col-md-7">
+      <div class="card-body">
+        <a href="/FEDEASdocs/Gallery/NewExample/" class="stretched-link">
+          <h5 class="card-title">New Example</h5>
+        </a>
+        <p class="card-text">
+          </p>
+      </div>
+    </div>
+        
+  </div>
+  <!-- <div class="card-footer"> -->
+      <!-- <code></code> -->
+  <!-- </div> -->
+</div>
+
+
 </div>
 
 
@@ -307,7 +333,7 @@
 
         <footer class="col-md-12">
             <hr>
-                <p>&copy 1998-2020 UC Regents, <a href="http://filippou.ce.berkeley.edu/">Filip C. Filippou</a></p>
+                <p>&copy 1998-2021 UC Regents, Filip C. Filippou</p>
         </footer>
 
         <script>

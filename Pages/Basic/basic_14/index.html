@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://claudioperez.github.io/FEDEASdocs/Pages/Basic/basic_14/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Summary of Basic [FEDEASlab] Functions and Scripts - FEDEASLab</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../_static/css/extra.css" rel="stylesheet">
+
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/matlab.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <!-- <script>
+            $(".nav .nav-link").on("click", function(){
+            $(".nav").find(".active").removeClass("active");
+            $(this).addClass("active");
+         });
+         </script> -->
+
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-170527070-1', 'auto');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">FEDEASLab</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav ml-auto">
+                        <!--<ul class="nav navbar-nav">-->
+                            <li class="navitem">
+                                <a href="../../../About/" class="nav-link">About</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../" class="nav-link">Pages</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../Functions/Help" class="nav-link">Functions</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../Gallery/" class="nav-link">Gallery</a>
+                            </li>
+                        <!--</ul>-->
+                        <!--</div>-->
+
+                    <!-- <ul class="nav navbar-nav ml-auto"> -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#elstir_search_modal">
+                               <!--<img src="img/search.png" class="icon">--> <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            
+            <!-- <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+            </nav> -->
+            
+            <div class="row">
+                    
+                        <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card ">
+        <ul class="nav flex-column">
+        
+            
+            <li class="nav-item " data-level="1">
+              <a href="/FEDEASdocs/Pages/Basic/" class="">Basic Structural Analysis Functions</a>
+              <!-- <a href="/FEDEASdocs/Pages/Basic/" class="nav-link ">Basic Structural Analysis Functions</a> -->
+              
+              <ul class="nav flex-column">
+              <div class="dropdown-divider"></div>
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Pages/Basic/basic_02/" class="">Function Organization</a>
+              <!-- <a href="/FEDEASdocs/Pages/Basic/basic_02/" class="nav-link ">Function Organization</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Pages/Basic/basic_03/" class="">Data Organization</a>
+              <!-- <a href="/FEDEASdocs/Pages/Basic/basic_03/" class="nav-link ">Data Organization</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Pages/Basic/basic_04/" class="">General Utility Functions</a>
+              <!-- <a href="/FEDEASdocs/Pages/Basic/basic_04/" class="nav-link ">General Utility Functions</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Pages/Basic/basic_05/" class="">Structural Equilibrium</a>
+              <!-- <a href="/FEDEASdocs/Pages/Basic/basic_05/" class="nav-link ">Structural Equilibrium</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Pages/Basic/basic_06/" class="">Structural Kinematics</a>
+              <!-- <a href="/FEDEASdocs/Pages/Basic/basic_06/" class="nav-link ">Structural Kinematics</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Pages/Basic/basic_07/" class="">Force-Deformation Relations for Linear Material Response</a>
+              <!-- <a href="/FEDEASdocs/Pages/Basic/basic_07/" class="nav-link ">Force-Deformation Relations for Linear Material Response</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Pages/Basic/basic_08/" class="">Force Method of Analysis</a>
+              <!-- <a href="/FEDEASdocs/Pages/Basic/basic_08/" class="nav-link ">Force Method of Analysis</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Pages/Basic/basic_09/" class="">Displacement Method of Analysis {#sec:DMinFL}</a>
+              <!-- <a href="/FEDEASdocs/Pages/Basic/basic_09/" class="nav-link ">Displacement Method of Analysis {#sec:DMinFL}</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Pages/Basic/basic_10/" class="">Direct Stiffness Assembly</a>
+              <!-- <a href="/FEDEASdocs/Pages/Basic/basic_10/" class="nav-link ">Direct Stiffness Assembly</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Pages/Basic/basic_11/" class="">Plastic Analysis</a>
+              <!-- <a href="/FEDEASdocs/Pages/Basic/basic_11/" class="nav-link ">Plastic Analysis</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Pages/Basic/basic_12/" class="">Graphics Utility Functions</a>
+              <!-- <a href="/FEDEASdocs/Pages/Basic/basic_12/" class="nav-link ">Graphics Utility Functions</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Pages/Basic/basic_13/" class="">Examples</a>
+              <!-- <a href="/FEDEASdocs/Pages/Basic/basic_13/" class="nav-link ">Examples</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item active" data-level="2">
+              <a href="/FEDEASdocs/Pages/Basic/basic_14/" class="active">Summary of Basic [FEDEASlab] Functions and Scripts</a>
+              <!-- <a href="/FEDEASdocs/Pages/Basic/basic_14/" class="nav-link active">Summary of Basic [FEDEASlab] Functions and Scripts</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+              </ul>
+              
+            </li>
+        
+        </ul>
+    </div>
+</div></div>
+                    
+
+                    
+                        <article class="col-md-9 p-3">
+                        <!-- <article class="col-md-9"> -->
+                        
+
+<h1 id="summary-of-basic-fedeaslab-functions-and-scripts">Summary of Basic <a href="" id="&lt;span style=&quot;color: blue;font-family: monospace;&quot;&gt;FEDEAS&lt;/span&gt;Lab" data-replace="&lt;span style=&quot;color: blue;font-family: monospace;&quot;&gt;FEDEAS&lt;/span&gt;Lab" title="../../"><span style="color: blue;font-family: monospace;">FEDEAS</span>Lab</a> Functions and Scripts</h1>
+<p>The basic <a href="" id="&lt;span style=&quot;color: blue;font-family: monospace;&quot;&gt;FEDEAS&lt;/span&gt;Lab" data-replace="&lt;span style=&quot;color: blue;font-family: monospace;&quot;&gt;FEDEAS&lt;/span&gt;Lab" title="../../"><span style="color: blue;font-family: monospace;">FEDEAS</span>Lab</a>  functions and script files are summarized below.</p>
+<h2 id="model-and-loading-functions">Model and Loading Functions</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><span style="color: blue"> Function name</span></th>
+<th style="text-align: left;"> <span style="color: blue">Input arguments</span></th>
+<th style="text-align: left;"> <span style="color: blue">Output</span>  </th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"> <code>Create_SimpleModel</code>  </td>
+<td style="text-align: left;"> <code>XYZ</code>, <code>CON</code>, <code>BOUN</code>, <code>ElemName</code>  </td>
+<td style="text-align: left;"> <code>Model</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"> <code>Create_NodalForces</code>  </td>
+<td style="text-align: left;"> <code>Model</code>, <code>Pe</code></td>
+<td style="text-align: left;"> <code>Pf</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"> <code>Create_PwForces</code>  </td>
+<td style="text-align: left;"> <code>Model</code>, <code>ElemData</code></td>
+<td style="text-align: left;"> <code>Pw</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="functions-for-structural-matrices-and-vectors">Functions for Structural Matrices and Vectors</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"> Function name</th>
+<th style="text-align: left;"> Input arguments (optional)</th>
+<th style="text-align: left;"> Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"> <code>B_matrix</code></td>
+<td style="text-align: left;"> <code>Model</code></td>
+<td style="text-align: left;"> <code>B</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"> <code>BbariBbarx_matrix</code>  </td>
+<td style="text-align: left;"> <code>Bf</code>, (<code>ind_r</code>)</td>
+<td style="text-align: left;"> <code>Bbari</code>, <code>Bbarx</code>  </td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"> <code>A_matrix</code></td>
+<td style="text-align: left;"> <code>Model</code></td>
+<td style="text-align: left;"> <code>A</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"> <code>Fs_matrix</code></td>
+<td style="text-align: left;"> <code>Model</code>, <code>ElemData</code>, <code>(Roption)</code>  </td>
+<td style="text-align: left;"> <code>Fs</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"> <code>V0_vector</code></td>
+<td style="text-align: left;"> <code>Model</code>, <code>ElemData</code>, <code>(Roption)</code>  </td>
+<td style="text-align: left;"> <code>V0</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"> <code>Ks_matrix</code></td>
+<td style="text-align: left;"> <code>Model</code>, <code>ElemData</code>  </td>
+<td style="text-align: left;"> <code>Ks</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"> <code>Q0_vector</code></td>
+<td style="text-align: left;"> <code>Model</code>, <code>ElemData</code>  </td>
+<td style="text-align: left;"> <code>Q0</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"> <code>Kf_matrix</code></td>
+<td style="text-align: left;"> <code>Model</code>, <code>ElemData</code>  </td>
+<td style="text-align: left;"> <code>Kf</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="analysis-scripts-and-functions">Analysis Scripts and Functions</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"> Script name</th>
+<th style="text-align: left;">  Input variables (optional)</th>
+<th style="text-align: left;">  Output variables  </th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"> <code>S_ForceMethod</code>  </td>
+<td style="text-align: left;"> <code>Model</code>, <code>ElemData</code>, (<code>Pf</code>), (<code>Pwf</code>)  </td>
+<td style="text-align: left;"> <code>Q</code>, <code>Ve</code>, <code>Uf</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"> <code>S_DisplMethod</code>  </td>
+<td style="text-align: left;"> <code>Model</code>, <code>ElemData</code>, (<code>Pf</code>), (<code>Pwf</code>)  </td>
+<td style="text-align: left;"> <code>Uf</code>, <code>Q</code>, <code>Ve</code></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"> Function name</th>
+<th style="text-align: center;"> Input arguments  </th>
+<th style="text-align: left;">  Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"> <code>PlasticAnalysis_wLBT</code>  </td>
+<td style="text-align: center;"> <code>Bf</code>, <code>Qpl</code>, <code>Pref</code>, <code>(Pcf)</code>, <code>(Options)</code>  </td>
+<td style="text-align: left;"> <code>lambdac</code>, <code>Qc</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"> <code>PlasticAnalysis_wUBT</code>  </td>
+<td style="text-align: center;"> <code>Af</code>, <code>Qpl</code>, <code>Pref</code>, <code>(Pcf)</code>, <code>(Options)</code>  </td>
+<td style="text-align: left;"> <code>lambdac</code>, <code>DUf</code>, <code>DVhp</code>  </td>
+</tr>
+</tbody>
+</table>
+<h2 id="general-utility-functions">General Utility Functions</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><span style="color: blue"> Function name</span>  </th>
+<th style="text-align: left;"><span style="color: blue"> Input arguments</span>  </th>
+<th style="text-align: left;"><span style="color: blue"> Output</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"> <code>CleanStart</code>  </td>
+<td style="text-align: left;">‘—’</td>
+<td style="text-align: left;">‘—’  </td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"> <code>Create_Units</code></td>
+<td style="text-align: left;"><code>'US'</code> or <code>'SI'</code></td>
+<td style="text-align: left;"> <code>Units</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"> <code>Localize</code>  </td>
+<td style="text-align: left;"> <code>Model</code>, <code>el</code>  </td>
+<td style="text-align: left;"> <code>xyz</code>, <code>id</code>  </td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"> <code>ElemLenOr</code></td>
+<td style="text-align: left;"> <code>xyz</code></td>
+<td style="text-align: left;"> <code>L</code>, <code>dcx</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"> <a href="/Functions/latest/General_Functions/H_index" id="&lt;span style=&quot;font-family: monospace&quot;&gt;H_index&lt;/span&gt;" data-replace="&lt;span style=&quot;font-family: monospace&quot;&gt;H_index&lt;/span&gt;"><span style="font-family: monospace">H_index</span></a></td>
+<td style="text-align: left;"> <code>Model</code>, <code>ElemData</code></td>
+<td style="text-align: left;"> <code>iced</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"> <code>D_index</code></td>
+<td style="text-align: left;"> <code>Model</code></td>
+<td style="text-align: left;"> <code>ied</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"> <code>Complete_QV</code></td>
+<td style="text-align: left;"> <code>Model</code>, <code>ElemData</code>, <code>Q</code></td>
+<td style="text-align: left;"> <code>Q</code>, <code>Ve</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"> <code>ElemData2Qpl</code></td>
+<td style="text-align: left;"> <code>Model</code>, <code>ElemData</code></td>
+<td style="text-align: left;"> <code>Qpl</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"> <code>Q2Post</code></td>
+<td style="text-align: left;"> <code>Model</code>, <code>Q</code></td>
+<td style="text-align: left;"> <code>Post</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="graphics-utility-functions">Graphics Utility Functions</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"> <span style="color: blue">Function name</span></th>
+<th style="text-align: left;"> <span style="color: blue">Input arguments (optional)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"> <code>Create_Window</code></td>
+<td style="text-align: left;"> <code>DX</code>, <code>DY</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"> <code>Plot_Model</code></td>
+<td style="text-align: left;"> <code>Model</code>, (<code>Uf</code>) , (<code>Options</code>)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"> <code>Label_Model</code></td>
+<td style="text-align: left;"> <code>Model</code>, (<code>Options</code>)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"> <code>Plot_NodalForces</code></td>
+<td style="text-align: left;"> <code>Model</code>, <code>Pe</code> , (<code>Options</code>) </td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"> <code>Plot_ElementLoading</code></td>
+<td style="text-align: left;"> <code>Model</code>, <code>ElemData</code> , (<code>Options</code>) </td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"> <code>Plot_Releases</code></td>
+<td style="text-align: left;"> <code>Model</code>, (<code>ElemData</code>) , (<code>Uf</code>) , (<code>Options</code>) </td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"> <code>Plot_AxialForces</code></td>
+<td style="text-align: left;"> <code>Model</code>, <code>Q</code>, (<code>ElemList</code>), (<code>Scale</code>)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"> <code>Label_AxialForces</code></td>
+<td style="text-align: left;"> <code>Model</code>, <code>Q</code>, (<code>ElemList</code>), (<code>Digit</code>), (<code>Force Units</code>)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"> <code>Plot_2dMomntDistr</code></td>
+<td style="text-align: left;"> <code>Model</code>, (<code>ElemData</code>), <code>Q</code>, (<code>ElemList</code>), (<code>Scale</code>)  </td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"> <code>Label_2dMoments</code></td>
+<td style="text-align: left;"> <code>Model</code>, <code>Q</code>, (<code>ElemList</code>), (<code>Digit</code>), (<code>Moment Units</code>)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"> <code>Plot_2dCurvDistr</code></td>
+<td style="text-align: left;"> <code>Model</code>, <code>ElemData</code>, <code>Q</code>, (<code>ElemList</code>), (<code>Scale</code>)  </td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"> <code>Plot_DeformedStructure</code>  </td>
+<td style="text-align: left;"> <code>Model</code>, (<code>ElemData</code>), <code>Uf</code>, (<code>Ve</code>), (<code>Options</code>)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"> <code>Plot_PlasticHinges</code></td>
+<td style="text-align: left;"> <code>Model</code>, <code>ElemData</code>, (<code>Uf</code>), <code>Q</code>, (<code>Options</code>)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="auxiliary-functions">Auxiliary Functions</h2>
+<h2 id="function-name">Function Name</h2>
+<p><code>Get_ModelScale</code> <code>Plot_BounCond</code> <code>DeformShape2dFrm</code> <code>Draw_Arrow</code> <code>Draw_Cube</code> ——————–</p>
+<!-- footnotes -->
+<!-- tag                URL                                                    Display text  -->
+
+                        
+                        </article>
+                        <!-- <div class="col-md-8" role="main"></div> -->
+                    
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>&copy 1998-2021 UC Regents, Filip C. Filippou</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="elstir_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="elstir-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="elstir-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="elstir_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

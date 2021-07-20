@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://claudioperez.github.io/FEDEASdocs/Pages/Basic/basic_13/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Examples - FEDEASLab</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../_static/css/extra.css" rel="stylesheet">
+
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/matlab.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <!-- <script>
+            $(".nav .nav-link").on("click", function(){
+            $(".nav").find(".active").removeClass("active");
+            $(this).addClass("active");
+         });
+         </script> -->
+
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-170527070-1', 'auto');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">FEDEASLab</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav ml-auto">
+                        <!--<ul class="nav navbar-nav">-->
+                            <li class="navitem">
+                                <a href="../../../About/" class="nav-link">About</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../" class="nav-link">Pages</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../Functions/Help" class="nav-link">Functions</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../Gallery/" class="nav-link">Gallery</a>
+                            </li>
+                        <!--</ul>-->
+                        <!--</div>-->
+
+                    <!-- <ul class="nav navbar-nav ml-auto"> -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#elstir_search_modal">
+                               <!--<img src="img/search.png" class="icon">--> <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            
+            <!-- <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+            </nav> -->
+            
+            <div class="row">
+                    
+                        <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card ">
+        <ul class="nav flex-column">
+        
+            
+            <li class="nav-item " data-level="1">
+              <a href="/FEDEASdocs/Pages/Basic/" class="">Basic Structural Analysis Functions</a>
+              <!-- <a href="/FEDEASdocs/Pages/Basic/" class="nav-link ">Basic Structural Analysis Functions</a> -->
+              
+              <ul class="nav flex-column">
+              <div class="dropdown-divider"></div>
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Pages/Basic/basic_02/" class="">Function Organization</a>
+              <!-- <a href="/FEDEASdocs/Pages/Basic/basic_02/" class="nav-link ">Function Organization</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Pages/Basic/basic_03/" class="">Data Organization</a>
+              <!-- <a href="/FEDEASdocs/Pages/Basic/basic_03/" class="nav-link ">Data Organization</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Pages/Basic/basic_04/" class="">General Utility Functions</a>
+              <!-- <a href="/FEDEASdocs/Pages/Basic/basic_04/" class="nav-link ">General Utility Functions</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Pages/Basic/basic_05/" class="">Structural Equilibrium</a>
+              <!-- <a href="/FEDEASdocs/Pages/Basic/basic_05/" class="nav-link ">Structural Equilibrium</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Pages/Basic/basic_06/" class="">Structural Kinematics</a>
+              <!-- <a href="/FEDEASdocs/Pages/Basic/basic_06/" class="nav-link ">Structural Kinematics</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Pages/Basic/basic_07/" class="">Force-Deformation Relations for Linear Material Response</a>
+              <!-- <a href="/FEDEASdocs/Pages/Basic/basic_07/" class="nav-link ">Force-Deformation Relations for Linear Material Response</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Pages/Basic/basic_08/" class="">Force Method of Analysis</a>
+              <!-- <a href="/FEDEASdocs/Pages/Basic/basic_08/" class="nav-link ">Force Method of Analysis</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Pages/Basic/basic_09/" class="">Displacement Method of Analysis {#sec:DMinFL}</a>
+              <!-- <a href="/FEDEASdocs/Pages/Basic/basic_09/" class="nav-link ">Displacement Method of Analysis {#sec:DMinFL}</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Pages/Basic/basic_10/" class="">Direct Stiffness Assembly</a>
+              <!-- <a href="/FEDEASdocs/Pages/Basic/basic_10/" class="nav-link ">Direct Stiffness Assembly</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Pages/Basic/basic_11/" class="">Plastic Analysis</a>
+              <!-- <a href="/FEDEASdocs/Pages/Basic/basic_11/" class="nav-link ">Plastic Analysis</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Pages/Basic/basic_12/" class="">Graphics Utility Functions</a>
+              <!-- <a href="/FEDEASdocs/Pages/Basic/basic_12/" class="nav-link ">Graphics Utility Functions</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item active" data-level="2">
+              <a href="/FEDEASdocs/Pages/Basic/basic_13/" class="active">Examples</a>
+              <!-- <a href="/FEDEASdocs/Pages/Basic/basic_13/" class="nav-link active">Examples</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Pages/Basic/basic_14/" class="">Summary of Basic [FEDEASlab] Functions and Scripts</a>
+              <!-- <a href="/FEDEASdocs/Pages/Basic/basic_14/" class="nav-link ">Summary of Basic [FEDEASlab] Functions and Scripts</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+              </ul>
+              
+            </li>
+        
+        </ul>
+    </div>
+</div></div>
+                    
+
+                    
+                        <article class="col-md-9 p-3">
+                        <!-- <article class="col-md-9"> -->
+                        
+
+<h1 id="examples">Examples</h1>
+<p>The examples in this section showcase the main graphics utility functions with further details about features. A separate MATLAB  script file is available for each example in the course reader with the file name starting with the prefix <code>ChmExn</code> corresponding to the example n in Chapter m of the reader. Salient excerpts from some of these script files are used in the following to showcase the [FEDEASlab] functions in the preceding sections and, in particular, the graphics utility functions.</p>
+<h2 id="plotting-and-labeling-of-model">Plotting and Labeling of Model</h2>
+<p>Once the function [func:Create_SimpleModel] creates the data structure [data:Model]   the information about the geometry of the model can be displayed with the functions <code>Plot_Model</code> and <code>Label_Model</code>. The default values for the graphic objects of these functions may result in an unsatisfactory image: disproportionately small size of labels and disproportionately large coordinate axes. Moreover, the default option for the function <code>Plot_Model</code> does not display node and boundary symbols in <span class="citation" data-cites="F:PoorSizeMod">[@F:PoorSizeMod]</span>.</p>
+<div class="sourceCode" id="cb1" data-startLine="62" data-endLine="64"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+<figure>
+<img src="Ex4_1F2a" id="F:PoorSizeMod" width="0" alt="Display of 2d truss model with default values for graphic objects" /><figcaption aria-hidden="true">Display of 2d truss model with default values for graphic objects</figcaption>
+</figure>
+<p>After turning on the fields <code>PlNod</code> and <code>PlBnd</code> in <code>PlotOpt</code>, adjusting the size of the node and boundary symbols with <code>NodSF</code>, adjusting the size of the coordinate axes with <code>AxsSF</code>, and adjusting the size and offset of labels with <code>FntSz</code> and <code>LOfSz</code>, respectively, the resulting display in <span class="citation" data-cites="F:GoodSizeMod">[@F:GoodSizeMod]</span> is improved significantly.</p>
+<div class="sourceCode" id="cb2" data-startLine="68" data-endLine="76"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+<figure>
+<img src="Ex4_1F2b" id="F:GoodSizeMod" width="0" alt="Improved display of 2d truss with custom values for plot options" /><figcaption aria-hidden="true">Improved display of 2d truss with custom values for plot options</figcaption>
+</figure>
+<p>The default sizing and labeling values produce satisfactory results for the 3d truss model in <span class="citation" data-cites="F:GoodSz3dTruss">[@F:GoodSz3dTruss]</span>, as long as the user requests that the node and boundary symbols be displayed.</p>
+<div class="sourceCode" id="cb3" data-startLine="55" data-endLine="59"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+<figure>
+<img src="Ex4_2F1" id="F:GoodSz3dTruss" width="0" alt="Satisfactory display of 3d truss with default values for graphic objects" /><figcaption aria-hidden="true">Satisfactory display of 3d truss with default values for graphic objects</figcaption>
+</figure>
+<h2 id="plotting-of-nodal-forces-and-element-loading">Plotting of Nodal Forces and Element Loading</h2>
+<p>The function <code>Plot_NodalForces</code> displays the nodal forces <code>Pe</code> <strong>before these are assigned to the free DOFs of the structural model by the function</strong> <code>Create_NodalForces</code>. It is expedient to prevent the display of node symbols in <code>Plot_Model</code>. The nodal force values are displayed by turning on the field <code>Label</code> in <code>PlotOpt</code>. The size of the arrow can be customized with the field <code>FrcSF</code>.</p>
+<div class="sourceCode" id="cb4" data-startLine="77" data-endLine="82"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+<figure>
+<img src="Ex4_2F2" width="0" alt="image" /><figcaption aria-hidden="true">image</figcaption>
+</figure>
+<p>The function <code>Plot_ElemLoading</code> displays the element loads specified in field <code>w</code> and the element deformations in field <code>e0</code> of the data object [data:Data] . The size of the arrow for the element loading can be customized with the field <code>FrcSF</code> and the size of the arrow tip with the field <code>TipSF</code>. Calling the function <code>Plot_Model</code> <strong>after</strong> calling <code>Plot_ElemLoading</code> and <strong>not before</strong> ensures that the node and boundary symbols are clearly visible in <span class="citation" data-cites="F:ElemLoad">[@F:ElemLoad]</span>.</p>
+<div class="sourceCode" id="cb5" data-startLine="59" data-endLine="65"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+<figure>
+<img src="Ex4_5F2" id="F:ElemLoad" width="0" alt="Display of the uniformly distributed element load w for the simple frame with an inclined element from [B-X:InclFrm]" /><figcaption aria-hidden="true">Display of the uniformly distributed element load <span class="math inline">\(w\)</span><br />
+for the simple frame with an inclined element from [B-X:InclFrm]</figcaption>
+</figure>
+<h2 id="plotting-of-releases-for-internal-forces">Plotting of Releases for Internal Forces</h2>
+<p>The function <code>Plot_Releases</code> displays the internal force releases. End moment releases for truss elements are displayed automatically with default values when invoking the function. The size and offset of the moment release symbol can be adjusted with the fields <code>HngSF</code> and <code>HOfSF</code>.</p>
+<div class="sourceCode" id="cb6" data-startLine="49" data-endLine="58"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+<figure>
+<img src="Ex4_7F1" alt="image" /><figcaption aria-hidden="true">image</figcaption>
+</figure>
+<div class="sourceCode" id="cb7" data-startLine="47" data-endLine="59"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+<figure>
+<img src="Ex4_6F1" id="F:MomRel" alt="Display of the end moment release for the three hinge portal frame of [B-X:StatDetFrm]" /><figcaption aria-hidden="true">Display of the end moment release for the three hinge portal frame of [B-X:StatDetFrm]</figcaption>
+</figure>
+<p>For frame elements the display of internal force releases depends on the field <code>Release</code> of the data structure [data:Data] . The entries of the field in <span class="citation" data-cites="F:MomRel">[@F:MomRel]</span> indicate the presence of an end moment release at end <span class="math inline">\(i\)</span> of element <span class="math inline">\(c\)</span> for the model of a three hinge portal frame.</p>
+<h2 id="plotting-and-labeling-of-axial-force-distribution">Plotting and Labeling of Axial Force Distribution</h2>
+<p>The script excerpt in [B:Qplotcom] displays and labels the axial forces <span class="math inline">\(\boldsymbol{Q}\)</span> in <span class="citation" data-cites="F:Qplot">[@F:Qplot]</span> for the plane truss of [B-X:StatDetTruss]. The optional input argument <code>ScaleN</code> in <code>Plot_AxialForces</code> controls the scaling of the axial force distribution, while the optional input argument <code>NDigt=2</code> in <code>Label_AxialForces</code> requests 2 digits after the comma for the label of the axial force value. A tensile axial force distribution is shown in blue and a compressive axial force in red.</p>
+<div class="sourceCode" id="cb8" data-startLine="105" data-endLine="110"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+<figure>
+<img src="Ex4_1F1" id="F:Qplot" width="0" alt="Axial force distribution for the truss of [B-X:StatDetTruss]" /><figcaption aria-hidden="true">Axial force distribution for the truss of [B-X:StatDetTruss]</figcaption>
+</figure>
+<h2 id="plotting-and-labeling-of-bending-moment-distribution">Plotting and Labeling of Bending Moment Distribution</h2>
+<div class="sourceCode" id="cb9" data-startLine="88" data-endLine="93"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+<figure>
+<img src="Ex4_4F2" id="F:MomPlotwow" width="0" alt="Bending moment distribution for the homogeneous solution of the beam from [B-X:StatDetBeamww]" /><figcaption aria-hidden="true">Bending moment distribution for the homogeneous solution of the beam from [B-X:StatDetBeamww]</figcaption>
+</figure>
+<p>The script excerpt in [B:MPlotwow] uses the basic forces <span class="math inline">\(\boldsymbol{Q}\)</span> to display and label the bending moments in <span class="citation" data-cites="F:MomPlotwow">[@F:MomPlotwow]</span> for the beam with overhang of [B-X:StatDetBeamww]. Without specification of the value for the distributed element loading in the field <code>w</code> of [data:Data]  the function "is not aware" of the presence of element loads and <strong>only displays the homogeneous solution</strong> for the bending moment distribution.</p>
+<div class="MLbox">
+<div class="sourceCode" id="cb10" data-startLine="97" data-endLine="100"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+</div>
+<figure>
+<img src="Ex4_4F3" id="F:MomPlotww" width="0" alt="Bending moment distribution for the complete solution of the beam from [B-X:StatDetBeamww]" /><figcaption aria-hidden="true">Bending moment distribution for the complete solution of the beam from [B-X:StatDetBeamww]</figcaption>
+</figure>
+<p>The script excerpt in [B:MPlotww] includes the input argument [data:Data]  in the call to the function <code>Plot_2dMomntDistr</code>, so that it can display the complete solution by superposing the particular solution for element <span class="math inline">\(b\)</span> to the homogeneous solution of <span class="citation" data-cites="F:MomPlotwow">[@F:MomPlotwow]</span>.</p>
+<h2 id="plotting-of-deformed-shape">Plotting of Deformed Shape</h2>
+<p>The script excerpt in <span class="citation" data-cites="F:DefoTrwDV">[@F:DefoTrwDV]</span> uses the free DOF displacements <code>Uf</code> under the initial element deformations <code>V0</code> in [B:TrussKinem] to display the resulting deformed shape for the truss of [B-X:KinDetTruss] with the help of the function <code>Plot_DeformedStructure</code>. The input arguments <code>ElemData</code> and <code>Veps</code> to the function are not required for the case in hand.</p>
+<div class="sourceCode" id="cb11" data-startLine="67" data-endLine="70"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+<figure>
+<img src="Ex5_1F1" id="F:DefoTrwDV" alt="Deformed shape for plane truss of [B-X:KinDetTruss]" /><figcaption aria-hidden="true">Deformed shape for plane truss of [B-X:KinDetTruss]</figcaption>
+</figure>
+<p><span class="citation" data-cites="F:DefoTrwDV">[@F:DefoTrwDV]</span> shows the deformed shape of the truss with default values under a magnification factor <code>MAGF</code> of 30. The function displays the releases of internal forces by default, which may not be desirable for truss models. The function also displays the boundary symbols by default, but the default size value is disproportionately large for the model in <span class="citation" data-cites="F:DefoTrwDV">[@F:DefoTrwDV]</span>.</p>
+<div class="sourceCode" id="cb12" data-startLine="73" data-endLine="78"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+<figure>
+<img src="Ex5_1F2" id="F:DefoTrwCV" width="0" alt="Improved display of deformed shape for plane truss of [B-X:KinDetTruss]" /><figcaption aria-hidden="true">Improved display of deformed shape for plane truss of [B-X:KinDetTruss]</figcaption>
+</figure>
+<p><span class="citation" data-cites="F:DefoTrwCV">[@F:DefoTrwCV]</span> shows the improvement of the display for the deformed shape of the truss by suppressing the display of internal force releases and scaling the boundary symbols to a quarter of the default value.</p>
+<div class="sourceCode" id="cb13" data-startLine="61" data-endLine="64"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+<figure>
+<img src="Ex5_1F3" id="F:DefoTrCrd" width="0" alt="Deformed shape for the plane truss of [B-X:KinDetTruss]" /><figcaption aria-hidden="true">Deformed shape for the plane truss of [B-X:KinDetTruss]</figcaption>
+</figure>
+<p><span class="citation" data-cites="F:DefoTrCrd">[@F:DefoTrCrd]</span> shows that the deformed shape of a truss model can also be displayed with the function <code>Plot_Model</code> by including the free dof displacements <code>Uf</code> as the second input argument. This instructs the function to connect the nodes of the model in the deformed configuration by straight lines and can, therefore, be used for elements with straight edges to display the deformed shape of the structure. The default option is not to display the boundary conditions. The default values for the line color and line style reflect the color and style selection for element chords of deformed frame elements. These values can be overwritten with the field <code>PlBnd</code> for displaying the the boundary symbols, and with the fields <code>LnClr</code> and <code>LnStl</code> of <code>PlotOpt</code> for setting the line color and style for the deformed shape of the structure, respectively.</p>
+<p>[B:SpecV04Frm] shows the specification of the element deformations <span class="math inline">\(\boldsymbol{V}_{\varepsilon}\)</span> for the three hinge portal frame of [B-X:KinDetFrame]. It is important to initialize <span class="math inline">\(\boldsymbol{V}_{\varepsilon}\)</span> to its full size. The script uses the function <code>Localize</code> to extract the end coordinates of each element, which are then used with the function <code>ElmLenOr</code> to determine the element length. The axial deformations in elements a through d are set equal to zero on account of their inextensible character. The index of continuous element deformations <code>ic</code> is set up with the MATLAB  function <code>setdiff</code> after specification of the flexural release locations at end <span class="math inline">\(i\)</span> of element a, end <span class="math inline">\(i\)</span> of element c, and end <span class="math inline">\(j\)</span> of element d for the three hinge portal frame in <a href="a">B-F:KineFrEx2F1</a>.</p>
+<div class="MLbox">
+<div class="sourceCode" id="cb14" data-startLine="45" data-endLine="55"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+</div>
+<p>The command sequence in [B:Uf4Frm] sets up the kinematic matrix <span class="math inline">\(\mathbf{A}\)</span> and extracts the submatrix <span class="math inline">\(\mathbf{A}_f\)</span> corresponding to the free DOFs of the model in <a href="a">B-F:KineFrEx2F1</a> without taking advantage of the inextensibility of elements a through d to reduce the size of the matrix, as was done for the hand calculations in [B-X:KinDetFrame]. The matrix <span class="math inline">\(\mathbf{A}_f\)</span> refers to element deformations at continuous element ends. In this case the kinematic relations in [B-E:VAfUf] result in a system of 9 equations with 9 unknowns that gives a unique solution for the free DOF displacements under the given element deformations <span class="math inline">\(\boldsymbol{V}_{\varepsilon}\)</span>. Following the determination of the free DOF displacements <span class="math inline">\(\boldsymbol{U}_f\)</span> the release deformations can be determined with the relation</p>
+<p><span class="math display">\[
+\boxed{ \boldsymbol{V}_h= \breve{\mathbf{A}}_f\mspace{1.5mu}\boldsymbol{U}_f- \boldsymbol{V}_{\varepsilon} }
+\]</span>{#E:VhVeps}</p>
+<div class="MLbox">
+<div class="sourceCode" id="cb15" data-startLine="58" data-endLine="67"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+</div>
+<div class="MLbox">
+<div class="sourceCode" id="cb16" data-startLine="78" data-endLine="88"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+</div>
+<p>The command sequence in [B:DefoFrmcom] draws the model in <span class="citation" data-cites="F:DefoFrm">[@F:DefoFrm]</span> in the original configuration in blue color. The command <code>Plot_Model</code> with the optional argument <code>Uf</code> draws the nodes and the element chords in the deformed configuration. The element chords are displayed with a black, dash-dotted line by default. Finally, the function call <code>Plot_DeformedStructure</code> draws the deformed shape of the model in the deformed configuration with a red solid line by default. The default line color, line style and line width of most plotting functions can be overwritten with specification of the <code>PlotOpt</code> fields <code>LnClr</code>, <code>LnStl</code>, and <code>LnWth</code>, respectively.</p>
+<figure>
+<img src="Ex5_3F2" id="F:DefoFrm" width="0" alt="Deformed shape for the three hinge portal frame of [B-X:KinDetFrame] under given element deformations \boldsymbol{V}_0" /><figcaption aria-hidden="true">Deformed shape for the three hinge portal frame of [B-X:KinDetFrame]<br />
+under given element deformations <span class="math inline">\(\boldsymbol{V}_0\)</span></figcaption>
+</figure>
+<p>The presence of flexural releases at end <span class="math inline">\(i\)</span> of element a, end <span class="math inline">\(i\)</span> of element c, and end <span class="math inline">\(j\)</span> of element d results in concentrated rotations at these locations. For the correct deformed shape it is imperative to specify the element deformations <span class="math inline">\(\boldsymbol{V}_{\varepsilon}\)</span> as the fourth input argument to <code>Plot_DeformedStructure</code> in [B:DefoFrmcom]. Furthermore, the function displays the end moment releases in elements a, c and d, as long as [data:Data]  appears as the second input argument of the function with the release specification in the field <code>Release</code>, as [B:DefoFrmcom] shows.</p>
+<p>If the element deformations <code>Veps</code> are not specified as the fourth input argument to the function <code>Plot_DeformedStructure</code>, as in [B:DefoWrong], the function draws the deformed shape in <span class="citation" data-cites="F:WrongDefoFrm">[@F:WrongDefoFrm]</span> under the assumption that the element tangents are continuous at the nodes. Consequently, instead of determining <span class="math inline">\(\boldsymbol{V}_h\)</span> according to <span class="citation" data-cites="E:VhVeps">[@E:VhVeps]</span> and the element deformations <span class="math inline">\(\boldsymbol{V}\)</span> from <span class="math inline">\(\boldsymbol{V}_{\varepsilon}+\boldsymbol{V}_h\)</span>, the function simply uses <span class="math inline">\(\boldsymbol{V}= \mathbf{A}_f\mspace{1.5mu}\boldsymbol{U}_f\)</span> resulting in the wrong deformed shape in <span class="citation" data-cites="F:WrongDefoFrm">[@F:WrongDefoFrm]</span> with fixed ends at the two supports and a continuous tangent at the midspan of the girder.</p>
+<div class="MLbox">
+<div class="sourceCode" id="cb17" data-startLine="70" data-endLine="76"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+</div>
+<figure>
+<img src="Ex5_3WF1" id="F:WrongDefoFrm" width="0" alt="Wrong deformed shape for the portal frame of [@B-X:KinDetFrame] with continuous element deformations throughout" /><figcaption aria-hidden="true">Wrong deformed shape for the portal frame of <span class="citation" data-cites="B-X:KinDetFrame">[@B-X:KinDetFrame]</span> with continuous element deformations throughout</figcaption>
+</figure>
+<p>The specification of the element release locations in [B:SpecV04Frm] by setting up the global index <code>ic</code> into the element deformation vector <span class="math inline">\(\boldsymbol{V}\)</span> is inconvenient for large structural models. In such case it is advisable to take advantage of the field <code>Release</code> in [data:Data]  for specifying the release locations of each element. <code>Release</code> is a 3-component column vector, with component 1 corresponding to the axial force, component 2 to the moment at end <span class="math inline">\(i\)</span>, and component 3 to the moment at end <span class="math inline">\(j\)</span> of the element. A value of 1 indicates the presence of a release for the corresponding basic element force. [B:Icgen] shows the specification of the flexural releases at end <span class="math inline">\(i\)</span> of element a, end <span class="math inline">\(i\)</span> of element c, and end <span class="math inline">\(j\)</span> of element d for the three hinge portal frame in <a href="a">B-F:KineFrEx2F1</a>. This information is used by <code>FEDEASlab</code> function [func:H_index] to set up the collection of cell arrays <code>iced</code> in [B:Icgen] with the indices for the continuous element deformations. Concatenating these cell arrays produces the global index <code>ic</code> for the continuous element deformations and the use of the MATLAB  function <code>setdiff</code> gives the global index <code>ih</code> for the release locations in [B:Icgen].</p>
+<div class="MLbox">
+<div class="sourceCode" id="cb18" data-startLine="54" data-endLine="63"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+</div>
+<h2 id="linear-analysis">Linear Analysis</h2>
+<p>Following the specification of the model geometry and the generation of the data structure [data:Model]  with the function [func:Create_SimpleModel] [B:ElProp4DM] shows the specification of the element properties for the portal frame of [B-X:FramewDM] in <a href="a">B-F:DMFrEx1F1</a>. To account for the inextensible character of elements a, b, c and d a large value for the cross section area <span class="math inline">\(A\)</span> is specified in [data:Data] . The value of <span class="math inline">\(A=10^6\)</span> suffices for the purpose.</p>
+<div class="MLbox">
+<div class="sourceCode" id="cb19" data-startLine="42" data-endLine="49"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+</div>
+<p>[B:Load4DM] shows the determination of the equivalent nodal forces for the uniform element load in elements a and b in [B-F:DMFrEx1F16]. The uniform element load values are specified in [data:Data]  and used as input to the function <code>Create_PwForces</code> to generate the equivalent nodal forces at all DOFs. The equivalent nodal forces <span class="math inline">\(\boldsymbol{P}_{wf}\)</span> at the free DOFs are extracted from <code>Pw</code>. The element load is defined in the local reference system with the <span class="math inline">\(x\)</span>-axis pointing from end <span class="math inline">\(i\)</span> to end <span class="math inline">\(j\)</span>. Consequently, the <span class="math inline">\(y\)</span>-axis of element a points to the left and that of element b upward, with the element load <span class="math inline">\(w\)</span> in [B-F:DMFrEx1F16] pointing in the negative <span class="math inline">\(y\)</span> direction in both in agreement with the sign for the field <code>w</code> of [data:Data]  in [B:Load4DM].</p>
+<div class="MLbox">
+<div class="sourceCode" id="cb20" data-startLine="51" data-endLine="55"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+</div>
+<p>Following the element property and loading specification, [B:Mdistr4DM] shows the command sequence for the displacement method of analysis of the portal frame and for plotting and labeling the bending moment distribution under the uniform element load in elements a and b with a scale factor of <span class="math inline">\(0.5\)</span>.</p>
+<div class="MLbox">
+<div class="sourceCode" id="cb21" data-startLine="56" data-endLine="62"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+</div>
+<figure>
+<img src="Ex10_3F1" id="F:Mdistr4DM" width="0" alt="Bending moment distribution of the portal frame under uniform load w in elements a and b" /><figcaption aria-hidden="true">Bending moment distribution of the portal frame under uniform load <span class="math inline">\(w\)</span> in elements a and b</figcaption>
+</figure>
+<p>[B:e0Prop4DM] shows the specification of the uniform thermal curvature in elements a and b for the portal frame of [B-X:FramewDM]. Note the clearing of the values from the preceding load case of uniform element loading. Finally, [B:MCurv4DM] shows the command sequence for producing the result display in <span class="citation" data-cites="F:Ex8_3F3">[@F:Ex8_3F3]</span> under the uniform thermal curvature in elements a and b.</p>
+<div class="MLbox">
+<div class="sourceCode" id="cb22" data-startLine="76" data-endLine="83"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+</div>
+<div class="MLbox">
+<div class="sourceCode" id="cb23" data-linerange="97-103,105-108,110-117"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+</div>
+<p><img src="Ex10_3F3" title="fig:" id="F:Ex8_3F3" alt="Bending moment, curvature distribution, and deformed shape under uniform curvature in elements a and b" /> (a) Bending moment distribution</p>
+<p><img src="Ex10_3F4" title="fig:" id="F:Ex8_3F3" width="0" alt="Bending moment, curvature distribution, and deformed shape under uniform curvature in elements a and b" /><br />
+(b) Curvature distribution<br />
+<img src="Ex10_3F5" title="fig:" id="F:Ex8_3F3" width="0" alt="Bending moment, curvature distribution, and deformed shape under uniform curvature in elements a and b" /><br />
+(c) Deformed shape</p>
+<h2 id="plastic-analysis">Plastic Analysis</h2>
+<p>sec. <strong>¿sec:PlAnwFlab?</strong> discusses the use of [FEDEASlab] function  for determining the collapse load factor <span class="math inline">\(\lambda_c\)</span> and the corresponding basic forces <span class="math inline">\(\boldsymbol{Q}_c\)</span> of a structural model under a given reference load vector <span class="math inline">\(\boldsymbol{P}_{ref}\)</span> at the free DOFs. The input arguments to the function are the equilibrium matrix <code>Bf</code> at the free DOFs, the vector of plastic capacities <code>Qpl</code> and the reference load vector <code>Pref</code>. The script in [B:PlAnal] shows the set-up of the input arguments to the function  for the column-girder assembly of [B-X:PlAColGird].</p>
+<div class="MLbox">
+<div class="sourceCode" id="cb24" data-startLine="47" data-endLine="57"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+</div>
+<p>Because the end forces <code>Qc</code> in [B:PlAnal] do not include the axial basic forces nor the end moment at the roller support, it is not possible to use the post-processing functions of [FEDEASlab] to display the moment distribution and the plastic hinge locations at collapse without information about the missing basic element forces. To accomplish this we append the field <code>Qmis</code> to the data structure [data:Model]  to supply the index of the missing basic forces. The plotting and labeling functions of [FEDEASlab] use the entries in this field, if present, to adjust the incoming basic force vector <span class="math inline">\(\boldsymbol{Q}\)</span>, so that its terms end up in the right location of the full basic force vector <span class="math inline">\(\boldsymbol{Q}\)</span> before performing the display and labeling operations.</p>
+<p><img src="Function_Code/Ex12_2F1.png" title="fig:" id="F:PlotColGird" width="0" alt="Moment distribution with plastic hinge locations at collapse for the column-girder assembly of [B-X:PlAColGird]" /><br />
+</p>
+<p>[B:PlotColGirdCom] shows the specification of the element index <code>Qmis</code> for the missing basic element forces and the command sequence for plotting the moment distribution and the plastic hinge locations at collapse for the girder-column assembly of [B-X:PlAColGird] in <span class="citation" data-cites="F:PlotColGird">[@F:PlotColGird]</span>. Because the plastic flexural capacity of elements b and c is the same, a plastic hinge is displayed at end <span class="math inline">\(j\)</span> of element b as well as at end <span class="math inline">\(i\)</span> of element c indicating, in fact, that a plastic hinge forms at the girder midspan. To avoid the display of a double hinge the plastic capacity of element b should be slightly different from element c.</p>
+<p>The last example deals with the determination and display of the collapse mechanism of the portal frame in [B-X:PlUB4PortalFrame]. In [B:UB4PorFr] the collapse load factor and the kinematics of the collapse mechanism were determined by specifying explicitly the kinematic matrix <span class="math inline">\(\mathbf{A}_f\)</span> of the portal frame and invoking the [FEDEASlab] function for the upper bound theorem. In [B:UB4PorFrB] we let [FEDEASlab] set up the kinematic matrix with the function [func:A_matrix]  based on the geometric information of the structural model in data structure [data:Model] . Because this function includes also the axial deformations of the frame elements in the entries of the kinematic matrix <span class="math inline">\(\mathbf{A}_f\)</span> it is important to specify a plastic capacity vector of equal length with the number of rows of <span class="math inline">\(\mathbf{A}_f\)</span>. For this reason the plastic axial capacity is included in the plastic capacity vector <code>Qpl</code> in [B:UB4PorFrB]. It is set to a relatively high value to exclude the possibility of an axial plastic hinge forming in the portal frame.</p>
+<div class="sourceCode" id="cb25" data-firstline="42" data-lastline="52"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+<div class="sourceCode" id="cb26" data-firstline="53" data-lastline="58"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+<p>[B:UB4PorFrB] shows the required sequence of commands for plotting the collapse mechanism of the portal frame with the plastic hinge locations in <span class="citation" data-cites="F:Mech4PorFrm">[@F:Mech4PorFrm]</span>. After creating a new window and displaying the structural model in the undeformed configuration the magnification factor <code>MAGF</code> is set and the <code>Plot_Model</code> function is invoked a second time with an additional argument the displacement increments <code>DUf</code> of the collapse mechanism. Finally the function <code>Plot_PlasticHinges</code> with the optional argument <code>DUf</code> displays the plastic hinge locations on the collapse mechanism.</p>
+<figure>
+<img src="Function_Code/Ex12_6F1.png" title="fig:" id="F:Mech4PorFrm" width="0" alt="Collapse mechanism of portal frame" /><figcaption aria-hidden="true">Collapse mechanism of portal frame</figcaption>
+</figure>
+<p>We note that the third input argument of the <code>Plot_PlasticHinges</code> function can be either the basic forces <code>Qc</code> at incipient collapse, as is the case in [B:PlotColGirdCom], in which case the plastic capacity at the corresponding location needs to be specified as the second argument to the function, or the plastic hinge deformation increments <code>DVhp</code>, as shown in [B:UB4PorFrC].</p>
+
+                        
+                        </article>
+                        <!-- <div class="col-md-8" role="main"></div> -->
+                    
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>&copy 1998-2021 UC Regents, Filip C. Filippou</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="elstir_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="elstir-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="elstir-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="elstir_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

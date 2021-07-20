@@ -1,15 +1,10 @@
-URL: https://github.com/FEDEASLab/fdlb-0011
 abstract: An exploration into how the yield surface of certain cross sections evolve
   as they undergo combined flexural and axial loading into the inelastic range.
-archive: $FEDEASLAB_DEV
-archive_location: Gallery/fdlb-0011
 author:
 - family: Perez
   given: Claudio
 collection-title: Section analysis
 id: fdlb-0011
-medium: FEDEASLab Dev
 programming-language: Matlab
-system: FEDEASLab Dev
+distribution: FEDEASLab Dev
 title: Yield surface evolution
-type: book

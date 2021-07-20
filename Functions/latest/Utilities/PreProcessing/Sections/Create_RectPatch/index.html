@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://claudioperez.github.io/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_RectPatch/">
+        <link rel="shortcut icon" href="../../../../../../img/favicon.ico">
+        <title>Create RectPatch - FEDEASLab</title>
+        <link href="../../../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../../../../_static/css/extra.css" rel="stylesheet">
+
+
+        <script src="../../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/matlab.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <!-- <script>
+            $(".nav .nav-link").on("click", function(){
+            $(".nav").find(".active").removeClass("active");
+            $(this).addClass("active");
+         });
+         </script> -->
+
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-170527070-1', 'auto');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../../../..">FEDEASLab</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav ml-auto">
+                        <!--<ul class="nav navbar-nav">-->
+                            <li class="navitem">
+                                <a href="../../../../../../About/" class="nav-link">About</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../../../../Pages/" class="nav-link">Pages</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../../../Help" class="nav-link">Functions</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../../../../Gallery/" class="nav-link">Gallery</a>
+                            </li>
+                        <!--</ul>-->
+                        <!--</div>-->
+
+                    <!-- <ul class="nav navbar-nav ml-auto"> -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#elstir_search_modal">
+                               <!--<img src="img/search.png" class="icon">--> <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            
+            <!-- <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+            </nav> -->
+            
+            <div class="row">
+                    
+                        <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card ">
+        <ul class="nav flex-column">
+        
+            
+            <li class="nav-item " data-level="1">
+              <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/" class="">Index</a>
+              <!-- <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/" class="nav-link ">Index</a> -->
+              
+              <ul class="nav flex-column">
+              <div class="dropdown-divider"></div>
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Add_Bars2Section/" class="">Add Bars2Section</a>
+              <!-- <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Add_Bars2Section/" class="nav-link ">Add Bars2Section</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Add_Shape2Section/" class="">Add Shape2Section</a>
+              <!-- <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Add_Shape2Section/" class="nav-link ">Add Shape2Section</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/CircLayer2Bar/" class="">CircLayer2Bar</a>
+              <!-- <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/CircLayer2Bar/" class="nav-link ">CircLayer2Bar</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_BoxOutline/" class="">Create BoxOutline</a>
+              <!-- <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_BoxOutline/" class="nav-link ">Create BoxOutline</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_BoxwOvhOutline/" class="">Create BoxwOvhOutline</a>
+              <!-- <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_BoxwOvhOutline/" class="nav-link ">Create BoxwOvhOutline</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_CircBarGrid/" class="">Create CircBarGrid</a>
+              <!-- <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_CircBarGrid/" class="nav-link ">Create CircBarGrid</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_CSecOutline/" class="">Create CSecOutline</a>
+              <!-- <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_CSecOutline/" class="nav-link ">Create CSecOutline</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_IPMesh4Circ/" class="">Create IPMesh4Circ</a>
+              <!-- <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_IPMesh4Circ/" class="nav-link ">Create IPMesh4Circ</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_IPMesh4MultRectShape/" class="">Create IPMesh4MultRectShape</a>
+              <!-- <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_IPMesh4MultRectShape/" class="nav-link ">Create IPMesh4MultRectShape</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_IPMesh4Rect/" class="">Create IPMesh4Rect</a>
+              <!-- <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_IPMesh4Rect/" class="nav-link ">Create IPMesh4Rect</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_IPMesh4WFShape/" class="">Create IPMesh4WFShape</a>
+              <!-- <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_IPMesh4WFShape/" class="nav-link ">Create IPMesh4WFShape</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_ISecOutline/" class="">Create ISecOutline</a>
+              <!-- <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_ISecOutline/" class="nav-link ">Create ISecOutline</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_LSecOutline/" class="">Create LSecOutline</a>
+              <!-- <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_LSecOutline/" class="nav-link ">Create LSecOutline</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_MPMesh4Circ/" class="">Create MPMesh4Circ</a>
+              <!-- <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_MPMesh4Circ/" class="nav-link ">Create MPMesh4Circ</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_MultRectShape/" class="">Create MultRectShape</a>
+              <!-- <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_MultRectShape/" class="nav-link ">Create MultRectShape</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_RectBarGrid/" class="">Create RectBarGrid</a>
+              <!-- <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_RectBarGrid/" class="nav-link ">Create RectBarGrid</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_RectOutline/" class="">Create RectOutline</a>
+              <!-- <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_RectOutline/" class="nav-link ">Create RectOutline</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item active" data-level="2">
+              <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_RectPatch/" class="active">Create RectPatch</a>
+              <!-- <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_RectPatch/" class="nav-link active">Create RectPatch</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_RectShape/" class="">Create RectShape</a>
+              <!-- <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_RectShape/" class="nav-link ">Create RectShape</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_RectwCovOutline/" class="">Create RectwCovOutline</a>
+              <!-- <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_RectwCovOutline/" class="nav-link ">Create RectwCovOutline</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_ShapewMat/" class="">Create ShapewMat</a>
+              <!-- <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_ShapewMat/" class="nav-link ">Create ShapewMat</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_SSecOutline/" class="">Create SSecOutline</a>
+              <!-- <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_SSecOutline/" class="nav-link ">Create SSecOutline</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_TSecOutline/" class="">Create TSecOutline</a>
+              <!-- <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Create_TSecOutline/" class="nav-link ">Create TSecOutline</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/MP1dInt4Circ/" class="">MP1dInt4Circ</a>
+              <!-- <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/MP1dInt4Circ/" class="nav-link ">MP1dInt4Circ</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/MP2dInt4Circ/" class="">MP2dInt4Circ</a>
+              <!-- <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/MP2dInt4Circ/" class="nav-link ">MP2dInt4Circ</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Rectangle2Fiber/" class="">Rectangle2Fiber</a>
+              <!-- <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Rectangle2Fiber/" class="nav-link ">Rectangle2Fiber</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Rectangle2Layer/" class="">Rectangle2Layer</a>
+              <!-- <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/Rectangle2Layer/" class="nav-link ">Rectangle2Layer</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/_index/" class=""> index</a>
+              <!-- <a href="/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/_index/" class="nav-link "> index</a> -->
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+              </ul>
+              
+            </li>
+        
+        </ul>
+    </div>
+</div></div>
+                    
+
+                    
+                        <article class="col-md-9 p-3">
+                        <!-- <article class="col-md-9"> -->
+                        
+
+<p><a name="_top"></a> <div><a href="../../../../_index.md">Home</a> &gt; <a href="#">latest</a> &gt; <a href="#">Utilities</a> &gt; <a href="#">PreProcessing</a> &gt; <a href="">Sections</a> &gt; Create_RectPatch</div></p>
+<!--<table width="100%"><tr><td align="left"><a href="../../../../_index.md"><img alt="<" border="0" src="../../../../left.png">&nbsp;Master index</a></td>
+<td align="right"><a href="_index.md">Index for latest\Utilities\PreProcessing\Sections&nbsp;<img alt=">" border="0" src="../../../../right.png"></a></td></tr></table>-->
+<hr />
+<h1 id="create_rectpatch"><code>Create_RectPatch</code></h1>
+<!-- <h1>Create_RectPatch
+</h1> -->
+<h2 id="purpose"><a name="_name"></a>Purpose</h2>
+<!-- <h2 id="purpose"><a name="_name"></a>Purpose</h2> -->
+<p>CREATE_RECTPATCH generate corner coordinates of rectangular patch for given reference point</p>
+<!-- <div class="box"><strong>CREATE_RECTPATCH generate corner coordinates of rectangular patch for given reference point</strong></div> -->
+<h2 id="synopsis"><a name="_synopsis"></a>Synopsis</h2>
+<p><code>function yz = Create_RectPatch (ty,tz,sy,sz)</code></p>
+<h2 id="description"><a name="_description"></a>Description</h2>
+<pre class="comment">CREATE_RECTPATCH generate corner coordinates of rectangular patch for given reference point
+  YZ = CREATE_RECTPATCH (TY,TZ,SY,SZ)
+  the function generates the corner coordinates of a rectangular patch TY x TZ, where TY is
+  the dimension in Y and TZ is the dimension in Z, with respect to a reference point at a
+  distance SY in Y and SZ in Z from the centroid of the patch;
+  the function returns the corner coordinates in the 1x4 array YZ = [Y1 Z1 Y2 Z2] where
+  1 refers to the upper left corner and 2 to the lower right corner of the rectangular patch
+
+  Section coordinate system:
+                                   ^ y
+                                   |
+                               ----+----
+                               |   |   |
+                               |   |   |
+                         z &lt;---+---+   |
+                               |       |
+                               |       |
+                               ---------</pre>
+<!-- <div class="fragment"><pre class="comment">CREATE_RECTPATCH generate corner coordinates of rectangular patch for given reference point
+  YZ = CREATE_RECTPATCH (TY,TZ,SY,SZ)
+  the function generates the corner coordinates of a rectangular patch TY x TZ, where TY is
+  the dimension in Y and TZ is the dimension in Z, with respect to a reference point at a
+  distance SY in Y and SZ in Z from the centroid of the patch;
+  the function returns the corner coordinates in the 1x4 array YZ = [Y1 Z1 Y2 Z2] where
+  1 refers to the upper left corner and 2 to the lower right corner of the rectangular patch
+
+  Section coordinate system:
+                                   ^ y
+                                   |
+                               ----+----
+                               |   |   |
+                               |   |   |
+                         z &lt;---+---+   |
+                               |       |
+                               |       |
+                               ---------</pre></div> -->
+<!-- crossreference -->
+<h2 id="cross-reference-information"><a name="_cross"></a>Cross-Reference Information</h2>
+<p>This function calls: <ul style="list-style-image:url(../../../../matlabicon.gif)"> </ul> This function is called by: <ul style="list-style-image:url(../../../../matlabicon.gif)"> <li><a href="Create_BoxOutline.md" class="code" title="function [Outline,A,sy,sz] = Create_BoxOutline (Data)">Create_BoxOutline</a> CREATE_BOXOUTLINE generate geometry outline for box section</li><li><a href="Create_BoxwOvhOutline.md" class="code" title="function [Outline,A,sy,sz] = Create_BoxwOvhOutline (Data)">Create_BoxwOvhOutline</a> CREATE_BOXwOVHOUTLINE generate geometry outline for box section</li><li><a href="Create_CSecOutline.md" class="code" title="function [Outline,A,sy,sz] = Create_CSecOutline (Data)">Create_CSecOutline</a> CREATE_CSECOUTLINE generate geometry outline for C-section</li><li><a href="Create_IPMesh4WFShape.md" class="code" title="function [yfib,zfib,wfib,MatID] = Create_IPMesh4WFShape (SecData)">Create_IPMesh4WFShape</a> CREATE_IPMESH4WFSHAPE coordinates, weights and material IDs for wide flange section</li><li><a href="Create_ISecOutline.md" class="code" title="function [Outline,A,sy,sz] = Create_ISecOutline (Data)">Create_ISecOutline</a> CREATE_ISECOUTLINE generate geometry outline for I-section</li><li><a href="Create_LSecOutline.md" class="code" title="function [Outline,A,sy,sz] = Create_LSecOutline (Data)">Create_LSecOutline</a> CREATE_LSECOUTLINE generate geometry outline for L-section</li><li><a href="Create_RectShape.md" class="code" title="function Shape = Create_RectShape (ndm,SType,Data)">Create_RectShape</a> CREATE_RECTSHAPE generate geometry outline and assign material properties for rectangle</li><li><a href="Create_RectwCovOutline.md" class="code" title="function [Outline,A,sy,sz] = Create_RectwCovOutline (Data)">Create_RectwCovOutline</a> CREATE_RECTwCOVOUTLINE generate geometry outline for rectangular section with cover</li><li><a href="Create_SSecOutline.md" class="code" title="function [Outline,A,sy,sz] = Create_SSecOutline (Data)">Create_SSecOutline</a> CREATE_SSECOUTLINE generate geometry outline for C-section</li><li><a href="Create_TSecOutline.md" class="code" title="function [Outline,A,sy,sz] = Create_TSecOutline (Data)">Create_TSecOutline</a> CREATE_TSECOUTLINE generate geometry outline for T-section</li></ul> <!-- crossreference --></p>
+<!-- <hr><address>Generated on Tue 20-Jul-2021 16:07:49 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" title="Matlab Documentation in HTML">m2html</a></strong> &copy; 2005</address> -->
+
+                        
+                        </article>
+                        <!-- <div class="col-md-8" role="main"></div> -->
+                    
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>&copy 1998-2021 UC Regents, Filip C. Filippou</p>
+        </footer>
+        <script>
+            var base_url = "../../../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../../../js/base.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
+        <script src="../../../../../../search/main.js" defer></script>
+
+        <div class="modal" id="elstir_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="elstir-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="elstir-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="elstir_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -61,11 +61,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Element_Library/_index/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Element_Library/Frame_Elements/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
@@ -106,11 +101,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Element_Library/Frame_Elements/_index/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
@@ -137,11 +127,6 @@
     </url>
     <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/InelTruss/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/_index/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -186,11 +171,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/_index/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Element_Library/Frame_Elements/Linear/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
@@ -226,11 +206,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Element_Library/Frame_Elements/Linear/_index/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Element_Library/Shell_Elements/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
@@ -252,11 +227,6 @@
     </url>
     <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Element_Library/Shell_Elements/TransformStr2GL/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Element_Library/Shell_Elements/_index/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -316,11 +286,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Element_Library/Shell_Elements/Inelastic/_index/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Element_Library/Shell_Elements/Linear/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
@@ -361,11 +326,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Element_Library/Shell_Elements/Linear/_index/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Element_Library/Special_Elements/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
@@ -377,11 +337,6 @@
     </url>
     <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Element_Library/Special_Elements/SectionWrapper/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Element_Library/Special_Elements/_index/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -466,11 +421,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/General/_index/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Geometry/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
@@ -516,11 +466,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Geometry/_index/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Geometry/kg_2dFrm/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
@@ -542,11 +487,6 @@
     </url>
     <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Material_Library/SubIncr4MatSD/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Material_Library/_index/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -601,11 +541,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Material_Library/1dMaterials/_index/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Material_Library/2dMaterials/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
@@ -632,11 +567,6 @@
     </url>
     <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Material_Library/2dMaterials/LESOrth2dMat/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Material_Library/2dMaterials/_index/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -716,11 +646,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Material_Library/3dMaterials/_index/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Section_Library/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
@@ -762,11 +687,6 @@
     </url>
     <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Section_Library/ReRectSecw1dMat/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Section_Library/_index/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -821,11 +741,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Solution_Library/Scripts/_index/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Solution_Library/Strategies/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
@@ -862,11 +777,6 @@
     </url>
     <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Solution_Library/Strategies/S_Transient_MultiStepwSD/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Solution_Library/Strategies/_index/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -936,11 +846,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Solution_Library/Transient_Analysis/_index/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Utilities/General/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
@@ -996,11 +901,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Utilities/General/_index/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Utilities/Interpolation/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
@@ -1012,11 +912,6 @@
     </url>
     <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Utilities/Interpolation/Lagrange/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Utilities/Interpolation/_index/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1086,11 +981,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Utilities/Plotting/_index/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Utilities/Plotting/Elements/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
@@ -1156,11 +1046,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Utilities/Plotting/Elements/_index/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Utilities/Plotting/Sections/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
@@ -1192,11 +1077,6 @@
     </url>
     <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Utilities/Plotting/Sections/Plot_SectionGeometry/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Utilities/Plotting/Sections/_index/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1281,11 +1161,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Utilities/Plotting/Structure/_index/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Utilities/PostProcessing/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
@@ -1336,11 +1211,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Utilities/PostProcessing/_index/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Elements/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
@@ -1382,11 +1252,6 @@
     </url>
     <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Elements/FiberElemData4SteelFrame/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Elements/_index/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1531,11 +1396,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Sections/_index/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Structure/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
@@ -1591,11 +1451,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Utilities/PreProcessing/Structure/_index/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Utilities/Quadrature/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
@@ -1642,11 +1497,6 @@
     </url>
     <url>
          <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Utilities/Quadrature/Trap/</loc>
-         <lastmod>2021-07-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://claudioperez.github.io/FEDEASdocs/Functions/latest/Utilities/Quadrature/_index/</loc>
          <lastmod>2021-07-21</lastmod>
          <changefreq>daily</changefreq>
     </url>

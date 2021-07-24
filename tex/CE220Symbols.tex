@@ -1,0 +1,366 @@
+% symbol definitions for CE220 - Linear Structural Analysis
+\def\Flab{{\texttt{FEDEAS}}\texttt{Lab}}
+%%%%%%%%%%%%%%%%%%%%
+% spacing definitions
+\def\msp {\mspace{1.5mu}}
+\def\qnegskip{\vspace{-3pt}}
+\def\hnegskip{\vspace{-6pt}}
+\def\negskip{\vspace{-12pt}}
+\def\Bignegskip{\vspace{-18pt}}
+\def\hugeskip{\vspace{30pt}}
+\def\vs24{\vspace{24pt}}
+%
+%%%%%%%%%%%%%%%%%%%%
+% scalars
+\def\lam{\lambda}             % load factor
+\def\lamc{\lambda_c}          % collapse load factor
+\def\DLo{\Delta L_0}          % lack-of-fit
+\def\DL{\Delta L}             % change of distance
+\def\Dl{\Delta l}             % change of length
+\def\bDL{\vectorsym{\DL}}
+\def\betap{\beta'}            % chord rotation angle per unit translation
+\def\thetap{\theta'}
+%
+\def\XY{$X$-$Y$}
+\def\XYZ{$X$-$Y$-$Z$}
+\def\xy{$x$-$y$}
+\def\yz{$y$-$z$}
+\def\xyz{$x$-$y$-$z$}
+\def\DX{\Delta X}
+\def\DY{\Delta Y}
+\def\DZ{\Delta Z}
+%
+\def\Np{N_p}
+\def\Mp{M_p}
+\def\Mpc{M_{pc}}
+\def\Mpg{M_{pg}}
+%
+\def\My{M_y}
+\def\Mz{M_z}
+\def\Mpy{M_{py}}
+\def\Mpz{M_{pz}}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\NOS{{\small{NOS}}}
+\def\Tenm3{\cdot 10^{-3}}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% nodal forces and reactions
+\def\Pv{P_v}
+\def\Ph{P_h}
+\def\P{\vectorsym{P}}
+\def\Pc{\vectorsym{P}_{c}}
+\def\Pd{\vectorsym{P}_d}
+\def\Pf{\vectorsym{P}_f}
+\def\Pcf{\vectorsym{P}_{cf}}
+\def\Pfw{\vectorsym{P}_{wf}}
+\def\Pdw{\vectorsym{P}_{wd}}
+\def\Poin{\vectorsym{P}_0}
+\def\Po{\vectorsym{P}_{\raisebox{-1pt}{$\scriptstyle{0}$}}}
+\def\Pr{\vectorsym{P}_{r}}
+\def\Prf{\vectorsym{P}_{rf}}
+\def\Pref{\vectorsym{P}_{ref}}
+\def\Pu{\vectorsym{P}_{u}}
+\def\Pw{\vectorsym{P}_w}
+\def\Ptild{\tilde{\vectorsym{P}}}
+\def\Pftild{\tilde{\vectorsym{P}}_f}
+%\def\Phato{\breve{\vectorsym{P}}_0}
+\def\Phato{\breve{\vectorsym{P}}_{\raisebox{-1pt}{$\scriptstyle{0}$}}}
+\def\Mv{\vectorsym{M}}
+\def\R{\vectorsym{R}}
+\def\r{\vectorsym{r}}
+\def\Fv{\vectorsym{F}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% displacements
+\def\U{\vectorsym{U}}
+\def\Uc{\vectorsym{U}_c}
+\def\Up{U_p}
+\def\DUp{\Delta U_p}
+\def\Ud{\vectorsym{U}_d}
+\def\Udot{\dot{\U}}
+\def\Uddot{\ddot{\U}}
+\def\Uf{\vectorsym{U}_f}
+\def\rUf{\color{red}\vectorsym{U}_f\color{black}}
+\def\Ufdot{\dot{\U}_f}
+\def\Ug{\vectorsym{U}_g}
+\def\Uga{\Uddot_g}
+\def\Ui{\vectorsym{U}_i}
+%\def\Uo{\vectorsym{U}_0}
+\def\Uo{\vectorsym{U}_{\raisebox{-1pt}{$\scriptstyle{0}$}}}
+\def\Utild{\tilde{\vectorsym{U}}}
+\def\Uftild{\tilde{\vectorsym{U}}_f}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% element forces
+\def\p{\vectorsym{p}}
+%\def\po{\vectorsym{p}_0}
+\def\po{\vectorsym{p}_{\raisebox{-1pt}{$\scriptstyle{0}$}}}
+%\def\poel{\vectorsym{p}_0^{(el)}}
+\def\poel{\vectorsym{p}_{\raisebox{-1pt}{$\scriptstyle{0}$}}^{(el)}}
+\def\pel{\vectorsym{p}^{(el)}}
+\def\pbar{\bar{\vectorsym{p}}}
+\def\q{\vectorsym{q}}
+\def\qpl{\vectorsym{q}_{pl}}
+%\def\qo{\vectorsym{q}_0}
+\def\qo{\vectorsym{q}_{\raisebox{-1pt}{$\scriptstyle{0}$}}}
+\def\s{\vectorsym{s}}
+\def\g{\vectorsym{g}}
+\def\Q{\vectorsym{Q}}
+%\def\Qo{\vectorsym{Q}_0}
+\def\Qo{\vectorsym{Q}_{\raisebox{-1pt}{$\scriptstyle{0}$}}}
+\def\Qhat{\hat{\vectorsym{Q}}}
+\def\Qx{\vectorsym{Q}_x}
+\def\rQx{\color{red}\vectorsym{Q}_x\color{black}}
+\def\Qi{\vectorsym{Q}_i}
+\def\Qp{\vectorsym{Q}_p}
+\def\Qc{\vectorsym{Q}_c}
+\def\Qh{\vectorsym{Q}_h}
+\def\Qpl{\vectorsym{Q}_{pl}}
+\def\Qtild{\tilde{\Q}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% static and force influence matrices
+\def\b{\mathbf{b}}
+\newcommand{\bb}{\mbox{\boldmath $b$}}
+\def\bx{\mathbf{b}(x)}
+\def\bT{\mathbf{b}^T}
+\def\bxT{\mathbf{b}^T(x)}
+\def\br{\mathbf{b}_r}
+\def\bg{\mathbf{b}_g}
+%%%
+\def\B{\mathbf{B}}
+\def\Bhat{\breve{\mathbf{B}}}
+\def\Bf{\mathbf{B}_f}
+%\def\Bf{\mathbf{B}_{\mathrm{f}}}
+\def\Bfinv{\mathbf{B}_f^{\mathsf{-1}}}
+\def\BfT{\mathbf{B}_f^T}
+\def\Bd{\mathbf{B}_d}
+\def\Be{\mathbf{B}_e}
+\def\Bi{\mathbf{B}_i}
+\def\Bp{\mathbf{B}_p}
+\def\Biinv{\mathbf{B}_i^{\mathsf{-1}}}
+\def\Bx{\mathbf{B}_x}
+\def\Bbar{\bar{\mathbf{B}}}
+\def\BbarT{\bar{\mathbf{B}}^T}
+\def\Bibar{\bar{\mathbf{B}}_i}
+\def\Bibarj{\bar{\mathbf{B}}_{\mathbf{i}_{j}}}
+\def\Bxbar{\bar{\mathbf{B}}_x}
+\def\BxbarT{\bar{\mathbf{B}}_x^T}
+\def\Bvbar{\bar{\mathbf{B}}_v}
+\def\Brbar{\bar{\mathbf{B}}_r}
+\def\BrbarT{\bar{\mathbf{B}}_r^T}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% element displacements and deformations
+\def\u{\vectorsym{u}}
+\def\ubar{\bar{\vectorsym{u}}}
+\def\uel{\vectorsym{u}^{(el)}}
+\def\uelT{\vectorsym{u}^{{(el)}^T}}
+\def\v{\vectorsym{v}}
+%\def\vo{\vectorsym{v}_0}
+\def\vo{\vectorsym{v}_{\raisebox{-1pt}{$\scriptstyle{0}$}}}
+\def\veps{\vectorsym{v}_{\eps}}
+\def\vh{\vectorsym{v}_h}
+\def\vhp{\vectorsym{v}_{hp}}
+\def\vdot{\dot{\vectorsym{v}}}
+\def\vdothp{\dot{\vectorsym{v}}_{hp}}
+\def\e{\vectorsym{e}}
+\def\V{\vectorsym{V}}
+%\def\Vo{\vectorsym{V}_0}
+\def\Vo{\vectorsym{V}_{\raisebox{-1pt}{$\scriptstyle{0}$}}}
+\def\Vd{\vectorsym{V}_d}
+\def\Vi{\vectorsym{V}_i}
+\def\Vx{\vectorsym{V}_x}
+\def\Vh{\vectorsym{V}_h}
+\def\Vec{\vectorsym{V}_{\eps_c}}
+\def\Vhat{\hat{\vectorsym{V}}}
+\def\Vhhat{\hat{\vectorsym{V}_h}}
+\def\Veps{\vectorsym{V}_{\eps}}
+\def\Vhp{\vectorsym{V}_{hp}}
+\def\Vpl{\vectorsym{V}_{pl}}
+\def\Vdot{\dot{\vectorsym{V}}}
+\def\Vdothp{\dot{\vectorsym{V}}_{hp}}
+\def\Vdoteps{\dot{\vectorsym{V}}_{\eps}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% kinematic matrices
+\def\a{\mathbf{a}}
+\def\ar{\mathbf{a}_r}
+\def\ag{\mathbf{a}_g}
+\def\agT{\mathbf{a}_g^T}
+\def\ah{\mathbf{a}_h}
+\def\ahT{\mathbf{a}_h^T}
+\def\agel{\mathbf{a}_g^{(el)}}
+\def\agelT{\mathbf{a}_g^{{(el)}^T}}
+\def\arelT{\mathbf{a}_r^{{(el)}^T}}
+%%%
+\def\A{\mathbf{A}}
+\newcommand{\bA}{\mbox{\boldmath $A$}}
+\def\AT{\mathbf{A}^T}
+\def\Ab{\mathbf{A}_b}
+\def\Abel{\mathbf{A}_b^{(el)}}
+\def\AbelT{\mathbf{A}_b^{{(el)}^T}}
+\def\Ad{\mathbf{A}_d}
+\def\AdT{\mathbf{A}_d^T}
+\def\Af{\mathbf{A}_f}
+\def\AfT{\mathbf{A}_f^T}
+\def\Ac{\mathbf{A}_c}
+\def\AcT{\mathbf{A}_c^T}
+\def\Acf{\mathbf{A}_{cf}}
+\def\AcfT{\mathbf{A}_{cf}^T}
+\def\Acp{\mathbf{A}_{cp}}
+\def\Acm{\mathbf{A}_{cm}}
+\def\AcpT{\mathbf{A}_{cp}^T}
+\def\Acpr{\mathbf{A'}_c}
+\def\Ae{\mathbf{A}_e}
+\def\Afp{\mathbf{A}_{fp}}
+\def\AfpT{\mathbf{A}_{fp}^T}
+\def\Afhat{\breve{\mathbf{A}}_f}
+\def\Atild{\tilde{\mathbf{A}}}
+\def\Aftild{\tilde{\mathbf{A}}_f}
+\def\AftildT{\tilde{\mathbf{A}}_f^{T}}
+\def\Afinv{\mathbf{A}_f^{\mathsf{-1}}}
+\def\Ahat{\breve{\mathbf{A}}}
+\def\Ai{\mathbf{A}_i}
+\def\AiT{\mathbf{A}_i^T}
+\def\Aiinv{\mathbf{A}_i^{\mathsf{-1}}}
+\def\Al{\mathbf{A}_l}
+\def\Ali{\mathbf{A}_{li}}
+\def\Alc{\mathbf{A}_{lc}}
+\def\Amp{\mathbf{A}_{mp}}
+\def\Ax{\mathbf{A}_x}
+\def\AxT{\mathbf{A}_x^T}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% work, strain energy
+\def\Us{\mathcal{U}}
+\def\Ws{\mathcal{W}}
+\def\Wsdot{\dot{\mathcal{W}}}
+\def\Ds{\mathcal{D}}
+\def\We{\mathcal{W}_e}
+\def\Wi{\mathcal{W}_i}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% stiffness matrices
+\def\ks{\mathbf{k}_s}
+\def\k{\mathbf{k}}
+\def\ke{\mathbf{k}_e}
+\def\kbar{\bar{\k}}
+\def\keel{{\mathbf{k}_e^{(el)}}}
+\def\K{\mathbf{K}}
+\def\Ks{\mathbf{K}_s}
+\def\Kf{\mathbf{K}_f}
+\def\Ktild{\tilde{\mathbf{K}}}
+\def\Khat{\breve{\mathbf{K}}}
+\def\Khatff{\breve{\mathbf{K}}_{ff}}
+\def\Khatfd{\breve{\mathbf{K}}_{fd}}
+\def\Khatdf{\breve{\mathbf{K}}_{df}}
+\def\Khatdd{\breve{\mathbf{K}}_{dd}}
+\def\Krr{\mathbf{K}_{rr}}
+\def\Krrstar{\mathbf{K}_{rr}^*}
+\def\Krc{\mathbf{K}_{rc}}
+\def\Kcr{\mathbf{K}_{cr}}
+\def\Kcc{\mathbf{K}_{cc}}
+\def\Kccinv{\mathbf{K}_{cc}^{\mathsf{-1}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% flexibility matrices
+\def\fs{\mathbf{f}_s}
+\def\f{\mathbf{f}}
+\def\Fs{\mathbf{F}_s}
+\def\FsT{\mathbf{F}_s^T}
+\def\F{\mathbf{F}}
+\def\Fxx{\mathbf{F}_{xx}}
+\def\Frr{\mathbf{F}_{rr}}
+\def\Frc{\mathbf{F}_{rc}}
+\def\Frf{\mathbf{F}_{rf}}
+\def\Frrinv{\mathbf{F}_{rr}^{\mathsf{-1}}}
+\def\Fxxinv{\mathbf{F}_{xx}^{\mathsf{-1}}}
+\def\Fxi{\mathbf{F}_{xi}}
+\def\Fix{\mathbf{F}_{ix}}
+\def\FixT{\mathbf{F}_{ix}^T}
+\def\FxiT{\mathbf{F}_{xi}^T}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% miscellaneous
+\def\id{\vectorsym{id}}
+\def\dc{\vectorsym{dc}}
+\def\Mr{\mathbf{M}_r}
+\newcommand{\bMr}{\mbox{\boldmath $M_r$}}
+\def\MrT{\M_r^T}
+\newcommand{\bMrT}{\mbox{\boldmath $M_r^T$}}
+\def\0{\mathbf{0}}
+\def\I{\mathbf{I}}
+\def\t{\vectorsym{t}}
+\def\n{\vectorsym{n}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% section response variables
+\def\as{\mathbf{a}_s}
+\def\bx{\mathbf{b}(x)}
+\def\bxT{\mathbf{b}^T(x)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% strain, stress and curvature
+\def\eps{\varepsilon}
+\def\sig{\sigma}
+\def\sphi{\varphi}
+\def\fy{f_y}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% strain and stress tensors
+\def\beps{\tensorsym{\epsilon}}
+\def\bsig{\tensorsym{\sigma}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% basic dynamic response matrices
+\def\M{\mathbf{M}}
+\def\C{\mathbf{C}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% incremental variables
+\def\Dlam{\Delta \lambda}
+\def\DQ{\Delta \Q}
+\def\DU{\Delta \U}
+\def\DUf{\Delta \Uf}
+\def\DV{\Delta \V}
+\def\Dq{\Delta \q}
+\def\delU{\delta \U}
+\def\delP{\delta \P}
+\def\delV{\delta \V}
+\def\delQ{\delta \Q}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% miscellaneous variables
+\def\w{\vectorsym{w}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% miscellaneous symbols, phantom placeholders
+\def\SpRA{\quad \rightarrow \quad }
+\def\hpm{\hphantom{-}}
+\def\hpp{\hphantom{+}}
+\def\hpd{\hphantom{.}}
+\def\hpeq{\hphantom{=}}
+\def\hpx{\hphantom{xxxxx}}
+\def\hp1{\hphantom{1}}
+\def\hpz{\hphantom{0}}
+\def\hpU{\hphantom{\U}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% instantaneous centers et al.
+\def\ICa{IC$_\text{a}$}
+\def\ICb{IC$_\text{b}$}
+\def\ICc{IC$_\text{c}$}
+\def\ICd{IC$_\text{d}$}
+\def\ICA{IC$_\text{A}$}
+\def\ICB{IC$_\text{B}$}
+\def\ICC{IC$_\text{C}$}
+\def\ICD{IC$_\text{D}$}
+\def\ICE{IC$_\text{E}$}
+\def\ICG{IC$_\text{G}$}
+\def\ICH{IC$_\text{H}$}
+\def\ICJ{IC$_\text{J}$}
+\def\ICL{IC$_\text{L}$}
+\def\RCab{RC$_\text{ab}$}
+\def\RCbc{RC$_\text{bc}$}
+\def\RCac{RC$_\text{ac}$}
+\def\RCcd{RC$_\text{cd}$}
+\def\RCAB{RC$_\text{AB}$}
+\def\RCBC{RC$_\text{BC}$}
+\def\RCAC{RC$_\text{AC}$}
+\def\RCAD{RC$_\text{AD}$}
+\def\RCAE{RC$_\text{AE}$}
+\def\RCCD{RC$_\text{CD}$}
+\def\RCAH{RC$_\text{AH}$}
+\def\RCGH{RC$_\text{GH}$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% for stiffness matrices
+\def\bN{\mathbf{N}}
+\def\bI{\mathbf{I}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% miscellaneous
+\def\bcourses{\texttt{bcourses}} 

@@ -101,126 +101,6 @@
     <div id="toc-collapse" class="navbar-collapse collapse card ">
         <ul class="nav flex-column">
         
-            
-            <li class="nav-item " data-level="1">
-              <a href="/FEDEASdocs/Functions/latest/Element_Library/Shell_Elements/" class="">latest\Element_Library\Shell_Elements</a>
-              <!-- <a href="/FEDEASdocs/Functions/latest/Element_Library/Shell_Elements/" class="nav-link ">latest\Element_Library\Shell_Elements</a> -->
-              
-              <ul class="nav flex-column">
-              <div class="dropdown-divider"></div>
-                    
-            <li class="nav-item " data-level="2">
-              <a href="/FEDEASdocs/Functions/latest/Element_Library/Shell_Elements/RectPatch2Layer/" class="">RectPatch2Layer</a>
-              <!-- <a href="/FEDEASdocs/Functions/latest/Element_Library/Shell_Elements/RectPatch2Layer/" class="nav-link ">RectPatch2Layer</a> -->
-              
-              <ul class="nav flex-column">
-              
-              </ul>
-              
-            </li>
-                    
-                    
-            <li class="nav-item active" data-level="2">
-              <a href="/FEDEASdocs/Functions/latest/Element_Library/Shell_Elements/shape2d/" class="active">Shape2d</a>
-              <!-- <a href="/FEDEASdocs/Functions/latest/Element_Library/Shell_Elements/shape2d/" class="nav-link active">Shape2d</a> -->
-              
-              <ul class="nav flex-column">
-              
-              </ul>
-              
-            </li>
-                    
-                    
-            <li class="nav-item " data-level="2">
-              <a href="/FEDEASdocs/Functions/latest/Element_Library/Shell_Elements/shape3d/" class="">Shape3d</a>
-              <!-- <a href="/FEDEASdocs/Functions/latest/Element_Library/Shell_Elements/shape3d/" class="nav-link ">Shape3d</a> -->
-              
-              <ul class="nav flex-column">
-              
-              </ul>
-              
-            </li>
-                    
-                    
-            <li class="nav-item " data-level="2">
-              <a href="/FEDEASdocs/Functions/latest/Element_Library/Shell_Elements/shapeBhat/" class="">shapeBhat</a>
-              <!-- <a href="/FEDEASdocs/Functions/latest/Element_Library/Shell_Elements/shapeBhat/" class="nav-link ">shapeBhat</a> -->
-              
-              <ul class="nav flex-column">
-              
-              </ul>
-              
-            </li>
-                    
-                    
-            <li class="nav-item " data-level="2">
-              <a href="/FEDEASdocs/Functions/latest/Element_Library/Shell_Elements/shapeCST/" class="">shapeCST</a>
-              <!-- <a href="/FEDEASdocs/Functions/latest/Element_Library/Shell_Elements/shapeCST/" class="nav-link ">shapeCST</a> -->
-              
-              <ul class="nav flex-column">
-              
-              </ul>
-              
-            </li>
-                    
-                    
-            <li class="nav-item " data-level="2">
-              <a href="/FEDEASdocs/Functions/latest/Element_Library/Shell_Elements/shapeLST/" class="">shapeLST</a>
-              <!-- <a href="/FEDEASdocs/Functions/latest/Element_Library/Shell_Elements/shapeLST/" class="nav-link ">shapeLST</a> -->
-              
-              <ul class="nav flex-column">
-              
-              </ul>
-              
-            </li>
-                    
-                    
-            <li class="nav-item " data-level="2">
-              <a href="/FEDEASdocs/Functions/latest/Element_Library/Shell_Elements/Tint2d/" class="">Tint2d</a>
-              <!-- <a href="/FEDEASdocs/Functions/latest/Element_Library/Shell_Elements/Tint2d/" class="nav-link ">Tint2d</a> -->
-              
-              <ul class="nav flex-column">
-              
-              </ul>
-              
-            </li>
-                    
-                    
-            <li class="nav-item " data-level="2">
-              <a href="/FEDEASdocs/Functions/latest/Element_Library/Shell_Elements/TransformMtensor2GL/" class="">TransformMtensor2GL</a>
-              <!-- <a href="/FEDEASdocs/Functions/latest/Element_Library/Shell_Elements/TransformMtensor2GL/" class="nav-link ">TransformMtensor2GL</a> -->
-              
-              <ul class="nav flex-column">
-              
-              </ul>
-              
-            </li>
-                    
-                    
-            <li class="nav-item " data-level="2">
-              <a href="/FEDEASdocs/Functions/latest/Element_Library/Shell_Elements/TransformStr2GL/" class="">TransformStr2GL</a>
-              <!-- <a href="/FEDEASdocs/Functions/latest/Element_Library/Shell_Elements/TransformStr2GL/" class="nav-link ">TransformStr2GL</a> -->
-              
-              <ul class="nav flex-column">
-              
-              </ul>
-              
-            </li>
-                    
-                    
-            <li class="nav-item " data-level="2">
-              <a href="/FEDEASdocs/Functions/latest/Element_Library/Shell_Elements/_index/" class="">latest\Element_Library\Shell_Elements</a>
-              <!-- <a href="/FEDEASdocs/Functions/latest/Element_Library/Shell_Elements/_index/" class="nav-link ">latest\Element_Library\Shell_Elements</a> -->
-              
-              <ul class="nav flex-column">
-              
-              </ul>
-              
-            </li>
-                    
-              </ul>
-              
-            </li>
         
         </ul>
     </div>
@@ -244,7 +124,7 @@
 <p>SHAPE2D shape functions for 4-9 node quadrilateral element</p>
 <!-- <div class="box"><strong>SHAPE2D shape functions for 4-9 node quadrilateral element</strong></div> -->
 <h2 id="synopsis"><a name="_synopsis"></a>Synopsis</h2>
-<p><code>function [N,dNdx,J] = shape2d (nat,xyz,nodix)</code></p>
+<p><code class="sourceCode matlab"><span class="kw">function</span> [<span class="va">N</span><span class="op">,</span><span class="va">dNdx</span><span class="op">,</span><span class="va">J</span>] <span class="op">=</span> <span class="va">shape2d</span> (<span class="va">nat</span><span class="op">,</span><span class="va">xyz</span><span class="op">,</span><span class="va">nodix</span>)</code></p>
 <h2 id="description"><a name="_description"></a>Description</h2>
 <pre class="comment">SHAPE2D shape functions for 4-9 node quadrilateral element
   [N,dNdx,J] = SHAPE2D (NAT,XYZ,NODIX) shape functions for 4-9 node quadrilateral element
@@ -280,8 +160,8 @@
   Reference: T.J.R. Hughes, The Finite Element Method, pp. 135</pre></div> -->
 <!-- crossreference -->
 <h2 id="cross-reference-information"><a name="_cross"></a>Cross-Reference Information</h2>
-<p>This function calls: <ul style="list-style-image:url(../../../matlabicon.gif)"> </ul> This function is called by: <ul style="list-style-image:url(../../../matlabicon.gif)"> <li><a href="../../../latest/Element_Library/Shell_Elements/Inelastic/Inel4to9nodeQuad.md" class="code" title="function ElemResp = Inel4to9nodeQuad (action,el_no,xyz,ElemData,ElemState)">Inel4to9nodeQuad</a> INEL4to9NODEQUAD isoparametric 4-9 node quadrilateral element with inelastic material</li><li><a href="../../../latest/Element_Library/Shell_Elements/Inelastic/Inel4to9nodeReQuad.md" class="code" title="function ElemResp = Inel4to9nodeReQuad (action,el_no,xyz,ElemData,ElemState)">Inel4to9nodeReQuad</a> INEL4to9NODEREQUAD isoparametric 4-9 node quad element with inelastic material and reinforcing layers</li><li><a href="../../../latest/Element_Library/Shell_Elements/Linear/LE4nodeQuad.md" class="code" title="function ElemResp = LE4nodeQuad (action,el_no,xyz,ElemData,ElemState)">LE4nodeQuad</a> LE4NODEQUAD isoparametric 4-node quadrilateral element with linear elastic material</li><li><a href="../../../latest/Element_Library/Shell_Elements/Linear/LE4nodeQuadwIM.md" class="code" title="function ElemResp = LE4nodeQuadwIM (action,el_no,xyz,ElemData,ElemState)">LE4nodeQuadwIM</a> LE4NODEQUADwIM isoparametric 4-node quad element with linear elastic material and incompatible bending modes</li><li><a href="../../../latest/Element_Library/Shell_Elements/Linear/LE4to9nodeQuad.md" class="code" title="function ElemResp = LE4to9nodeQuad (action,el_no,xyz,ElemData,ElemState)">LE4to9nodeQuad</a> LE4to9NODEQUAD isoparametric 4-9 node quadrilateral element with linear elastic material</li><li><a href="../../../latest/Element_Library/Shell_Elements/Linear/LE9nodeQuad.md" class="code" title="function ElemResp = LE9nodeQuad (action,el_no,xyz,ElemData,ElemState)">LE9nodeQuad</a> LE9NODEQUAD isoparametric 9 node quadrilateral element with linear elastic material</li><li><a href="shapeBhat.md" class="code" title="function [Bhat,G,J] = shapeBhat(npd,nat,wIP,xyz)">shapeBhat</a> SHAPEBHAT shape function Bhat</li></ul> <!-- crossreference --></p>
-<!-- <hr><address>Generated on Fri 23-Jul-2021 19:13:56 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" title="Matlab Documentation in HTML">m2html</a></strong> &copy; 2005</address> -->
+<p>This function calls: <ul style="list-style-image:url(../../../matlabicon.gif)"> </ul> This function is called by: <ul style="list-style-image:url(../../../matlabicon.gif)"> <li><a href="../../../../latest/Element_Library/Shell_Elements/Inelastic/Inel4to9nodeQuad.md" class="code" title="function ElemResp = Inel4to9nodeQuad (action,el_no,xyz,ElemData,ElemState)">Inel4to9nodeQuad</a> INEL4to9NODEQUAD isoparametric 4-9 node quadrilateral element with inelastic material</li><li><a href="../../../../latest/Element_Library/Shell_Elements/Inelastic/Inel4to9nodeReQuad.md" class="code" title="function ElemResp = Inel4to9nodeReQuad (action,el_no,xyz,ElemData,ElemState)">Inel4to9nodeReQuad</a> INEL4to9NODEREQUAD isoparametric 4-9 node quad element with inelastic material and reinforcing layers</li><li><a href="../../../../latest/Element_Library/Shell_Elements/Linear/LE4nodeQuad.md" class="code" title="function ElemResp = LE4nodeQuad (action,el_no,xyz,ElemData,ElemState)">LE4nodeQuad</a> LE4NODEQUAD isoparametric 4-node quadrilateral element with linear elastic material</li><li><a href="../../../../latest/Element_Library/Shell_Elements/Linear/LE4nodeQuadwIM.md" class="code" title="function ElemResp = LE4nodeQuadwIM (action,el_no,xyz,ElemData,ElemState)">LE4nodeQuadwIM</a> LE4NODEQUADwIM isoparametric 4-node quad element with linear elastic material and incompatible bending modes</li><li><a href="../../../../latest/Element_Library/Shell_Elements/Linear/LE4to9nodeQuad.md" class="code" title="function ElemResp = LE4to9nodeQuad (action,el_no,xyz,ElemData,ElemState)">LE4to9nodeQuad</a> LE4to9NODEQUAD isoparametric 4-9 node quadrilateral element with linear elastic material</li><li><a href="../../../../latest/Element_Library/Shell_Elements/Linear/LE9nodeQuad.md" class="code" title="function ElemResp = LE9nodeQuad (action,el_no,xyz,ElemData,ElemState)">LE9nodeQuad</a> LE9NODEQUAD isoparametric 9 node quadrilateral element with linear elastic material</li><li><a href="../shapeBhat" class="code" title="function [Bhat,G,J] = shapeBhat(npd,nat,wIP,xyz)">shapeBhat</a> SHAPEBHAT shape function Bhat</li></ul> <!-- crossreference --></p>
+<!-- <hr><address>Generated on Sat 24-Jul-2021 11:39:11 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" title="Matlab Documentation in HTML">m2html</a></strong> &copy; 2005</address> -->
 
                         
                         </article>

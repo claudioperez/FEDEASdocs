@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://claudioperez.github.io/FEDEASdocs/Pages/Basic/basic_12/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Graphics Utility Functions - FEDEASLab</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../_static/css/extra.css" rel="stylesheet">
+
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/matlab.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <!-- <script>
+            $(".nav .nav-link").on("click", function(){
+            $(".nav").find(".active").removeClass("active");
+            $(this).addClass("active");
+         });
+         </script> -->
+
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-170527070-1', 'auto');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">FEDEASLab</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav ml-auto">
+                        <!--<ul class="nav navbar-nav">-->
+                            <li class="navitem">
+                                <a href="../../../About/" class="nav-link">About</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../" class="nav-link">Pages</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../Functions/latest/" class="nav-link">Functions</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../Gallery/" class="nav-link">Gallery</a>
+                            </li>
+                        <!--</ul>-->
+                        <!--</div>-->
+
+                    <!-- <ul class="nav navbar-nav ml-auto"> -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#elstir_search_modal">
+                               <!--<img src="img/search.png" class="icon">--> <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            
+            <!-- <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+            </nav> -->
+            
+            <div class="row">
+                    
+                        <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card ">
+        <ul class="nav flex-column">
+        
+        
+        </ul>
+    </div>
+</div></div>
+                    
+
+                    
+                        <article class="col-md-9 p-3">
+                        <!-- <article class="col-md-9"> -->
+                        
+
+<h1 id="graphics-utility-functions">Graphics Utility Functions</h1>
+<p>[FEDEASlab]  has functions for displaying on the computer screen the geometry of the model and the results of the analysis in the form of internal force distributions, deformed shape, and plastic hinge locations. The graphics utility functions are listed in <a href="./basic_02/#tbl:GraphUtil" title="Table">tbl:GraphUtil</a> and are briefly described in the following. These functions depend on several supporting functions in the folder <code>Utilities</code>, which are of no further interest for the user.</p>
+<p>Specifically:</p>
+<ul>
+<li><p>The function <code>Create_Window</code> opens an empty window with two input arguments <code>DX</code> and <code>DY</code> for the percentage of the computer screen that the window occupies in the horizontal and in the vertical direction, respectively. Thus, the function call <code class="sourceCode matlab"><span class="va">Create_Window</span>(<span class="fl">0.80</span><span class="op">,</span><span class="fl">0.60</span>)</code> creates an empty window centered on the computer display and occupying 80% of the horizontal display and 60% of the vertical display dimension.</p></li>
+<li><p>The function <code>Plot_Model</code> displays the nodes of the structural model connected by straight lines (the element chords).</p></li>
+<li><p>The presence of the optional input argument <code>Uf</code> in any plotting function ensures that the information is displayed in the deformed configuration.</p></li>
+<li><p>The optional input argument <code>Options</code> in a plotting function is a data structure with fields specifying the attributes of graphical elements. Field descriptions of the data structure <code>Options</code> are given in <span class="citation" data-cites="tbl:OptPlotModel"><a href="#ref-tbl:OptPlotModel" role="doc-biblioref"><strong>tbl:OptPlotModel?</strong></a></span>-<span class="citation" data-cites="tbl:OptPlHng"><a href="#ref-tbl:OptPlHng" role="doc-biblioref"><strong>tbl:OptPlHng?</strong></a></span> for the different plotting functions. Because some fields appear in more than one function, the user should make sure to change the field value before invoking the corresponding function, lest the last definition of the field is used, which may not be the intention.</p></li>
+<li><p>The function <code>Label_Model</code> displays node and element numbers of the structural model as well as the coordinate axes for the geometry description.</p></li>
+<li><p>The functions for plotting the axial force, the bending moment and the curvature distribution support an optional numerical input argument <code>Scale</code> for the magnification of the distribution display without affecting the numerical values of the internal forces and deformations.</p></li>
+<li><p>The functions for labeling the axial force and the bending moment distribution support an optional integer input argument <code>Digit</code> for the number of digits after the comma to display. The default is 1.</p></li>
+<li><p>The functions for labeling the axial force and the bending moment distribution support an optional character input argument <code>Units</code>, so that the values of the corresponding internal force are scaled to the specified unit of axial force or bending moment. The function <code>Create_Units.m</code> generates different units of force, moment, length and area in the return argument. The user can define additional dependent units in terms of those already present in the fields of the return argument.</p></li>
+<li><p>Plotting and labeling can be limited to some elements of the structural model with the optional argument <code>ElemList</code>. The default option is to display the requested information for all elements of the structural model.</p></li>
+<li><p>In the absence of the input argument <code>ElemData</code> the corresponding plot function will display the moment distribution and the deformed shape for the homogeneous solution of the element equilibrium. The field <code>w</code> must be specified in <code>ElemData</code> for the function to display the moment distribution and the deformed shape for the complete solution that includes the particular solution under the element loading.</p></li>
+<li><p>The variable <code>Ve</code> corresponds to <span class="math inline">\(\boldsymbol{V}_{\varepsilon}\)</span>, the element deformations of continuous nature.</p></li>
+</ul>
+<div id="tbl:OptPlotModel">
+<table>
+<caption>Fields of the optional input argument <code>Options</code> for function <span style="color: blue"><code>Plot_Model</code></span></caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;"> Field name  </th>
+<th style="text-align: left;"> Purpose  </th>
+<th style="text-align: center;"> Default value  </th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"> <code>MAGF</code>  </td>
+<td style="text-align: left;"> magnification for deformed wireframe  </td>
+<td style="text-align: center;"> 10  </td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"> <code>PlNod</code> </td>
+<td style="text-align: left;"> switch for displaying node symbols  </td>
+<td style="text-align: center;">  <code>'no'</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"> <code>PlBnd</code> </td>
+<td style="text-align: left;"> switch for displaying boundary symbols  </td>
+<td style="text-align: center;">  <code>'no'</code>  </td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"> <code>NodSF</code> </td>
+<td style="text-align: left;"> scale factor for node symbol  </td>
+<td style="text-align: center;"> 1  </td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"> <code>PlJnt</code> </td>
+<td style="text-align: left;"> switch for displaying rigid joint offsets  </td>
+<td style="text-align: center;"> <code>'yes'</code>  </td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"> <code>LnStl</code> </td>
+<td style="text-align: left;"> line style for undeformed/deformed model  </td>
+<td style="text-align: center;"> ‘-’ / ‘-.’  </td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"> <code>LnWth</code> </td>
+<td style="text-align: left;"> line thickness  </td>
+<td style="text-align: center;"> 2  </td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"> <code>LnClr</code> </td>
+<td style="text-align: left;"> line color for undeformed/deformed model  </td>
+<td style="text-align: center;"> ‘b’ / ‘k’  </td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"> <code>BsClr</code> </td>
+<td style="text-align: left;"> color for boundary node and symbol  </td>
+<td style="text-align: center;"> [0.6 0 0.6]  </td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"> <code>ModSF</code> </td>
+<td style="text-align: left;"> switch for adjusting the scale factor with element size  </td>
+<td style="text-align: center;"> ‘yes’  </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tbl:OptLabModel">
+<table>
+<caption>Fields of the optional input argument <code>Options</code> for function <span style="color: blue"><code>Label_Model</code></span></caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;"> Field name  </th>
+<th style="text-align: left;"> Purpose  </th>
+<th style="text-align: center;"> Default value  </th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"> <code>Item</code>  </td>
+<td style="text-align: left;"> ‘node,’‘elem’ or ‘axes’  </td>
+<td style="text-align: center;">  <code>'all'</code> </td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"> <code>FntSF</code> </td>
+<td style="text-align: left;"> label font scale factor  </td>
+<td style="text-align: center;"> 1  </td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"> <code>AxsSF</code> </td>
+<td style="text-align: left;"> coordinate axes arrow scale factor  </td>
+<td style="text-align: center;"> 1  </td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"> <code>LOfSF</code> </td>
+<td style="text-align: left;"> label offset scale factor  </td>
+<td style="text-align: center;"> 1  </td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"> <code>NList</code> </td>
+<td style="text-align: left;"> list of nodes to label  </td>
+<td style="text-align: center;"> <code>1:nn</code>  </td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"> <code>EList</code> </td>
+<td style="text-align: left;"> list of elements to label  </td>
+<td style="text-align: center;"> <code>1:ne</code>  </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tbl:OptPlotNForc">
+<table>
+<caption>Some fields of the optional input argument <code>Options</code> for function <span style="color: blue"><code>Plot_NodalForces</code></span></caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;"> Field name  </th>
+<th style="text-align: left;"> Purpose  </th>
+<th style="text-align: center;"> Default value  </th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"> <code>FrcSF</code>  </td>
+<td style="text-align: left;"> scale factor for force arrow shaft  </td>
+<td style="text-align: center;"> 1  </td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"> <code>TipSF</code> </td>
+<td style="text-align: left;"> scale factor for force arrow tip  </td>
+<td style="text-align: center;"> 1  </td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"> <code>ArWth</code> </td>
+<td style="text-align: left;"> line width for force arrow shaft  </td>
+<td style="text-align: center;"> 3  </td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"> <code>ArClr</code> </td>
+<td style="text-align: left;"> nodal force arrow color  </td>
+<td style="text-align: center;"> ‘r’  </td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"> <code>Label</code> </td>
+<td style="text-align: left;"> ‘yes’ / ‘no’ for labeling nodal force    ‘No’  </td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"> <code>FntSF</code> </td>
+<td style="text-align: left;"> scale factor for nodal force label  </td>
+<td style="text-align: center;"> 1  </td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"> <code>Digit</code> </td>
+<td style="text-align: left;"> number of digits for nodal force label  </td>
+<td style="text-align: center;"> 2  </td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"> <code>Units</code> </td>
+<td style="text-align: left;"> force units  </td>
+<td style="text-align: center;"> base unit  </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tbl:OptPlRel">
+<table>
+<caption>Fields of optional input argument <code>Options</code> for function <span style="color: blue"><code>Plot_Releases</code></span></caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;"> Field name  </th>
+<th style="text-align: left;"> Purpose  </th>
+<th style="text-align: center;"> Default value  </th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"> <code>MAGF</code>  </td>
+<td style="text-align: left;"> magnification factor for deformed model  </td>
+<td style="text-align: center;"> 10  </td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"> <code>HngSF</code>  </td>
+<td style="text-align: left;"> scale factor for size of hinge symbol  </td>
+<td style="text-align: center;"> 1  </td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"> <code>HOfSF</code>  </td>
+<td style="text-align: left;"> factor for hinge symbol offset from element end  </td>
+<td style="text-align: center;"> 1  </td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"> <code>AHClr</code>  </td>
+<td style="text-align: left;"> display color for axial releases  </td>
+<td style="text-align: center;"> light gray  </td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"> <code>FHClr</code>  </td>
+<td style="text-align: left;"> display color for flexural releases  </td>
+<td style="text-align: center;"> white  </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tbl:OptDefoStr">
+<table>
+<caption>Fields of optional input argument <code>Options</code> for function <span style="color: blue"><code>Plot_DeformedStructure</code></span></caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;"> Field name  </th>
+<th style="text-align: left;"> Purpose  </th>
+<th style="text-align: center;"> Default value  </th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"> <code>MAGF</code>  </td>
+<td style="text-align: left;"> magnification for deformed configuration  </td>
+<td style="text-align: center;"> 10  </td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"> <code>EList</code> </td>
+<td style="text-align: left;"> list of elements to include in deformed shape  </td>
+<td style="text-align: center;"> <code>1:ne</code>  </td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"> <code>PlBnd</code> </td>
+<td style="text-align: left;"> switch for displaying boundary symbols  </td>
+<td style="text-align: center;"> ‘Yes’  </td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"> <code>NodSF</code> </td>
+<td style="text-align: left;"> scale factor for size of boundary symbol  </td>
+<td style="text-align: center;"> 1  </td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"> <code>PlJnt</code> </td>
+<td style="text-align: left;"> switch for displaying rigid joint offsets  </td>
+<td style="text-align: center;"> ‘Yes’  </td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"> <code>PlCrd</code> </td>
+<td style="text-align: left;"> switch for displaying element chord  </td>
+<td style="text-align: center;"> ‘No’  </td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"> <code>PlRel</code> </td>
+<td style="text-align: left;"> switch for displaying element releases  </td>
+<td style="text-align: center;"> ‘Yes’  </td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"> <code>LnStl</code> </td>
+<td style="text-align: left;"> line style for deformed shape  </td>
+<td style="text-align: center;"> ‘-’  </td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"> <code>LnWth</code> </td>
+<td style="text-align: left;"> line thickness for deformed shape  </td>
+<td style="text-align: center;"> 2  </td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"> <code>LnClr</code> </td>
+<td style="text-align: left;"> line color for deformed shape  </td>
+<td style="text-align: center;"> ‘r’  </td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"> <code>BsClr</code> </td>
+<td style="text-align: left;"> color for boundary node and symbol  </td>
+<td style="text-align: center;"> [0.6 0 0.6]  </td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"> <code>HngSF</code> </td>
+<td style="text-align: left;"> scale factor for size of release symbol  </td>
+<td style="text-align: center;"> 1  </td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"> <code>HOfSF</code> </td>
+<td style="text-align: left;"> scale factor for flexural hinge symbol offset from element end  </td>
+<td style="text-align: center;"> 1  </td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"> <code>AHClr</code>  </td>
+<td style="text-align: left;"> display color for axial releases  </td>
+<td style="text-align: center;"> light gray  </td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"> <code>FHClr</code>  </td>
+<td style="text-align: left;"> display color for flexural releases  </td>
+<td style="text-align: center;"> white  </td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"> <code>ModSF</code> </td>
+<td style="text-align: left;"> switch for adjusting the scale factor with element size  </td>
+<td style="text-align: center;"> ‘yes’  </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tbl:OptPlHng">
+<table>
+<caption>Fields of optional input argument <code>Options</code> for function [func:Plot_PlasticHinges]</caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;"> Field name  </th>
+<th style="text-align: left;"> Purpose  </th>
+<th style="text-align: center;"> Default value  </th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"> <code>EList</code> </td>
+<td style="text-align: left;"> list of elements for which plastic hinges are displayed  </td>
+<td style="text-align: center;"> <code class="sourceCode matlab"><span class="fl">1</span><span class="op">:</span><span class="va">ne</span></code></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"> <code>HngSF</code> </td>
+<td style="text-align: left;"> scale factor for size of plastic hinge symbol  </td>
+<td style="text-align: center;"><code>1</code> </td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"> <code>HOfSF</code> </td>
+<td style="text-align: left;"> scale factor for flexural hinge offset from element end  </td>
+<td style="text-align: center;"><code>1</code> </td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"> <code>FHClr</code> </td>
+<td style="text-align: left;"> flexural hinge color  </td>
+<td style="text-align: center;">  <code>'r'</code> </td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"> <code>CHClr</code> </td>
+<td style="text-align: left;"> color for column hinge with <span class="math inline">\(N\)</span>-<span class="math inline">\(M\)</span> interaction  </td>
+<td style="text-align: center;"> <code class="sourceCode matlab">[<span class="fl">1</span> <span class="fl">0.6</span> <span class="fl">0</span>]</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"> <code>AHClr</code> </td>
+<td style="text-align: left;"> axial hinge color in truss elements  </td>
+<td style="text-align: center;"> <code>[1 0.6 0]</code>  </td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"> <code>tol</code> </td>
+<td style="text-align: left;"> relative tolerance for plastic capacity check  </td>
+<td style="text-align: center;"> <span class="math inline">\(10^{-6}\)</span>  </td>
+</tr>
+</tbody>
+</table>
+</div>
+
+                        
+                        </article>
+                        <!-- <div class="col-md-8" role="main"></div> -->
+                    
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>&copy 1998-2021 UC Regents, Filip C. Filippou</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="elstir_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="elstir-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="elstir-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="elstir_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

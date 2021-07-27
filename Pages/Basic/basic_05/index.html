@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://claudioperez.github.io/FEDEASdocs/Pages/Basic/basic_05/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Structural Equilibrium - FEDEASLab</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../_static/css/extra.css" rel="stylesheet">
+
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/matlab.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <!-- <script>
+            $(".nav .nav-link").on("click", function(){
+            $(".nav").find(".active").removeClass("active");
+            $(this).addClass("active");
+         });
+         </script> -->
+
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-170527070-1', 'auto');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">FEDEASLab</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav ml-auto">
+                        <!--<ul class="nav navbar-nav">-->
+                            <li class="navitem">
+                                <a href="../../../About/" class="nav-link">About</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../" class="nav-link">Pages</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../Functions/latest/" class="nav-link">Functions</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../Gallery/" class="nav-link">Gallery</a>
+                            </li>
+                        <!--</ul>-->
+                        <!--</div>-->
+
+                    <!-- <ul class="nav navbar-nav ml-auto"> -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#elstir_search_modal">
+                               <!--<img src="img/search.png" class="icon">--> <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            
+            <!-- <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+            </nav> -->
+            
+            <div class="row">
+                    
+                        <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card ">
+        <ul class="nav flex-column">
+        
+        
+        </ul>
+    </div>
+</div></div>
+                    
+
+                    
+                        <article class="col-md-9 p-3">
+                        <!-- <article class="col-md-9"> -->
+                        
+
+<h1 id="structural-equilibrium">Structural Equilibrium</h1>
+<p>The global DOF equilibrium equations of the structural model are given by [B-E:PBQ]. As discussed in [B-C:Statics], the equilibrium equations at the free DOFs of the structural model in [B-E:GlEqwBfQ] are used to solve for the basic forces <span class="math inline">\(\boldsymbol{Q}\)</span>. For determining the solution of these equations it is necessary to set up the applied nodal forces <span class="math inline">\(\boldsymbol{P}_f\)</span>, the equivalent nodal forces <span class="math inline">\(\boldsymbol{P}_{wf}\)</span> and the equilibrium matrix <span class="math inline">\(\mathbf{B}_f\)</span>. The latter is extracted from the full equilibrium matrix <span class="math inline">\(\mathbf{B}\)</span>.</p>
+<h2 id="sec:FLBfAssembly">Assembly of Equilibrium Matrix <span class="math inline">\(\mathbf{B}\)</span></h2>
+<p>The assembly of the equilibrium matrix <span class="math inline">\(\mathbf{B}\)</span> of the structural model in [B-S:BfAssembly] involves the determination of the equilibrium matrix <span class="math inline">\(\mathbf{b}_g\)</span> of each element and the re-assignment of the rows of <span class="math inline">\(\mathbf{b}_g\)</span> to the rows of <span class="math inline">\(\mathbf{B}\)</span> based on the local-global DOF number correspondence in accordance with the <span class="math inline">\(\boldsymbol{id}\)</span> array of the element. Setting up the equilibrium matrix <span class="math inline">\(\mathbf{b}_g\)</span> of each element according to [B-E:bg42dfr], [B-E:bg42dtr] or [B-E:bg43dtr] for a 2d frame, a 2d truss and a 3d truss element, respectively, requires the element length <span class="math inline">\(L\)</span> and the direction cosines of the undeformed element <span class="math inline">\(x\)</span>-axis. These are set up by the utility function [func:ElmLenOr] in conjunction with the utility function <code>Localize</code>, which also sets up the <span class="math inline">\(\boldsymbol{id}\)</span> array for the element, as described earlier.</p>
+<p>The assembly of the <span class="math inline">\(\mathbf{B}\)</span> matrix according to [B-E:Belbg] is implemented in [FEDEASlab]  function [func:B_matrix] , as shown in [B:Bmatimpl]. The function [func:B_matrix]  calls the internal function <code>bg_matrix</code> to set up the equilibrium matrix <span class="math inline">\(\mathbf{b}_g\)</span> of each element according to [B-E:bg42dfr], [B-E:bg42dtr] or [B-E:bg43dtr] for a 2d frame, a 2d truss and a 3d truss element, respectively. The function syntax is given in [B:bgimpl].</p>
+<p>Because the data structure [data:Model]  does not have information about basic force releases, it is the user’s responsibility to remove the columns of the <span class="math inline">\(\mathbf{B}\)</span>-matrix corresponding to basic force releases so that the difference between the number of columns and the number of rows of the <span class="math inline">\(\mathbf{B}\)</span>-matrix matches the degree of static indeterminacy NOS of the structural model. A convenient way for setting up an index of element release locations is furnished by the utility function [func:H_index] with information about the element releases in [data:Data] , as will be discussed later.</p>
+<p>After setting up the complete equilibrium matrix <span class="math inline">\(\mathbf{B}\)</span> for the structural model, the equilibrium matrix <span class="math inline">\(\mathbf{B}_f\)</span> for the free DOFs corresponds to the upper <span class="math inline">\(nf\)</span> rows of <span class="math inline">\(\mathbf{B}\)</span>. It can be extracted with the statement</p>
+<div class="MLbox">
+<div class="sourceCode" id="cb1" data-rulecolor="\color{red}" data-startFrom="1"><pre class="sourceCode matlab"><code class="sourceCode matlab"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="va">B</span> <span class="op">=</span> <span class="va">B_matrix</span> (<span class="va">Model</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb2" data-startFrom="20"><pre class="sourceCode matlab"><code class="sourceCode matlab" style="counter-reset: source-line 19;"><span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="co">% assemble structure equilibrium matrix</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="va">ne</span> <span class="op">=</span> <span class="va">Model</span>.<span class="va">ne</span><span class="op">;</span>          <span class="co">% number of elements in structural model</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="va">k</span>  <span class="op">=</span> <span class="fl">0</span><span class="op">;</span>                 <span class="co">% initialize column index into matrix B</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="kw">for</span> <span class="va">el</span><span class="op">=</span><span class="fl">1</span><span class="op">:</span><span class="va">ne</span>             <span class="co">% loop over all elements</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>   <span class="co">% locate element in Model and return end coordinates and id array</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>   [<span class="va">xyz</span><span class="op">,</span><span class="va">id</span>] <span class="op">=</span> <span class="va">Localize</span>(<span class="va">Model</span><span class="op">,</span><span class="va">el</span>)<span class="op">;</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>   <span class="co">% form element equilibrium matrix bg</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>   <span class="va">bg</span> <span class="op">=</span> <span class="va">bg_matrix</span>(<span class="va">Model</span>.<span class="va">ElemName</span>{<span class="va">el</span>}<span class="op">,</span><span class="va">xyz</span>)<span class="op">;</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>   <span class="co">% assemble element equilibrium matrix bg into static matrix B</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>   <span class="va">nc</span> <span class="op">=</span> <span class="va">size</span>(<span class="va">bg</span><span class="op">,</span><span class="fl">2</span>)<span class="op">;</span>     <span class="co">% determine number of columns of matrix bg</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>   <span class="va">B</span>(<span class="va">id</span><span class="op">,</span><span class="va">k</span><span class="op">+</span><span class="fl">1</span><span class="op">:</span><span class="va">k</span><span class="op">+</span><span class="va">nc</span>) <span class="op">=</span> <span class="va">bg</span><span class="op">;</span> <span class="co">% insert bg into id locations of matrix B</span></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>   <span class="va">k</span>  <span class="op">=</span> <span class="va">k</span><span class="op">+</span><span class="va">nc</span><span class="op">;</span>           <span class="co">% augment column index by number of columns</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb3" data-startFrom="35"><pre class="sourceCode matlab"><code class="sourceCode matlab" style="counter-reset: source-line 34;"><span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="va">bg</span> <span class="op">=</span> <span class="va">bg_matrix</span>(<span class="va">ElemName</span><span class="op">,</span><span class="va">xyz</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb4" data-startFrom="39"><pre class="sourceCode matlab"><code class="sourceCode matlab" style="counter-reset: source-line 38;"><span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a><span class="co">% determine element length and orientation</span></span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>[<span class="va">L</span><span class="op">,</span><span class="va">dcx</span>] <span class="op">=</span> <span class="va">ElmLenOr</span>(<span class="va">xyz</span>)<span class="op">;</span></span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a><span class="kw">if</span> <span class="va">contains</span>(<span class="va">ElemName</span><span class="op">,</span><span class="ss">&#39;Truss&#39;</span>)</span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>   <span class="co">% truss element</span></span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>   <span class="va">bg</span> <span class="op">=</span> [<span class="op">-</span><span class="va">dcx</span><span class="op">;</span> <span class="va">dcx</span>]<span class="op">;</span></span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a><span class="kw">elseif</span> <span class="va">contains</span>(<span class="va">ElemName</span><span class="op">,</span><span class="ss">&#39;2dFrm&#39;</span>)</span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a>   <span class="co">% 2d frame element</span></span>
+<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>   <span class="va">dXL</span> <span class="op">=</span> <span class="va">dcx</span>(<span class="fl">1</span>)<span class="op">;</span></span>
+<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a>   <span class="va">dYL</span> <span class="op">=</span> <span class="va">dcx</span>(<span class="fl">2</span>)<span class="op">;</span></span>
+<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a>   <span class="va">bg</span>  <span class="op">=</span> [<span class="op">-</span><span class="va">dXL</span>  <span class="op">-</span><span class="va">dYL</span><span class="op">/</span><span class="va">L</span>  <span class="op">-</span><span class="va">dYL</span><span class="op">/</span><span class="va">L</span><span class="op">;</span></span>
+<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>          <span class="op">-</span><span class="va">dYL</span>   <span class="va">dXL</span><span class="op">/</span><span class="va">L</span>   <span class="va">dXL</span><span class="op">/</span><span class="va">L</span><span class="op">;</span></span>
+<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a>             <span class="fl">0</span>     <span class="fl">1</span>       <span class="fl">0</span>  <span class="op">;</span></span>
+<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>           <span class="va">dXL</span>   <span class="va">dYL</span><span class="op">/</span><span class="va">L</span>   <span class="va">dYL</span><span class="op">/</span><span class="va">L</span><span class="op">;</span></span>
+<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a>           <span class="va">dYL</span>  <span class="op">-</span><span class="va">dXL</span><span class="op">/</span><span class="va">L</span>  <span class="op">-</span><span class="va">dXL</span><span class="op">/</span><span class="va">L</span><span class="op">;</span></span>
+<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a>             <span class="fl">0</span>     <span class="fl">0</span>       <span class="fl">1</span>  ]<span class="op">;</span></span>
+<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a><span class="kw">else</span></span>
+<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a>   <span class="va">error</span> (<span class="ss">&#39;only truss and 2d frame elements supported; check syntax&#39;</span>)</span>
+<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+</div>
+<h2 id="sec:SpecNF">Specification of Nodal Forces</h2>
+<figure>
+<img src="Function_Code/StatTrEx2.png" id="fig:PfInp" width="0" alt="Specification of applied nodal forces in the script file Ex3_1.m" /><figcaption aria-hidden="true">Specification of applied nodal forces in the script file <code>Ex3_1.m</code></figcaption>
+</figure>
+<div class="sourceCode" id="cb5" data-startFrom="84"><pre class="sourceCode matlab"><code class="sourceCode matlab" style="counter-reset: source-line 83;"><span id="cb5-84"><a href="#cb5-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-85"><a href="#cb5-85" aria-hidden="true" tabindex="-1"></a><span class="co">%% specify loading</span></span>
+<span id="cb5-86"><a href="#cb5-86" aria-hidden="true" tabindex="-1"></a><span class="va">Pe</span>(<span class="fl">2</span><span class="op">,</span><span class="fl">2</span>) <span class="op">=</span> <span class="op">-</span><span class="fl">5</span><span class="op">;</span> <span class="co">% node 2, direction Y</span></span>
+<span id="cb5-87"><a href="#cb5-87" aria-hidden="true" tabindex="-1"></a><span class="va">Pe</span>(<span class="fl">4</span><span class="op">,</span><span class="fl">1</span>) <span class="op">=</span> <span class="fl">10</span><span class="op">;</span> <span class="co">% node 4, direction X</span></span>
+<span id="cb5-88"><a href="#cb5-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-89"><a href="#cb5-89" aria-hidden="true" tabindex="-1"></a><span class="co">% generate applied force vector Pf</span></span></code></pre></div>
+<p>The next task for setting up the node equilibrium equations of the structural model is the specification of the applied and the equivalent nodal forces. For this task it is impractical to know the global DOF numbering for directly setting up the applied and the equivalent nodal force vectors <span class="math inline">\(\boldsymbol{P}_f\)</span> and <span class="math inline">\(\boldsymbol{P}_{wf}\)</span> at the free DOFs, respectively. Instead, it is convenient to specify the nodal forces in a two dimensional array <code>Pe</code> with row numbers corresponding to node numbers and column numbers corresponding to DOF numbers, where 1 = force in <span class="math inline">\(X\)</span>, <code>2</code> = force in <span class="math inline">\(Y\)</span>, <code>3</code> = moment about <span class="math inline">\(Z\)</span> (for 2d model), or force in <span class="math inline">\(Z\)</span> (for 3d model), <code>4,5,6</code> = moment about <span class="math inline">\(X\)</span>, <span class="math inline">\(Y\)</span> and <span class="math inline">\(Z\)</span>, respectively (for 3d model). With the global DOF numbering available in the data structure [data:Model] , the [FEDEASlab] function [func:Create_NodalForces]  in <span class="citation" data-cites="tbl:ModLoad"><a href="#ref-tbl:ModLoad" role="doc-biblioref"><strong>tbl:ModLoad?</strong></a></span>] sets-up the nodal force vector. The input arguments to the function are the data structure [data:Model] and the two dimensional nodal force array <code>Pe</code>, while the output argument is the nodal force vector <code>Pf</code>. <span class="citation" data-cites="fig:PfInp"><a href="#ref-fig:PfInp" role="doc-biblioref"><strong>fig:PfInp?</strong></a></span> shows the syntax for the applied nodal forces of the truss from [B-X:StatDetTruss]. The equivalent nodal forces <span class="math inline">\(\boldsymbol{P}_w\)</span> are set up by the function <code>Create_PwForces</code> in <span class="citation" data-cites="tbl:ModLoad"><a href="#ref-tbl:ModLoad" role="doc-biblioref"><strong>tbl:ModLoad?</strong></a></span> for the element loading <span class="math inline">\(w\)</span> specified in data structure [data:Data]  according to <span class="citation" data-cites="tbl:ElDatafields"><a href="#ref-tbl:ElDatafields" role="doc-biblioref"><strong>tbl:ElDatafields?</strong></a></span>.</p>
+<h2 id="sec:Q42dtruss">Solution for Statically Determinate Structures</h2>
+<p>For a stable, statically determinate structure the equilibrium matrix <span class="math inline">\(\mathbf{B}_f\)</span> is square with full rank. The MATLAB  function <code>rank</code> can be used to make sure that this is indeed the case. Given the nodal forces <span class="math inline">\(\boldsymbol{P}_f\)</span> and <span class="math inline">\(\boldsymbol{P}_{wf}\)</span> at the free DOFs of a stable structural model, a unique solution of the system of linear equations in [B-E:GlEqwBfQ] exists, resulting in the basic forces <span class="math inline">\(\boldsymbol{Q}\)</span> of the structure. The product of the basic forces <span class="math inline">\(\boldsymbol{Q}\)</span> with the full equilibrium matrix <span class="math inline">\(\mathbf{B}\)</span> gives the complete nodal force vector <span class="math inline">\(\boldsymbol{P}\)</span> according to [B-E:PBQ]. The entries in the upper <span class="math inline">\(nf\)</span> rows of <span class="math inline">\(\boldsymbol{P}\)</span> correspond to the nodal forces <span class="math inline">\(\boldsymbol{P}_f-\boldsymbol{P}_{wf}\)</span>, and the entries in the remaining rows correspond to the support reactions <span class="math inline">\(\boldsymbol{R}\)</span> according to [B-E:PfRBQ].</p>
+<p>[B:QRdet] shows an excerpt from a MATLAB  script file that follows the generation of [data:Model]  in <span class="citation" data-cites="F:ModelInp"><a href="#ref-F:ModelInp" role="doc-biblioref"><strong>F:ModelInp?</strong></a></span> and of the applied nodal force vector <span class="math inline">\(\boldsymbol{P}_f\)</span> in <span class="citation" data-cites="F:PfInp"><a href="#ref-F:PfInp" role="doc-biblioref"><strong>F:PfInp?</strong></a></span>. The script shows the determination of the equilibrium matrix <span class="math inline">\(\mathbf{B}\)</span> with function [func:B_matrix]  and its display, the solution of the equilibrium equations in [B-E:GlEqwBfQ] with the MATLAB  <span class="math inline">\(\backslash\)</span> command, and the resulting basic forces <span class="math inline">\(\boldsymbol{Q}\)</span>. The basic forces <span class="math inline">\(\boldsymbol{Q}\)</span> are then used to determine the support reactions <span class="math inline">\(\boldsymbol{R}\)</span> after first multiplying these with the full equilibrium matrix <span class="math inline">\(\mathbf{B}\)</span> and then extracting the rows corresponding to the restrained DOFs.</p>
+<div class="MLbox">
+<div class="sourceCode" id="cb6" data-startLine="1" data-endLine="17"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+</div>
+<h2 id="solution-for-statically-indeterminate-structures">Solution for Statically Indeterminate Structures</h2>
+<p>The general solution of the equilibrium equations in [B-E:GlEqwBfQ] for a equilibrium matrix <span class="math inline">\(\mathbf{B}_f\)</span> with full rank and with more columns than rows uses <strong>the row-echelon form of the matrix</strong>. Conversion of a matrix to row-echelon form uses the Gauss-Jordan elimination procedure. This well established procedure of linear algebra is implemented in the function <code>rref</code> of MATLAB . It can be used to establish the rank of <span class="math inline">\(\mathbf{B}_f\)</span> and provide the particular and the homogeneous solutions of the equilibrium equations according to [B-S:Sol4SIStr].</p>
+<p>Following [B-S:Sol4SIStr] the general solution of the equilibrium equations in [B-E:Qfinal] is based on the basic force influence matrix <span class="math inline">\(\bar{\mathbf{B}}_i\)</span> of <strong>the primary structure</strong> for the applied and equivalent nodal forces, and the basic force influence matrix <span class="math inline">\(\bar{\mathbf{B}}_x\)</span> for the redundant basic forces <span class="math inline">\(\boldsymbol{Q}_x\)</span>. [FEDEASlab]  function [func:BbariBbarx_matrix]  takes the equilibrium matrix <span class="math inline">\(\mathbf{B}_f\)</span> as input argument and uses its reduced-row echelon form to set up the force influence matrices <span class="math inline">\(\bar{\mathbf{B}}_i\)</span> and <span class="math inline">\(\bar{\mathbf{B}}_x\)</span>. The optional function argument <code>ind_r</code> can be used to select specific basic forces as redundants. If <code>ind_r</code> is not specified, the Gauss-Jordan elimination process selects the redundant basic forces automatically, and the function [func:BbariBbarx_matrix]  returns the index array <code>ind_x</code> to the basic force vector <span class="math inline">\(\boldsymbol{Q}\)</span>, so that the redundant basic forces <span class="math inline">\(\boldsymbol{Q}_x\)</span> can be extracted with <code>Qx = Q(ind_x)</code>. The function syntax is</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode matlab"><code class="sourceCode matlab"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> [<span class="va">Bbari</span><span class="op">,</span> <span class="va">Bbarx</span><span class="op">,</span> <span class="va">ind</span> <span class="va">x</span>] <span class="op">=</span> <span class="va">BbariBbarx</span> <span class="va">matrix</span> ( <span class="va">Bf</span><span class="op">,</span> <span class="va">ind</span> <span class="va">r</span>)</span></code></pre></div>
+<div class="MLbox" data-caption="Particular and homogeneous static solutions">
+<div class="sourceCode" id="lst:Bbar4brfr" data-linerange="11"><pre class="sourceCode matlab"><code class="sourceCode matlab"><span id="lst:Bbar4brfr-1"><a href="#lst:Bbar4brfr-1" aria-hidden="true" tabindex="-1"></a><span class="co">%% Matlab script for force influence matrix generation</span></span>
+<span id="lst:Bbar4brfr-2"><a href="#lst:Bbar4brfr-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="lst:Bbar4brfr-3"><a href="#lst:Bbar4brfr-3" aria-hidden="true" tabindex="-1"></a><span class="co">% Department of Civil and Environmental Engineering</span></span>
+<span id="lst:Bbar4brfr-4"><a href="#lst:Bbar4brfr-4" aria-hidden="true" tabindex="-1"></a><span class="co">% University of California, Berkeley</span></span>
+<span id="lst:Bbar4brfr-5"><a href="#lst:Bbar4brfr-5" aria-hidden="true" tabindex="-1"></a><span class="co">% Professor Filip C. Filippou</span></span>
+<span id="lst:Bbar4brfr-6"><a href="#lst:Bbar4brfr-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="lst:Bbar4brfr-7"><a href="#lst:Bbar4brfr-7" aria-hidden="true" tabindex="-1"></a><span class="co">% clear memory</span></span>
+<span id="lst:Bbar4brfr-8"><a href="#lst:Bbar4brfr-8" aria-hidden="true" tabindex="-1"></a><span class="va">CleanStart</span></span>
+<span id="lst:Bbar4brfr-9"><a href="#lst:Bbar4brfr-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="lst:Bbar4brfr-10"><a href="#lst:Bbar4brfr-10" aria-hidden="true" tabindex="-1"></a><span class="co">% static matrix Bf of braced frame (Ex 2.7)</span></span>
+<span id="lst:Bbar4brfr-11"><a href="#lst:Bbar4brfr-11" aria-hidden="true" tabindex="-1"></a><span class="va">Bf</span> <span class="op">=</span> [ <span class="fl">1</span><span class="op">/</span><span class="fl">6</span>  <span class="fl">1</span><span class="op">/</span><span class="fl">6</span>  <span class="fl">0</span>    <span class="fl">0</span>    <span class="fl">0</span>  <span class="fl">0.8</span><span class="op">;</span></span>
+<span id="lst:Bbar4brfr-12"><a href="#lst:Bbar4brfr-12" aria-hidden="true" tabindex="-1"></a>        <span class="fl">0</span>    <span class="fl">1</span>   <span class="fl">1</span>    <span class="fl">0</span>    <span class="fl">0</span>   <span class="fl">0</span> <span class="op">;</span></span>
+<span id="lst:Bbar4brfr-13"><a href="#lst:Bbar4brfr-13" aria-hidden="true" tabindex="-1"></a>        <span class="fl">0</span>    <span class="fl">0</span> <span class="op">-</span><span class="fl">1</span><span class="op">/</span><span class="fl">4</span> <span class="op">-</span><span class="fl">1</span><span class="op">/</span><span class="fl">4</span>  <span class="fl">1</span><span class="op">/</span><span class="fl">4</span>  <span class="fl">0</span> <span class="op">;</span></span>
+<span id="lst:Bbar4brfr-14"><a href="#lst:Bbar4brfr-14" aria-hidden="true" tabindex="-1"></a>        <span class="fl">0</span>    <span class="fl">0</span>   <span class="fl">0</span>    <span class="fl">1</span>    <span class="fl">1</span>   <span class="fl">0</span> ]<span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb8" data-startFrom="16"><pre class="sourceCode matlab"><code class="sourceCode matlab" style="counter-reset: source-line 15;"><span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a><span class="co">% select basic force redundants</span></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a><span class="va">ind_r</span> <span class="op">=</span> [<span class="fl">1</span><span class="op">,</span><span class="fl">4</span>]<span class="op">;</span></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>[<span class="va">Bbari</span><span class="op">,</span><span class="va">Bbarx</span><span class="op">,</span><span class="va">ind_x</span>] <span class="op">=</span> <span class="va">BbariBbarx_matrix</span>(<span class="va">Bf</span><span class="op">,</span><span class="va">ind_r</span>)<span class="op">;</span></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a><span class="va">Pf</span> <span class="op">=</span> [<span class="fl">20</span><span class="op">;</span><span class="fl">0</span><span class="op">;-</span><span class="fl">30</span><span class="op">;</span><span class="fl">0</span>]<span class="op">;</span></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a><span class="va">Qp</span> <span class="op">=</span> <span class="va">Bbari</span><span class="op">*</span><span class="va">Pf</span><span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb9" data-startFrom="1"><pre class="sourceCode matlab"><code class="sourceCode matlab"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">%% Matlab script for force influence matrix generation</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co">% Department of Civil and Environmental Engineering</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co">% University of California, Berkeley</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="co">% Professor Filip C. Filippou</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="co">% clear memory</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="va">CleanStart</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="co">% static matrix Bf of braced frame (Ex 2.7)</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a><span class="va">Bf</span> <span class="op">=</span> [ <span class="fl">1</span><span class="op">/</span><span class="fl">6</span>  <span class="fl">1</span><span class="op">/</span><span class="fl">6</span>  <span class="fl">0</span>    <span class="fl">0</span>    <span class="fl">0</span>  <span class="fl">0.8</span><span class="op">;</span></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>        <span class="fl">0</span>    <span class="fl">1</span>   <span class="fl">1</span>    <span class="fl">0</span>    <span class="fl">0</span>   <span class="fl">0</span> <span class="op">;</span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>        <span class="fl">0</span>    <span class="fl">0</span> <span class="op">-</span><span class="fl">1</span><span class="op">/</span><span class="fl">4</span> <span class="op">-</span><span class="fl">1</span><span class="op">/</span><span class="fl">4</span>  <span class="fl">1</span><span class="op">/</span><span class="fl">4</span>  <span class="fl">0</span> <span class="op">;</span></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>        <span class="fl">0</span>    <span class="fl">0</span>   <span class="fl">0</span>    <span class="fl">1</span>    <span class="fl">1</span>   <span class="fl">0</span> ]<span class="op">;</span></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a><span class="co">% select basic force redundants</span></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="va">ind_r</span> <span class="op">=</span> [<span class="fl">1</span><span class="op">,</span><span class="fl">4</span>]<span class="op">;</span></span></code></pre></div>
+</div>
+<p><span class="citation" data-cites="lst:Bbar4brfr"><a href="#ref-lst:Bbar4brfr" role="doc-biblioref"><strong>lst:Bbar4brfr?</strong></a></span> shows the direct specification of the <span class="math inline">\(\mathbf{B}_f\)</span> matrix for the braced frame of [B-X:SIBrFrm] that corresponds to the equilibrium equations in [B-E:EqEqs4brfr]. The function [func:BbariBbarx_matrix]  then determines the force influence matrices <span class="math inline">\(\bar{\mathbf{B}}_i\)</span> and <span class="math inline">\(\bar{\mathbf{B}}_x\)</span> for the selection of <span class="math inline">\(\boldsymbol{Q}_1\)</span> and <span class="math inline">\(\boldsymbol{Q}_4\)</span> as redundant basic forces, as specified by <code>ind_r=[1,4]</code>. With the direct specification of the nodal force vector <span class="math inline">\(\boldsymbol{P}_f\)</span> the particular solution for the given nodal forces can be determined by the product <span class="math inline">\(\bar{\mathbf{B}}_i\mspace{1.5mu}\boldsymbol{P}_f\)</span>. The resulting values agree with those from <a href="b">B-X:SIBrFrm</a> and (c).</p>
+
+                        
+                        </article>
+                        <!-- <div class="col-md-8" role="main"></div> -->
+                    
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>&copy 1998-2021 UC Regents, Filip C. Filippou</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="elstir_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="elstir-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="elstir-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="elstir_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

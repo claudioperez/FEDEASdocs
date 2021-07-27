@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://claudioperez.github.io/FEDEASdocs/Pages/Basic/basic_11/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Plastic Analysis - FEDEASLab</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../_static/css/extra.css" rel="stylesheet">
+
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/matlab.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <!-- <script>
+            $(".nav .nav-link").on("click", function(){
+            $(".nav").find(".active").removeClass("active");
+            $(this).addClass("active");
+         });
+         </script> -->
+
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-170527070-1', 'auto');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">FEDEASLab</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav ml-auto">
+                        <!--<ul class="nav navbar-nav">-->
+                            <li class="navitem">
+                                <a href="../../../About/" class="nav-link">About</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../" class="nav-link">Pages</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../Functions/latest/" class="nav-link">Functions</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../Gallery/" class="nav-link">Gallery</a>
+                            </li>
+                        <!--</ul>-->
+                        <!--</div>-->
+
+                    <!-- <ul class="nav navbar-nav ml-auto"> -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#elstir_search_modal">
+                               <!--<img src="img/search.png" class="icon">--> <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            
+            <!-- <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+            </nav> -->
+            
+            <div class="row">
+                    
+                        <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card ">
+        <ul class="nav flex-column">
+        
+        
+        </ul>
+    </div>
+</div></div>
+                    
+
+                    
+                        <article class="col-md-9 p-3">
+                        <!-- <article class="col-md-9"> -->
+                        
+
+<h1 id="plastic-analysis">Plastic Analysis</h1>
+<p>According to [B-C:PlAnal] the determination of the collapse load factor of a structural model is possible either with the lower bound theorem of plastic analysis that makes use of the equilibrium equations and the plastic conditions, or with the upper bound theorem of plastic analysis that makes use of the kinematic relations and the plastic work increment of structural mechanisms. Even though the <strong>uniqueness theorem</strong> of plastic analysis states that the collapse load factor is the same with these methods, [FEDEASlab] uses two separate functions to better illustrate the resulting information from each method, which is of equilibrium nature for the lower bound theorem and of kinematic nature for the upper bound theorem. The basic forces at incipient collapse from the lower bound theorem can be used to display the moment distribution at <em>incipient collapse</em>, while the displacement and deformation increments from the upper bound theorem can be used to display the mechanism <em>after the onset of collapse</em>.</p>
+<h2 id="sec:PlAnwFlab">Lower Bound Theorem</h2>
+<p>The formulation of the lower bound theorem of plastic analysis in [B-E:LBeq] of [B-C:PlAnal] is a <strong>linear programming problem</strong>. Functions for the solution of such problems are available in the Optimization toolbox of MATLAB . In particular, the <code>linprog</code> function of the toolbox is suited for structural problems involving <strong>linear equalities and inequalities</strong>. To set up the input arguments for this function the [FEDEASlab] function  takes the equilibrium matrix <code>Bf</code>, the array of plastic capacities <code>Qpl</code>, and the reference force vector <code>Pref</code> at the free DOFs of the structural model as input arguments. The latter is set up directly or with the help of the function [func:Create_NodalForces] , as discussed in <span class="citation" data-cites="sec:SpecNF"><a href="#ref-sec:SpecNF" role="doc-biblioref"><strong>sec:SpecNF?</strong></a></span>. Optional input arguments to the function  are the constant nodal forces <span class="math inline">\(\boldsymbol{P}_{cf}\)</span> and the data structure <code>Options</code> with parameters for the linear programming solution. The default value for the constant nodal forces is zero, while the default parameters for the linear programming function that MATLAB  selects work in most cases. They need to be modified only if numerical difficulties arise.</p>
+<div class="MLbox">
+<div class="sourceCode" id="cb1" data-startLine="33" data-endLine="43"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+<div class="sourceCode" id="cb2" data-startLine="1" data-endLine="4" data-keywordstyle="\normalfont\color{black}"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
+</div>
+<p>With this information the function  determines the collapse load factor <code>lambdac</code> and the corresponding basic forces <code>Qc</code> of the structure under the collapse load. The syntax of the plastic analysis function is</p>
+<p>[B:PlAnal] shows the input arguments to  for the column-girder assembly of [B-X:PlAColGird]. The output arguments are the collapse load factor <code>lambdac</code> and the corresponding basic forces <code>Qc</code> of the structural model under the collapse load.</p>
+<h2 id="sec:UBPlAnwFlab">Upper Bound Theorem</h2>
+<p>The formulation of the upper bound theorem of plastic analysis in [B-E:LP4UB], [B-E:LP4UBINC], and [B-E:LPUBEQC] of [B-C:PlAnal] is also a <em>linear programming problem</em>, in fact it is the dual problem of the lower bound theorem in [B-E:LBeq] <span class="citation" data-cites="Strang_1988"><a href="#ref-Strang_1988" role="doc-biblioref"><strong>Strang_1988?</strong></a></span>.</p>
+<p>The [FEDEASlab] function <code>PlasticAnalysis_wUBT</code> sets up the necessary equality and inequality constraints with input arguments <span class="math inline">\(\mathbf{A}_f\)</span>, <span class="math inline">\(\boldsymbol{Q}_{pl}\)</span>, <span class="math inline">\(\boldsymbol{P}_{ref}\)</span>. It invokes the simplex algorithm for the solution of the linear programming problem and returns the collapse load factor <span class="math inline">\(\lambda_c\)</span>, and the displacement rates <span class="math inline">\(\dot{\boldsymbol{U}}_f\)</span> as displacement increments <code>DUf</code> and the plastic hinge deformation rates <span class="math inline">\(\dot{\boldsymbol{V}}_{hp}\)</span> as plastic deformation increments <code>DVhp</code> of the collapse mechanism. The syntax is</p>
+<p>[B:UB4PorFr] shows the input arguments to <code>PlasticAnalysis_wUBT</code> for the portal frame of [B-X:PlUB4PortalFrame]. The function output consists of the collapse load factor <code>lambdac</code>, the corresponding displacement increments <code>DUf</code>, and the plastic hinge deformation increments <code>DVhp</code> of the collapse mechanism. The values match those from [B-X:PlUB4PortalFrame].</p>
+
+                        
+                        </article>
+                        <!-- <div class="col-md-8" role="main"></div> -->
+                    
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>&copy 1998-2021 UC Regents, Filip C. Filippou</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="elstir_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="elstir-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="elstir-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="elstir_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

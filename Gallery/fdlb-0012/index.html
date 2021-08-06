@@ -189,44 +189,6 @@
                         <!-- <article class="col-md-9"> -->
                         
 
-<h1 id="ain_matrix"><code>AIN_MATRIX</code></h1>
-<h2 id="syntax">Syntax</h2>
-<ul>
-<li>AUB = AUB_MATRIX (MODEL,ELEMDATA)</li>
-<li>AUB = AUB_MATRIX (MODEL,ELEMDATA,ALPH)</li>
-</ul>
-<p>the function sets up the block diagonal matrix of element limit-surface equations, <span class="math inline">\(A_{in}\)</span>, for the structural model specified in data structure MODEL with element property information in cell array ELEMDATA. Options for parameter ALPH are specified below.</p>
-<h3 id="parameters">Parameters</h3>
-<hr />
-<ul>
-<li><p><code>Model</code>: struct<br />
-Contains structure data.</p></li>
-<li><p><code>ElemData</code>: cell array<br />
-Contains element property data.</p></li>
-<li><p><code>alph</code>: (Optional) Char array or float array.</p>
-<p><strong>Array.</strong> If an <span class="math inline">\(n \times 2\)</span> array is passed, <span class="math inline">\(n\)</span> piecewise linear axial-moment interaction equations of the following form will be generated for each element: <span class="math display">\[a_n \frac{|N|}{N_{pl}} + b_n\left( \frac{|M_z|}{M_{p,z}} + \frac{|M_y|}{M_{p,y}}\right)  \leq 1.0\]</span></p>
-<p>If an <span class="math inline">\(n \times 3\)</span> array is passed, <span class="math inline">\(n\)</span> piecewise linear axial-moment-shear interaction equations of the following form will be applied: <span class="math display">\[a_n \frac{|N|}{N_{p}} + b_n \frac{|M|}{M_{p}} + c_n \frac{|V|}{V_{p}} \leq 1.0\]</span> <strong>String.</strong> Alternatively, a <code>char array</code> may be passed indicating one of the following options:</p>
-<ul>
-<li><code>'AISC-H2'</code> (Default)</li>
-<li><code>'AISC-H1'</code></li>
-</ul>
-<p><strong>Empty.</strong> If no parameter is passed in the third position, the function will go to the <code>NMOpt</code> field of the cell <code>ElemData</code> for each element, which may also contain a string or an array. Elements with no such field will default to the <code>AISC-H2</code> option.</p></li>
-</ul>
-<h2 id="formulation">Formulation</h2>
-<p>The matrix <span class="math inline">\(A_{in}\)</span> forms the upper bound plastic conditions in the form <span class="math display">\[\mathbf{A}_{in} \mathbf{Q} \leq \mathbf{1}\]</span> for the lower bound linear programming problem expressed as follows: <span class="math display">\[\begin{aligned}
-\lambda_{c}=\max \lambda &amp; \\
-\text { with } &amp;\left\{\begin{aligned}
-\lambda P_{r e f}+P_{c f} &amp;=\mathbf{B}_{f} Q \\
-\mathbf{A}_{in} \mathbf{Q} &amp; \leq \mathbf{1} \\
-\end{aligned}\right.
-\end{aligned}
-\]</span></p>
-<h2 id="d-shear-moment-axial-interaction">### 2D Shear-moment-axial interaction</h2>
-<p>Interaction between shear, moment, and axial forces is implemented with <span class="math inline">\(n\)</span> piecewise linear equations of the following form:</p>
-<p><span class="math display">\[a_n\dfrac{|N|}{N_p} + b_n\dfrac{|M|}{M_p} + c_n\dfrac{|V|}{V_p} \leq1.0\]</span></p>
-<p><span class="math inline">\(N\)</span>, <span class="math inline">\(M\)</span>, and <span class="math inline">\(V\)</span> are substituted by <span class="math inline">\(Q_1\)</span>, <span class="math inline">\(Q_2\)</span>, and <span class="math inline">\((Q_2 +Q_3)/L\)</span> respectively, and the equations are rearranged and implemented follows:</p>
-<p><span class="math display">\[\dfrac{a}{N_p}Q_1 + \dfrac{b}{M_p}Q_2 + \dfrac{ c}{LV_p}(Q_2+Q_3) \leq1.0\]</span></p>
-<p><span class="math display">\[\dfrac{a}{N_p}Q_1 + \left(\dfrac{b}{M_p}+\dfrac{c}{LV_p}\right)Q_2 + \dfrac{c}{LV_p}Q_3 \leq1.0\]</span></p>
 
                         
                         </article>

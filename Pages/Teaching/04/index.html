@@ -262,7 +262,7 @@
 <div class="sourceCode" id="cb16"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
 <div class="sourceCode" id="cb17"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
 </div>
-<p>The syntax of function  is shown in.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> The function  calls the internal function <code>f_matrix</code> to set up the flexibility matrix <span class="math inline">\(\mathbf{f}\)</span> for each element according to with the flexibility matrices for the truss element in and for the 2d frame element in . The function syntax is given in . The function  has similar syntax and is not listed here.</p>
+<p>The syntax of function  is shown in <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. The function  calls the internal function <code>f_matrix</code> to set up the flexibility matrix <span class="math inline">\(\mathbf{f}\)</span> for each element according to with the flexibility matrices for the truss element in and for the 2d frame element in . The function syntax is given in . The function  has similar syntax and is not listed here.</p>
 <p>According to , the element force-deformation relations are established as the inverse of the deformation-force relations of the element with the basic element stiffness matrix <span class="math inline">\(\mathbf{k}\)</span> equal to the inverse of the element flexibility matrix <span class="math inline">\(\mathbf{f}\)</span> and the initial force vector <span class="math inline">\(\boldsymbol{q}_0\)</span> according to .</p>
 <div class="MLbox">
 <div class="sourceCode" id="cb18"><pre class="sourceCode matlab"><code class="sourceCode matlab"></code></pre></div>
@@ -332,7 +332,7 @@
 <p>With this information the function  determines the collapse load factor <code>lambdac</code> and the corresponding basic forces <code>Qc</code> of the structure under the collapse load. The syntax of the plastic analysis function is</p>
 <p>shows the input arguments to  for the column-girder assembly of . The output arguments are the collapse load factor <code>lambdac</code> and the corresponding basic forces <code>Qc</code> of the structural model under the collapse load.</p>
 <h2 id="S:UBPlAnwFlab">Upper Bound Theorem</h2>
-<p>The formulation of the upper bound theorem of plastic analysis in , , and of is also a , in fact it is the dual problem of the lower bound theorem in <span class="citation" data-cites="Strang_1988"><a href="#ref-Strang_1988" role="doc-biblioref"><strong>Strang_1988?</strong></a></span>.</p>
+<p>The formulation of the upper bound theorem of plastic analysis in , , and of is also a , in fact it is the dual problem of the lower bound theorem in <span class="citation" data-cites="Strang_1988">[@Strang_1988]</span>.</p>
 <p>The  function <code>PlasticAnalysis_wUBT</code> sets up the necessary equality and inequality constraints with input arguments <span class="math inline">\(\mathbf{A}_{f}\)</span>, <span class="math inline">\(\mathbf{Q}_{pl}\)</span>, <span class="math inline">\(\boldsymbol{P}_{ref}\)</span>. It invokes the simplex algorithm for the solution of the linear programming problem and returns the collapse load factor <span class="math inline">\(\lambda_c\)</span>, and the displacement rates <span class="math inline">\(\dot{\mathbf{U}_{}}_f\)</span> as displacement increments <code>DUf</code> and the plastic hinge deformation rates <span class="math inline">\(\dot{\mathbf{V}_{}}_{hp}\)</span> as plastic deformation increments <code>DVhp</code> of the collapse mechanism. The syntax is</p>
 <p>shows the input arguments to <code>PlasticAnalysis_wUBT</code> for the portal frame of . The function output consists of the collapse load factor <code>lambdac</code>, the corresponding displacement increments <code>DUf</code>, and the plastic hinge deformation increments <code>DVhp</code> of the collapse mechanism. The values match those from .</p>
 <h2 id="S:Post">Graphics Utility Functions</h2>
@@ -428,7 +428,7 @@
 <tbody>
 <tr class="odd">
 <td style="text-align: center;"> <code>Item</code>  </td>
-<td style="text-align: left;"> ‘node,’‘elem’ or ‘axes’  </td>
+<td style="text-align: left;"> ‘node’,‘elem’ or ‘axes’  </td>
 <td style="text-align: center;"> <span class="sans-serif">’</span>all<span class="sans-serif">’</span>  </td>
 </tr>
 <tr class="even">

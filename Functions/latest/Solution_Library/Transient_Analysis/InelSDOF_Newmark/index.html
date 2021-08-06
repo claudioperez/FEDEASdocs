@@ -254,6 +254,60 @@
                         <!-- <article class="col-md-9"> -->
                         
 
+<p><a name="_top"></a> <div><a href="../../../index.md">Home</a> &gt; <a href="#">Solution_Library</a> &gt; <a href="../">Transient_Analysis</a> &gt; InelSDOF_Newmark</div></p>
+<hr />
+<h1 id="inelsdof_newmark"><code>InelSDOF_Newmark</code></h1>
+<!-- <h1>InelSDOF_Newmark
+</h1> -->
+<h2 id="purpose"><a name="_name"></a>Purpose</h2>
+<!-- <h2 id="purpose"><a name="_name"></a>Purpose</h2> -->
+<p>INELSDOF_NEWMARK inelastic response of SDOF system to acceleration history with Newmark’s method</p>
+<!-- <div class="box"><strong>INELSDOF_NEWMARK inelastic response of SDOF system to acceleration history with Newmark's method</strong></div> -->
+<h2 id="synopsis"><a name="_synopsis"></a>Synopsis</h2>
+<p><code class="sourceCode matlab"><span class="kw">function</span> [<span class="va">u</span><span class="op">,</span><span class="va">udot</span><span class="op">,</span><span class="va">uddot</span><span class="op">,</span><span class="va">pr</span>] <span class="op">=</span> <span class="va">InelSDOF_Newmark</span> (<span class="va">Deltat</span><span class="op">,</span><span class="va">omega</span><span class="op">,</span><span class="va">p</span><span class="op">,</span><span class="va">InelSDFData</span><span class="op">,</span><span class="va">zeta</span><span class="op">,</span><span class="va">u0</span><span class="op">,</span><span class="va">udot0</span>)</code></p>
+<h2 id="description"><a name="_description"></a>Description</h2>
+<pre class="comment">INELSDOF_NEWMARK inelastic response of SDOF system to acceleration history with Newmark's method
+  [U,UDOT,UDDOT,PR] = INELSDOF_NEWMARK (DELT,OMEGA,P,INELSDFDATA,ZETA,U0,UDOT0)
+  the function determines the transient response history of an inelastic SDOF system
+  to the acceleration history (force/mass) in vector P
+  with Newmark's constant average acceleration method (1959)
+  with time step of integration DELTAT;
+  row vector OMEGA contains the eigenfrequency(ies) of the SDOF system,
+  and row vector ZETA the optional damping ratio(s) (default = 0);
+  the optional initial conditions are specified in row vectors U0 for the displacement
+  and UDOT0 for the velocity (default values for both = 0);
+  INELSDFDATA carries the force-deformation properties for the inelastic SDOF system:
+  MatName = function name for 1d relation (default = InelLPwLH1dMat)
+  uy      = yield displacement         (default = 1)
+  eta     = post-yield stiffness ratio (default = 0)
+  the function returns the displacement history(ies) in array U,
+  the velocity history(ies) in array UDOT,
+  the acceleration history(ies) in array UDDOT,
+  and the resisting force history(ies) in array PR (also in the form force/mass!);
+  these arrays are arranged columnwise (column no=frequency no)</pre>
+<!-- <div class="fragment"><pre class="comment">INELSDOF_NEWMARK inelastic response of SDOF system to acceleration history with Newmark's method
+  [U,UDOT,UDDOT,PR] = INELSDOF_NEWMARK (DELT,OMEGA,P,INELSDFDATA,ZETA,U0,UDOT0)
+  the function determines the transient response history of an inelastic SDOF system
+  to the acceleration history (force/mass) in vector P
+  with Newmark's constant average acceleration method (1959)
+  with time step of integration DELTAT;
+  row vector OMEGA contains the eigenfrequency(ies) of the SDOF system,
+  and row vector ZETA the optional damping ratio(s) (default = 0);
+  the optional initial conditions are specified in row vectors U0 for the displacement
+  and UDOT0 for the velocity (default values for both = 0);
+  INELSDFDATA carries the force-deformation properties for the inelastic SDOF system:
+  MatName = function name for 1d relation (default = InelLPwLH1dMat)
+  uy      = yield displacement         (default = 1)
+  eta     = post-yield stiffness ratio (default = 0)
+  the function returns the displacement history(ies) in array U,
+  the velocity history(ies) in array UDOT,
+  the acceleration history(ies) in array UDDOT,
+  and the resisting force history(ies) in array PR (also in the form force/mass!);
+  these arrays are arranged columnwise (column no=frequency no)</pre></div> -->
+<!-- crossreference -->
+<h2 id="cross-reference-information"><a name="_cross"></a>Cross-Reference Information</h2>
+<p>This function calls: <ul style="list-style-image:url(../../../matlabicon.gif)"> </ul> This function is called by: <ul style="list-style-image:url(../../../matlabicon.gif)"> <li><a href="../DuctilityDemandSpectrum" class="code" title="function mu = DuctilityDemandSpectrum (Acceleration,Ry,T,zeta)">DuctilityDemandSpectrum</a> DUCTILITYDEMANDSPECTRUM determines the ductility demand spectrum for given acceleration history</li><li><a href="../InelasticResponseSpectrum" class="code" title="function [D,V,A] = InelasticResponseSpectrum (Acceleration,MatData,T,zeta)">InelasticResponseSpectrum</a> INELASTICRESPONSESPECTRUM determines the inelastic response spectrum for given acceleration history</li></ul> <!-- crossreference --></p>
+<!-- <hr><address>Generated on Thu 05-Aug-2021 21:39:15 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" title="Matlab Documentation in HTML">m2html</a></strong> &copy; 2005</address> -->
 
                         
                         </article>

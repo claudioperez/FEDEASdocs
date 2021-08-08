@@ -89,52 +89,105 @@
                     
                         
 
+<style>
+.home-feature {
+  justify-content: space-between !important;
+  align-items: center !important; 
+  display: flex !important;
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+</style>
 <header>
 <div class="hero position-relative overflow-hidden p-3 text-center text-dark">
-    <div class="col-md-5 p-lg-1 mx-auto my-5">
-        <p> <h2 class="featurette-heading">Φειδιας</h2></p>
-        <p class="lead">
-    <span style="color: blue;font-family: monospace;">FEDEAS</span>Lab is a modular framework for teaching and research on the simulation of nonlinear structural response under static and dynamic loads, with a reference implementation in <a href="https://www.mathworks.com/products/matlab.html">Matlab©</a>.
+  <div class="col-md-5 p-lg-1 mx-auto my-5">
+    <p> <h2 class="featurette-heading">Φειδιας</h2></p>
+    <p class="lead">
+      <span style="color: blue;font-family: monospace;">FEDEAS</span>Lab is a modular framework for teaching and research on the simulation of nonlinear structural response under static and dynamic loads, with a reference implementation in <a href="https://www.mathworks.com/products/matlab.html">Matlab©</a>.
     </p>
-    <a class="btn btn-outline-primary btn-lg" href="Guides/Teaching" role="button">Get Started</a>
-    </div>
-    <div class="product-device box-shadow d-none d-md-block"></div>
-    <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
+    <a class="btn btn-outline-primary btn-lg" href="Guides/Install" role="button">Get Started</a>
+  </div>
+  <div class="product-device box-shadow d-none d-md-block"></div>
+  <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
 </div>
 </header>
 <main role="main">
 <div class="container marketing p-md-5">
-<hr class="featurette-divider">
-    <div class="row featurette">
+  <!--
+  <hr class="featurette-divider">
+  <div class="row featurette">
     <div class="row card-group text-center">
-        <div class="col-lg-4">
+      <div class="col-lg-4">
         <img src="img/Frame-4.png" alt="3D Truss Image" class="img-fluid p-4" height="200">
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+      </div>
+      <div class="col-lg-4">
         <img src="img/output_4_1.png" alt="FEA Image" class="img-fluid p-4" height="200">
-        </div>
-        <div class="col-lg-4">
+      </div>
+      <div class="col-lg-4">
         <img src="img/T-600.png" alt="Concrete cross-section." class="img-fluid p-4"  height="200">
-        </div>
+      </div>
     </div>
-    </div>
-    <hr class="featurette-divider">
-    <div class="row featurette p-4">
+  </div>
+  <hr class="featurette-divider">
+  -->
+  <div class="row featurette p-4">
     <div class="row text-center">
-        <div class="col-lg-4">
-        <p><a class="btn btn-outline-secondary" href="Guides/" role="button">Guides</a></p>
-        <p class="lead">View guides that explain the concepts and components of <span style="color: blue;font-family: monospace;">FEDEAS</span>Lab.</p>
-        </div>
-        <div class="col-lg-4">
-        <p><a class="btn btn-outline-secondary" href="Functions/latest" role="button">Function Index</a></p>
-        <p class="lead">Peruse a comprehensive list of functions provided by <span style="color: blue;font-family: monospace;">FEDEAS</span>Lab, with detailed explanations of their interfaces.</p>
-        </div>
-        <div class="col-lg-4">
-            <p><a class="btn btn-outline-secondary" href="Gallery/" role="button">Examples</a></p>
-        <p class="lead">Walk through some examples of the various analysis procedures that <span style="color: blue;font-family: monospace;">FEDEAS</span>Lab provides.</p>
-        </div>
+       <div class="col-lg-4">
+       <p><a class="btn btn-outline-secondary" href="Guides/" role="button">Guides</a></p>
+       <span class="math display">\[\boldsymbol{P}_f= \mathbf{K}_f\mspace{1.5mu}\boldsymbol{U}_f + \boldsymbol{P}_{0}\]</span>
+       <p class="lead">View guides that explain the concepts and components of <span style="color: blue;font-family: monospace;">FEDEAS</span>Lab.</p>
+       </div>
+       <div class="col-lg-4">
+       <p><a class="btn btn-outline-secondary" href="Functions/latest" role="button">Function Index</a></p>
+       <!--<pre class="sourceCode matlab">-->
+         <code class="sourceCode matlab hljs">
+           <span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="hljs-function"><span class="hljs-params">[</span></span><span class="op"><span class="hljs-function"><span class="hljs-params">,</span></span></span><span class="hljs-function"><span class="hljs-params"> </span></span><span class="va"><span class="hljs-function"><span class="hljs-params">Bbarx</span></span></span><span class="op"><span class="hljs-function"><span class="hljs-params">,</span></span></span><span class="hljs-function"><span class="hljs-params"> </span></span><span class="va"><span class="hljs-function"><span class="hljs-params">ind</span></span></span><span class="hljs-function"><span class="hljs-params"> </span></span><span class="va"><span class="hljs-function"><span class="hljs-params">x</span></span></span><span class="hljs-function"><span class="hljs-params">]</span> </span><span class="op"><span class="hljs-function">=</span></span><span class="hljs-function"> </span><span class="va"><span class="hljs-function"><span class="hljs-title">BbariBbarx</span></span></span><span class="hljs-function"> </span><span class="va"><span class="hljs-function"><span class="hljs-title">matrix</span></span></span><span class="hljs-function"><span class="hljs-params">(</span></span><span class="va"><span class="hljs-function"><span class="hljs-params">Bf</span></span></span><span class="op"><span class="hljs-function"><span class="hljs-params">,</span></span></span><span class="hljs-function"><span class="hljs-params"> </span></span><span class="va"><span class="hljs-function"><span class="hljs-params">ind</span></span></span><span class="hljs-function"><span class="hljs-params"> </span></span><span class="va"><span class="hljs-function"><span class="hljs-params">r</span></span></span><span class="hljs-function"><span class="hljs-params">)</span></span></span>
+         </code>
+       <!--</pre>-->
+       <p class="lead">Peruse a comprehensive list of functions provided by <span style="color: blue;font-family: monospace;">FEDEAS</span>Lab, with detailed explanations of their interfaces.</p>
+       </div>
+       <div class="col-lg-4">
+         <p><a class="btn btn-outline-secondary" href="Gallery/" role="button">Examples</a></p>
+       <p class="lead">Walk through some examples of the various analysis procedures that <span style="color: blue;font-family: monospace;">FEDEAS</span>Lab provides.</p>
+       </div>
     </div>
+  </div>
+
+  <div class="row featurette home-feature feature">
+    <div class="col-7">
+      <h2 class="featurette-heading">Inelasticity</h2>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <!--<a class="btn btn-outline-secondary" href="Guides/Developing" role="button">Developer's Manual</a>-->
     </div>
+    <div class="col-4" style="position: relative;">
+      <img style="vertical-align:middle; max-width: 100%; height: auto" src="img/T-600.png" class="img-fluid"/>
+    </div>
+  </div>
+
+  <div class="row featurette home-feature feature">
+    <div class="col-4" style="position: relative;">
+      <img style="vertical-align:middle; max-width: 100%; height: auto" src="img/pde-iso.svg" class="img-fluid"/>
+    </div>
+    <div class="col-7">
+      <h2 class="featurette-heading">Partial Differential Equations</h2>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <!--<a class="btn btn-outline-secondary" href="Guides/Developing" role="button">Developer's Manual</a>-->
+    </div>
+  </div>
+
+  <div  class="home-feature row featurette">
+   <div class="col-md-7">
+    <h2 class="featurette-heading">Reliability</h2>
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <!-- <a class="btn btn-outline-secondary" href="Functions/latest/Utility_Functions/Plotting//Functions/latest/Utility_Functions/Plotting/" role="button">Library </a> -->
+   </div>
+    <div class="col-4" style="position: relative;">
+      <img style="vertical-align:middle; max-width: 100%; height: auto" src="img/reliability.svg" class="img-fluid"/>
+    </div>
+  </div>
+
+
+
 </div>
 
 

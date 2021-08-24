@@ -48,8 +48,8 @@
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:zoom="1.5239931"
-     inkscape:cx="468.83415"
-     inkscape:cy="202.75683"
+     inkscape:cx="468.83414"
+     inkscape:cy="202.75682"
      inkscape:window-width="1920"
      inkscape:window-height="986"
      inkscape:window-x="1363"
@@ -65,13 +65,6 @@
          id="g2261"><g
            id="g2269"><g
              id="g2273"><g
-               id="g2283"
-               transform="matrix(0.75,0,0,-0.75,12.885035,583.77007)"><g
-                 id="g2285"
-                 clip-path="url(#clipPath2289)"><path
-                   d="M 0,0 H 1008 V 768 H 0 Z"
-                   style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-                   id="path2291" /></g></g><g
                id="g2297"
                transform="matrix(0.75,0,0,-0.75,12.885035,583.77007)"><g
                  id="g2299"
@@ -17354,4 +17347,4 @@
        id="text31971"><tspan
          x="0"
          y="0"
-         id="tspan31969"></tspan></text></g></svg>
+         id="tspan31969" /></text></g></svg>

@@ -1,0 +1,29 @@
+disp(Model)
+          nn: 4
+         ndm: 2
+         XYZ: [4x2 double]
+          ne: 5
+         CON: {5x1 cell}
+    ElemName: {'Truss'  'Truss'  'Truss'  'Truss'  'Truss'}
+         nen: [2 2 2 2 2]
+          nq: [1 1 1 1 1]
+         ndf: [2 2 2 2 2]
+          nt: 8
+        BOUN: [4x2 double]
+          nf: 5
+         DOF: [4x2 double]
+disp(Model.XYZ)
+     0     0
+     8     0
+    16     0
+     8     6
+disp(Model.BOUN)
+     1     1
+     0     0
+     0     1
+     0     0
+disp(Model.DOF)
+     6     7
+     1     2
+     3     8
+     4     5

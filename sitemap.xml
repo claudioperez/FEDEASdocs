@@ -36,22 +36,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/DeformedElements/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Element_Library/ElementLoading/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.fedeas.net/Functions/latest/Element_Library/ExtrReshu/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Extr_CondState/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -67,11 +57,6 @@
     </url>
     <url>
          <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/Check3dFrmAxes/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/Damage4Beam/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -111,42 +96,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/BInel2dFrm_wEPLHM/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/BInel2dFrm_wEPLHNMYS/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/BInel2dFrm_wEPLHw2NMYS/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/BInel2dFrm_wGPNMYS/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/BInel2dFrm_wTwoComp/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/BInelSeries2dFrm/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/BasicInel2dFrm_wLHNMYS_wHngOff/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/BasicInel3dFrm_wLHNMYS_wHngOff/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -156,147 +106,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/Damage4M/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/Damage4M_Alt/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/Damage4NM/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/Damage4NM_Old/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/Damage4NM_Orig/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/Damage4NMnOff/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/GPYS/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/GPYS_old/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/GenBInel2dFrm_wDmg/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/Inel2dFrm/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/Inel2dFrm_wDmg/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/Inel2dFrm_wDmgnOff/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/Inel2dFrm_wGPNMYS/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/Inel2dFrm_wLHNMYS/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/Inel2dFrm_wLHNMYS_wDmgOfs/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/Inel2dFrm_wLHNMYS_wMR/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/Inel2dFrm_wLPPM/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/Inel2dFrm_wLPPNMYS/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/Inel2dFrm_wMDamg/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/Inel2dFrm_wMDamgv1/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/Inel2dFrm_wNMDamg/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/Inel2dFrm_wOneComp/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/Inel2dFrm_wOneCompN/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/Inel2dFrm_wOneComp_wDmgDo/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/Inel2dFrm_wOneComp_wDmgOfs/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/Inel2dFrm_wTwoComp/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/Inel3dFrm_wGPNMYS/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/Inel3dFrm_wLHNMYS/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/ConcentrInelastic/Inel3dFrm_wLPPNMYS/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -311,57 +126,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/AddessiCiampi/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/BDinel2dFrm_wEBwDF/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/BasicDinel3dFrm_wMF_CLL/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/BasicDinel3dFrm_wMF_FCF/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Compute_SecDisp3dFrm_EBwFF/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Compute_SecDisp3dFrm_TwFF/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/DebugBasicDinel2dFrm_wFF/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/DebugBasicDinel2dFrm_wMF/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/DebugDinel2dFrm/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/DeformShape2dFrm_wCurvIntp/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/DeformShape2dFrm_wCurvShearIntp/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -371,57 +136,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/DeformShape3dFrm_wCurvShearIntp/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel2dFrm_EB2ndOrdwdirFF/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel2dFrm_EB2ndOrdwiterFF/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel2dFrm_EBwDF/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel2dFrm_EBwFF/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel2dFrm_EBwMF/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel2dFrm_TwDF/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel2dFrm_TwdirFF/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel2dFrm_TwiterFF/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel2dFrm_wMDamg/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel2dFrm_wMFwSecInv/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -431,67 +146,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel3dFrm_EBwFF/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel3dFrm_EBwMF/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel3dFrm_EBwiterMFCL/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel3dFrm_TWarpwiterFF/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel3dFrm_TwDF/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel3dFrm_TwDF_FLI/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel3dFrm_TwdirDF_FCQ/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel3dFrm_TwdirFF/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel3dFrm_TwiterDF_FCQ/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel3dFrm_TwiterFF/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/DinelBasicEB3dFrm_wMF/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Extract_BasicEl2SecState/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Extract_El2SecDispFF_T3D/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -501,32 +156,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Extract_El2SecStateFF/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Interpolatory/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Mass4Taper2dFrm_wDF/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/ReglIntTypList/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Scott/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/WarpShpFun4Elem/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -537,16 +167,6 @@
     </url>
     <url>
          <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/Linear/LE2dFrm/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/Linear/LE2dFrm_w2ndOrdDF/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/Linear/LE2dFrm_w2ndOrdFF/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -576,22 +196,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/Linear/LETrussC/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/ADOFTran_PlateShell/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/DeformShape2dPanel/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -601,17 +206,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/RectPatch2Layer_Alt/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/Tint2d/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/TranDK/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -631,16 +226,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/shape2dPanel/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/shape2dQT/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/shape3d/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
@@ -656,52 +241,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/shapeDKT/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/shapeLST/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/shapeMN/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/Inelastic/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/Inelastic/BeamColPanel/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/Inelastic/BeamColPanelO/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/Inelastic/Inel4nodeMindlinReShellwITC/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/Inelastic/Inel4nodeMindlinShellwITC/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/Inelastic/Inel4to9nodeMindlinReShell/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/Inelastic/Inel4to9nodeMindlinShell/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -726,11 +271,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/Inelastic/InelDKT/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/Inelastic/InelLST/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
@@ -741,37 +281,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/Linear/LE4nodeMindlinPlate/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/Linear/LE4nodeMindlinPlatewITC/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/Linear/LE4nodeMindlinShellwITC/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/Linear/LE4nodeQuad/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/Linear/LE4nodeQuadwIM/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/Linear/LE4to9nodeMindlinPlate/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/Linear/LE4to9nodeMindlinShell/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -791,22 +306,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/Linear/LECMSDKTShell/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/Linear/LECMSDKTShell_wDDOF/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/Linear/LECST/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Shell_Elements/Linear/LEDKT/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -826,32 +326,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Special_Elements/PointHinge/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Special_Elements/PointSDOFElem/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Special_Elements/Sample_Element/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Special_Elements/SectWrapNMFrcDsp/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Element_Library/Special_Elements/SectionWrapper/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Element_Library/Special_Elements/ShearBeam/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -862,16 +337,6 @@
     </url>
     <url>
          <loc>https://www.fedeas.net/Functions/latest/General/A_matrix/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/General/Ac_matrix/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/General/Add_Action/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -911,77 +376,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/General/Constrain_A_matrix/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/General/Create_Damping/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/General/Create_FullModel/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/General/Create_Loading/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/General/Create_Model/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/General/Create_NodalForces/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/General/Create_NodalMass/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/General/Create_NodeDispl/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/General/Create_PwForces/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/General/Create_SimpleModel/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/General/Debug_Element/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/General/Extract_Str2ElState/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/General/Form_StiffnessMatrix/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/General/Fs_matrix/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/General/Get_VarHist4Debug/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1006,26 +406,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/General/State_of_Model/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/General/Structure/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/General/Structure_Full/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/General/SubIncr4ElemntSD/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/General/V0_vector/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
@@ -1036,37 +416,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Geometry/Coro3dKinematics/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Geometry/DefGeom_2dFrm/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Geometry/DefGeom_2dPanel/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Geometry/DefGeom_2dPanelN/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Geometry/DefGeom_3dFrm/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Geometry/DefGeom_Quad/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Geometry/DefGeom_Tri/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1081,32 +436,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Geometry/GeomTran_2dPanel/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Geometry/GeomTran_3dFrm/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Geometry/GeomTran_QuadMemb/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Geometry/GeomTran_QuadPlate/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Geometry/GeomTran_TriMemb/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Geometry/GeomTran_TriPlate/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1121,37 +451,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Geometry/Large3du2ul_Quad/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Geometry/Large3du2ul_Tri/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Geometry/Large3du2v_Frm/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Geometry/Rot2q/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Geometry/TestScaleRotation/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Geometry/TranJnt/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Geometry/TranNodeQuat/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1161,52 +461,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Geometry/kg_2dPanel/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Geometry/kg_3dFrm/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Geometry/kg_QuadMemb/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Geometry/kg_QuadPlate/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Geometry/kg_TriMemb/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Geometry/kg_TriPlate/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Geometry/kg_Truss/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Geometry/q2Rmat/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Geometry/spin/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Geometry/spinblk/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1217,36 +472,6 @@
     </url>
     <url>
          <loc>https://www.fedeas.net/Functions/latest/Material_Library/Condense_k/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Material_Library/DmgEvo1d/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Material_Library/DmgEvo1d_Epl/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Material_Library/DmgEvow1pnd/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Material_Library/DmgEvow2pnd/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Material_Library/DmgEvow2pnd_Old/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Material_Library/DmgLib/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1266,11 +491,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Material_Library/1dMaterials/BilinHyst1dMat/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Material_Library/1dMaterials/BilinInel1dMat/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
@@ -1286,77 +506,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Material_Library/1dMaterials/BoucWen1dMat/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Material_Library/1dMaterials/ComprEnvlp_Library/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Material_Library/1dMaterials/Concrete021dMat/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Material_Library/1dMaterials/FrictionGap1dMat/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Material_Library/1dMaterials/FrictionSlipLock1dMat/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Material_Library/1dMaterials/FunHandleExample/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Material_Library/1dMaterials/GMP1dMat/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Material_Library/1dMaterials/Gen1dMatwDmg/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Material_Library/1dMaterials/InelDPwLH1dMat/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Material_Library/1dMaterials/InelGP1dMat/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Material_Library/1dMaterials/InelLPwLH1dMat/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Material_Library/1dMaterials/InelParall1dMat/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Material_Library/1dMaterials/InelSeries1dMat/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Material_Library/1dMaterials/InelSerieswFriction1dMat/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Material_Library/1dMaterials/InelSerieswFriction1dMatD/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1376,42 +531,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Material_Library/1dMaterials/ParCoLinConcr1dMat/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Material_Library/1dMaterials/ParLinConcr1dMat/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Material_Library/1dMaterials/ParLinNoTensElastic1dMat/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Material_Library/1dMaterials/Steel021dMat/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Material_Library/1dMaterials/TrilinHyst1dMat/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Material_Library/2dMaterials/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Material_Library/2dMaterials/InelConPlasDmgDo2dMat/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Material_Library/2dMaterials/InelConPlasDmgTT2dMat/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1511,16 +631,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Material_Library/3dMaterials/Mazars3dConcrete/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Material_Library/3dMaterials/OneParamPlastDamg3dMat/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Material_Library/3dMaterials/Vec2Tensor/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
@@ -1536,16 +646,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Section_Library/DmgEvo4M/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Section_Library/DmgEvo4NM/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Section_Library/Extract_Sec2MatState/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
@@ -1556,47 +656,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Section_Library/HomoCircSecwNdMat/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Section_Library/HomoRectSecw1dMat/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Section_Library/HomoRectSecwNdMat/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Section_Library/HomoWFSecw1dMat/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Section_Library/MatSDwConstr/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Section_Library/MatSDwDirConstr/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Section_Library/MatSDwDirConstrPaolo/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Section_Library/MatSDwIterConstr/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Section_Library/MatSDwIterConstrPaolo/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1616,47 +681,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Section_Library/ResSec_wLHNMYS/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Section_Library/ResSec_wLHNMzMyYS/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Section_Library/SD4ResSec_wLHNMYS/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Section_Library/SD4ResSec_wLHNMYS_2YS/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Section_Library/SD4ResSec_wLHNMzMyYS/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Section_Library/SecwMDmg/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Section_Library/SecwNMDmg/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Section_Library/Shear4RectSec/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Section_Library/Shear4WFSec/</loc>
+         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1681,17 +706,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Scripts/S_DisplMethodwUd/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Scripts/S_ForceMethod/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Scripts/S_GeneralForceMethod/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1716,117 +731,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Scripts/S_MomCurvAnalysis/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Scripts/S_NMAnalysis/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Scripts/S_NMAnalysiswSepLoadHist/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Scripts/S_Update_State/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Static_Analysis/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Static_Analysis/Event2Event_NLAnalysis/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Static_Analysis/Incipient_Collapse_State/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Static_Analysis/Increment/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Static_Analysis/Initialize/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Static_Analysis/Initialize_SolStrat/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Static_Analysis/Initialize_State/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Static_Analysis/Iterate/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Static_Analysis/LinearStep/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Static_Analysis/LoadFactorControl/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Static_Analysis/LoadFactorIncrement/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Static_Analysis/MomntCurvAnalysis/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Static_Analysis/OneIteration/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Static_Analysis/PlasticAnalysis/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Static_Analysis/PlasticAnalysis_wBx/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Static_Analysis/PlasticAnalysis_wLBT/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Static_Analysis/PlasticAnalysis_wUBT/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Static_Analysis/StateDetermination/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Static_Analysis/Update_State/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1846,22 +751,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Strategies/S_MultiStep_Cont/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Strategies/S_MultiStep_wLoadHist/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Strategies/S_MultiStep_wLoadHistCont/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Strategies/S_MultiStep_wLoadHistContwSD/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1876,22 +766,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Strategies/S_OneStep_wLoadHistwSD/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Strategies/S_Transient_MultiStep/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Strategies/S_Transient_MultiStep_Cont/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Strategies/S_Transient_MultiStep_ContwSD/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1911,16 +786,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Transient_Analysis/Create_GrndAcc/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Transient_Analysis/Create_LoadHistoryValue/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Transient_Analysis/DuctilityDemandSpectrum/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
@@ -1936,22 +801,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Transient_Analysis/InelBilinSDOF_Newmark/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Transient_Analysis/InelSDOF_Newmark/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Transient_Analysis/InelasticResponseSpectrum/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Transient_Analysis/LDRitzVectors/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1981,47 +836,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Transient_Analysis/OneTransientIteration/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Transient_Analysis/TimeIntegrationConstants/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Transient_Analysis/TransientIncrement/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Transient_Analysis/TransientInitialize/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Transient_Analysis/TransientIterate/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Transient_Analysis/TransientStateDetermination/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Solution_Library/Transient_Analysis/Update_TransientState/</loc>
+         <loc>https://www.fedeas.net/Functions/latest/Utilities/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.fedeas.net/Functions/latest/Utilities/General/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/General/Append_Fields/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -2051,32 +876,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/General/D_index/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Utilities/General/ElasticSpectra4EQRecord/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/General/Export_Figs2File/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Utilities/General/Extract_Fields/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/General/H_index/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/General/ImplicitData3/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -2096,31 +901,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/General/SIUnits_Old/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/General/S_Process_EQRecord/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/General/S_Process_EQRecordO/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/General/Select_M2PFileConversion/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/General/Units_Old/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Utilities/Interpolation/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
@@ -2131,47 +911,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/Interpolation/HermiteModN/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/Interpolation/HermiteN/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Utilities/Interpolation/Lagrange/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/Interpolation/LagrangeN/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/Interpolation/PolyIntLib/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/Interpolation/SplineN/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/Interpolation/hermitepoly/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/Interpolation/lagrangepoly/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/Interpolation/splinefit/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -2216,11 +956,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/Plotting/Plot_EQRecord/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Utilities/Plotting/Plot_LoadHistory/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
@@ -2241,22 +976,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/Plotting/Plot_XYData_Mark/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Utilities/Plotting/RshpData4MultColorPlot/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/Plotting/Tripartite_Plot/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/Plotting/elNodCON/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -2356,22 +1076,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/Plotting/Sections/Plot_NewSectionStress/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Utilities/Plotting/Sections/Plot_SectionGeometry/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/Plotting/Sections/Plot_SectionStress/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/Plotting/Sections/Plot_SectionStressA/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -2491,11 +1196,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/PostProcessing/Get_StShearPD/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Utilities/PostProcessing/Get_Veps/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
@@ -2516,22 +1216,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/PreProcessing/Elements/AISC_RectHSS_Section/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/PreProcessing/Elements/AISC_RoundHSS_Section/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Utilities/PreProcessing/Elements/AISC_Section/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/PreProcessing/Elements/AISC_WSection/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -2567,21 +1252,6 @@
     </url>
     <url>
          <loc>https://www.fedeas.net/Functions/latest/Utilities/PreProcessing/Elements/FiberElemData4SteelFrame/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/PreProcessing/Elements/Generate_RectHSSData/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/PreProcessing/Elements/Generate_RoundHSSData/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/PreProcessing/Elements/Generate_WSectionData/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -2736,17 +1406,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/PreProcessing/Structure/Add_Brace2Frame_Old/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Utilities/PreProcessing/Structure/Add_GravityColumn2Frame/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/PreProcessing/Structure/Add_PanelZone/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -2786,17 +1446,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/PreProcessing/Structure/Tie_2dMesh_Orig/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.fedeas.net/Functions/latest/Utilities/PreProcessing/Structure/Tie_3dMesh/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/PreProcessing/Structure/delaunayMesh/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -2817,11 +1467,6 @@
     </url>
     <url>
          <loc>https://www.fedeas.net/Functions/latest/Utilities/Quadrature/Gauss2d/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Functions/latest/Utilities/Quadrature/Gaussq/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -2867,41 +1512,6 @@
     </url>
     <url>
          <loc>https://www.fedeas.net/Gallery/BasicFrame/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Gallery/BasicLinear/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Gallery/_fdlb-0011/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Gallery/_fdlb-0011/docs/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Gallery/_fdlb-0011/docs/idx/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Gallery/_fdlb-0012/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Gallery/_fdlb-0012/archive/Ain_matrix/</loc>
-         <lastmod>2021-08-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.fedeas.net/Gallery/_fdlb-0012/archive/tests/</loc>
          <lastmod>2021-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>

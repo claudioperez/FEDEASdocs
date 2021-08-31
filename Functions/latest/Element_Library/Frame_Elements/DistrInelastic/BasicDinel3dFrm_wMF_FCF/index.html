@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://www.fedeas.net/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/BasicDinel3dFrm_wMF_FCF/">
+        <link rel="shortcut icon" href="../../../../../../img/favicon.ico">
+        <title>BasicDinel3dFrm wMF FCF - FEDEASLab</title>
+        <link href="../../../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../../../../_static/css/extra.css" rel="stylesheet">
+
+
+        <script src="../../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/matlab.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <!-- <script>
+            $(".nav .nav-link").on("click", function(){
+            $(".nav").find(".active").removeClass("active");
+            $(this).addClass("active");
+         });
+         </script> -->
+
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-170527070-1', 'auto');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../../../..">FEDEASLab</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav ml-auto">
+                        <!--<ul class="nav navbar-nav">-->
+                            <li class="navitem">
+                                <a href="../../../../../../About/" class="nav-link">About</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../../../../Pages/Basic/" class="nav-link">Basics</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../../" class="nav-link">Functions</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../../../../Gallery/" class="nav-link">Gallery</a>
+                            </li>
+                        <!--</ul>-->
+                        <!--</div>-->
+
+                    <!-- <ul class="nav navbar-nav ml-auto"> -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#elstir_search_modal">
+                               <!--<img src="img/search.png" class="icon">--> <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            
+            <!-- <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+            </nav> -->
+            
+            <div class="row">
+                    
+                        <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card ">
+        <ul class="nav flex-column">
+        
+            
+            <li class="nav-item " data-level="1">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/" class="" >DistrInelastic</a>
+              
+              <ul class="nav flex-column">
+              <div class="dropdown-divider"></div>
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/AddessiCiampi/" class="" >&raquo; AddessiCiampi</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/BasicDinel3dFrm_wMF_CLL/" class="" >&raquo; BasicDinel3dFrm wMF CLL</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item active" data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/BasicDinel3dFrm_wMF_FCF/" class="active" >&raquo; BasicDinel3dFrm wMF FCF</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/BDinel2dFrm_wEBwDF/" class="" >&raquo; BDinel2dFrm wEBwDF</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Compute_SecDisp3dFrm_EBwFF/" class="" >&raquo; Compute SecDisp3dFrm EBwFF</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Compute_SecDisp3dFrm_TwFF/" class="" >&raquo; Compute SecDisp3dFrm TwFF</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/DebugBasicDinel2dFrm_wFF/" class="" >&raquo; DebugBasicDinel2dFrm wFF</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/DebugBasicDinel2dFrm_wMF/" class="" >&raquo; DebugBasicDinel2dFrm wMF</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/DebugDinel2dFrm/" class="" >&raquo; DebugDinel2dFrm</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/DeformShape2dFrm_wCurvIntp/" class="" >&raquo; DeformShape2dFrm wCurvIntp</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/DeformShape2dFrm_wCurvShearIntp/" class="" >&raquo; DeformShape2dFrm wCurvShearIntp</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/DeformShape3dFrm_wCurvIntp/" class="" >&raquo; DeformShape3dFrm wCurvIntp</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/DeformShape3dFrm_wCurvShearIntp/" class="" >&raquo; DeformShape3dFrm wCurvShearIntp</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel2dFrm_EB2ndOrdwdirFF/" class="" >&raquo; Dinel2dFrm EB2ndOrdwdirFF</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel2dFrm_EB2ndOrdwiterFF/" class="" >&raquo; Dinel2dFrm EB2ndOrdwiterFF</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel2dFrm_EBwDF/" class="" >&raquo; Dinel2dFrm EBwDF</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel2dFrm_EBwFF/" class="" >&raquo; Dinel2dFrm EBwFF</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel2dFrm_EBwMF/" class="" >&raquo; Dinel2dFrm EBwMF</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel2dFrm_TwDF/" class="" >&raquo; Dinel2dFrm TwDF</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel2dFrm_TwdirFF/" class="" >&raquo; Dinel2dFrm TwdirFF</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel2dFrm_TwiterFF/" class="" >&raquo; Dinel2dFrm TwiterFF</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel2dFrm_wMDamg/" class="" >&raquo; Dinel2dFrm wMDamg</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel2dFrm_wMFwSecInv/" class="" >&raquo; Dinel2dFrm wMFwSecInv</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel3dFrm_EBwDF/" class="" >&raquo; Dinel3dFrm EBwDF</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel3dFrm_EBwFF/" class="" >&raquo; Dinel3dFrm EBwFF</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel3dFrm_EBwiterMFCL/" class="" >&raquo; Dinel3dFrm EBwiterMFCL</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel3dFrm_EBwMF/" class="" >&raquo; Dinel3dFrm EBwMF</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel3dFrm_TWarpwiterFF/" class="" >&raquo; Dinel3dFrm TWarpwiterFF</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel3dFrm_TwDF/" class="" >&raquo; Dinel3dFrm TwDF</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel3dFrm_TwDF_FLI/" class="" >&raquo; Dinel3dFrm TwDF FLI</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel3dFrm_TwdirDF_FCQ/" class="" >&raquo; Dinel3dFrm TwdirDF FCQ</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel3dFrm_TwdirFF/" class="" >&raquo; Dinel3dFrm TwdirFF</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel3dFrm_TwiterDF_FCQ/" class="" >&raquo; Dinel3dFrm TwiterDF FCQ</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Dinel3dFrm_TwiterFF/" class="" >&raquo; Dinel3dFrm TwiterFF</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/DinelBasicEB3dFrm_wMF/" class="" >&raquo; DinelBasicEB3dFrm wMF</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Extract_BasicEl2SecState/" class="" >&raquo; Extract BasicEl2SecState</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Extract_El2SecDispFF_T3D/" class="" >&raquo; Extract El2SecDispFF T3D</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Extract_El2SecState/" class="" >&raquo; Extract El2SecState</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Extract_El2SecStateFF/" class="" >&raquo; Extract El2SecStateFF</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Interpolatory/" class="" >&raquo; Interpolatory</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Mass4Taper2dFrm_wDF/" class="" >&raquo; Mass4Taper2dFrm wDF</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/ReglIntTypList/" class="" >&raquo; ReglIntTypList</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/Scott/" class="" >&raquo; Scott</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+                    
+            <li class="nav-item " data-level="2">
+              <a href="/Functions/latest/Element_Library/Frame_Elements/DistrInelastic/WarpShpFun4Elem/" class="" >&raquo; WarpShpFun4Elem</a>
+              
+              <ul class="nav flex-column">
+              
+              </ul>
+              
+            </li>
+                    
+              </ul>
+              
+            </li>
+        
+        </ul>
+    </div>
+</div></div>
+                    
+
+                    
+                        <article class="col-md-9 p-3">
+                        <!-- <article class="col-md-9"> -->
+                        
+
+<p><a name="_top"></a> <div> <!-- <a href="../../../index.md">Home</a> &gt; --> <a href="../../">Frame_Elements</a> &gt; <a href="../">DistrInelastic</a> &gt; BasicDinel3dFrm_wMF_FCF</div></p>
+<hr />
+<h1 id="basicdinel3dfrm_wmf_fcf"><code>BasicDinel3dFrm_wMF_FCF</code></h1>
+<h2 id="purpose"><a name="_name"></a>Purpose</h2>
+<p>of mixed formulation by Chin-Long Lee</p>
+<h2 id="synopsis"><a name="_synopsis"></a>Synopsis</h2>
+<p><code class="sourceCode matlab">[<span class="va">q</span><span class="op">,</span><span class="va">f</span><span class="op">,</span><span class="va">ElemHist</span><span class="op">,</span><span class="va">ConvFlag</span>] <span class="op">=</span> <span class="va">BasicDinel3dFrm_wMF_FCF</span> (<span class="va">ndm</span><span class="op">,</span><span class="va">L</span><span class="op">,</span><span class="va">ElemData</span><span class="op">,</span><span class="va">w</span><span class="op">,</span><span class="va">v</span><span class="op">,</span><span class="va">DDv</span><span class="op">,</span><span class="va">ElemHist</span>)</code></p>
+<h2 id="description"><a name="_description"></a>Description</h2>
+<pre class="comment"> implementation of mixed formulation by Chin-Long Lee</pre>
+<!-- <div class="fragment"><pre class="comment"> implementation of mixed formulation by Chin-Long Lee</pre></div> -->
+<!-- crossreference -->
+<h2 id="cross-reference-information"><a name="_cross"></a>Cross-Reference Information</h2>
+<p>This function calls: <ul style="list-style-image:url(../../../matlabicon.gif)"> </ul> This function is called by: <ul style="list-style-image:url(../../../matlabicon.gif)"> <li><a href="../Dinel3dFrm_EBwMF" class="code" title="ElemResp = Dinel3dFrm_EBwMF (action,el_no,xyz,ElemData,ElemState)">Dinel3dFrm_EBwMF</a> 3d-frame element with distributed inelasticity (mixed formulation)</li></ul> <!-- crossreference --></p>
+<!-- <hr><address>Generated on _DATE_ by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" title="Matlab Documentation in HTML">m2md</a></strong> &copy; 2021</address> -->
+
+                        
+                        </article>
+                        <!-- <div class="col-md-8" role="main"></div> -->
+                    
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>&copy 1998-2021 UC Regents, Filip C. Filippou</p>
+        </footer>
+        <script>
+            var base_url = "../../../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../../../js/base.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
+        <script src="../../../../../../search/main.js" defer></script>
+
+        <div class="modal" id="elstir_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="elstir-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="elstir-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="elstir_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

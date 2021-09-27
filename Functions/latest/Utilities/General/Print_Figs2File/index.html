@@ -250,10 +250,10 @@
 <p><code class="sourceCode matlab"><span class="va">Print_Figs2File</span> (<span class="va">Figure</span><span class="op">,</span><span class="va">FigName</span><span class="op">,</span><span class="va">FigOpt</span><span class="op">,</span><span class="va">PrOpt</span>)</code></p>
 <h2 id="description"><a name="_description"></a>Description</h2>
 <pre class="comment">PRINT_FIGS2FILE prints some or all open figures to file 
-  PRINT_FIGS2FILE(FIGURE,FNAME,FIGOPT,PROPT)
+  PRINT_FIGS2FILE(FIGURE,FIGNAME,FIGOPT,PROPT)
   the function prints some or all figures with handles FIGURE to files with the name
-  FNAME and suffix Fn with n as the numeric identifier;
-  if FNAME is missing, it is replaced by 'PFile';
+  FIGNAME and suffix Fn with n as the numeric identifier;
+  if FIGNAME is missing, it is replaced by 'PFile';
   the optional arguments FIGOPT and PROPT are data structures
   with the following fields for controlling the display and the output:
   FIGOPT.Pos   : position of figure(s) relative to display (1x4 numeric array)
@@ -265,10 +265,10 @@
    Example: Print_Fig2File(Fig([1 4]),'Response') prints the first and the fourth figure
             with handles in data structure Fig to the PDF files ResponseF1 and ResponseF2</pre>
 <!-- <div class="fragment"><pre class="comment">PRINT_FIGS2FILE prints some or all open figures to file 
-  PRINT_FIGS2FILE(FIGURE,FNAME,FIGOPT,PROPT)
+  PRINT_FIGS2FILE(FIGURE,FIGNAME,FIGOPT,PROPT)
   the function prints some or all figures with handles FIGURE to files with the name
-  FNAME and suffix Fn with n as the numeric identifier;
-  if FNAME is missing, it is replaced by 'PFile';
+  FIGNAME and suffix Fn with n as the numeric identifier;
+  if FIGNAME is missing, it is replaced by 'PFile';
   the optional arguments FIGOPT and PROPT are data structures
   with the following fields for controlling the display and the output:
   FIGOPT.Pos   : position of figure(s) relative to display (1x4 numeric array)

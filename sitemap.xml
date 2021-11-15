@@ -1726,6 +1726,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://www.fedeas.net/Functions/latest/Utilities/PreProcessing/</loc>
+         <lastmod>2021-11-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://www.fedeas.net/Functions/latest/Utilities/PreProcessing/Elements/</loc>
          <lastmod>2021-11-15</lastmod>
          <changefreq>daily</changefreq>
